@@ -1,0 +1,28 @@
+body {
+  font-family: "Roboto", "serif";
+  color: #c9122b;
+  background-color: black;
+  text-align: center;
+}
+h1 {
+  color: #7d0b1a;
+}
+h2 {
+  color: #fd6377;
+}
+ul {
+  color: #fc1735;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  color: #7d313b;
+}
+table,
+th,
+td {
+  border: 2px solid;
+  margin-left: auto;
+  margin-right: auto;
+}
