@@ -15,7 +15,6 @@ This project shows the following extra achievements:
   - Added rules for **table**, **tr**, **th**, **td**
     - Centered table on document
     - Added border to table
-- **JavaScript Animation**:
 - **Add other HTML tags**:
   - Added **ul** and **li** tags for previous courses taken
   - Added **table**, **tr**, **th**, and **td** tags for a table denoting experience with listed technologies
