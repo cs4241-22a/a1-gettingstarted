@@ -98,3 +98,10 @@ This project shows ...
 
 ### Design Achievements
 - **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+
+### Color Scheme
+#30516B
+#B3D3EE 
+#6AB2EB
+#505F6B
+#538AB8
