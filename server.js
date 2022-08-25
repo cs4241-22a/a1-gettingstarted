@@ -19,7 +19,7 @@ server.listen(process.env.PORT || port);
 console.log(`Listening on port ${port}...\n`);
 const sendFile = function (response, filename) {
     fs.readFile(filename, function (err, content) {
-        file = content; // TODO: Why?
+        File = content; // TODO: Why?
         response.end(content, 'utf-8');
     });
 };

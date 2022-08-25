@@ -26,7 +26,6 @@ console.log(`Listening on port ${port}...\n`)
 
 const sendFile = function( response, filename ) {
    fs.readFile( filename, function( err, content ) {
-     file = content;  // TODO: Why?
      response.end( content, 'utf-8' );
    })
 }
