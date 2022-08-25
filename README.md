@@ -5,7 +5,7 @@ Cole Manning
 https://a1-rvrx.glitch.me/
 
 ## Technical Achievements
-1. Styles page with CSS: added rules for body (1), table (2), td (3), and a class for positive (4) and negative (4)
+1. Styles page with CSS: added rules for body (1), table (2), td (3), and a class for positive (4) and negative (5)
 2.  JS Animation: Used JS Function to show/hide experience table
 3. Extra tags: `table`/`thead`/`td`/`tr` (1), `style` (2), `em` (3), `ul`/`li` (4), `div` (5)
 
