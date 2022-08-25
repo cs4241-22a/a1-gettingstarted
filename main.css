@@ -23,6 +23,7 @@ a {
 
 details {
     font-size: 20px;
+    color: #E6E6E8;
 }
 
 .intro {
@@ -38,4 +39,8 @@ footer {
 
 body {
     background-color: #232324;
+}
+
+h2 {
+    color: #E6E6E8;
 }
