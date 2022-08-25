@@ -1,0 +1,47 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1C0C2D;
+    color: #E2E2E2;
+    padding-left: 7px;
+    font-size: 16px;
+}
+.header {
+    text-align: center;
+}
+h4 {
+    font-style: italic;
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+hr {
+    border: 2px solid #361A55;
+}
+a {
+    color: #B23A48;
+}
+li {
+    list-style: none;
+}
+img {
+    padding-top: 10px;
+    width: 50%;
+}
+.column {
+    float: left;
+}
+#exp {
+    width: 50%;
+}
+#courses {
+    width: 25%;
+}
+.column li {
+    list-style: circle;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

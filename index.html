@@ -3,26 +3,89 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">  
+    <script>
+      window.onload = function() {
+        const colors = ["#E2E2E2", "#361A55", "#B23A48"];
+        let i = 0;
+        setInterval(
+          function() {
+            document.getElementById("name").style = "color:" + colors[i++ % 3]
+          }, 1000
+        );
+      }
+    </script>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+    <div class="header">
+      <h1 id="name">Abby Hyde</h1>
+      <h4>Class of 2023 - Majoring in Computer Science, Minor in Robotics</h4>
+      <h5><a href="https://www.linkedin.com/in/abigailghyde/" target="_blank">LinkedIn Profile</a></h5>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="column" id="exp">
+        <h2>Experience</h2>
+        <h3>Skills</h3>
+        <ul>
+          <li>No Experience: Ruby</li>
+          <li>Some Experience: HTML, CSS, JavaScript, unit testing</li>
+          <li>Adequate Experience: Java, Python</li>
+        </ul>
+      </div>
+      <div class="column" id="exp">
+        <img src="abby-hiking.jpg" alt="Trees, a trail sign, and Abby with her back turned.">
+      </div>
+    </div>
+    
+    <h3>
+      Coursework
+    </h3>
+    <span class="row">
+      <div class="column" id="courses">
+        <h5>1000s</h5>
+        <ul>
+          <li>1101 - Intro to Program Design</li>
+        </ul>
+      </div>
+      <div class="column" id="courses">
+        <h5>2000s</h5>
+        <ul>
+          <li>2011 - Machine Org</li>
+          <li>2022 - Discrete Math</li>
+          <li>2102 - Object-Oriented</li>
+          <li>2223 - Algorithms</li>
+          <li>2303 - Systems Programming</li>
+        </ul>
+      </div>
+      <div class="column" id="courses">
+        <h5>3000s</h5>
+        <ul>
+          <li>3041 - HCI</li>
+          <li>3043 - Social Implications</li>
+          <li>3133 - Foundations</li>
+          <li>3431 - Databases I</li>
+          <li>3733 - Software Engineering</li>
+        </ul>
+      </div>
+      <div class="column" id="course">
+        <h5>4000s</h5>
+        <ul>
+          <li>4432 - Databases II</li>
+          <li>4518 - Mobile Computing</li>
+        </ul>
+      </div>
+    </span> 
+  
+    <h3>
+      Work Experience
+    </h3>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>Dell Technologies (Summer 2021, 2022)</li>
+      <li>Connect.CI (Apr 2021 - May 2022)</li>
     </ul>
+
+    <br>
   </body>
 </html>
