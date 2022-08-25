@@ -1,7 +1,5 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
-
-Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
 ---
 
 Natalie McClain
