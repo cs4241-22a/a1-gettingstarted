@@ -4,7 +4,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
 ---
 
-Charlie Roberts
+Natalie McClain
 http://a1-othernatalie.glitch.me
 
 This project shows ...
