@@ -1,28 +1,121 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+<!-- Google Font used for h1 tag -->
+<h1>Information about Jonathan Metcalf</h1>
+<p>
+    Hello! I'm Jonathan, and I'm a senior at WPI (class of 2023).
+    <!-- Tag Type #1 -->
+    <br/>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+    <!-- Tag Type #2 -->
+    <a href="https://github.com/JMetcalf01">My GitHub</a>
+</p>
+<p>
+    Here's a picture of my dog!
+    <br/>
+
+    <!-- Tag Type #3 -->
+    <img src="https://cdn.glitch.global/446a4858-9251-41bb-90e3-b3cdc85034e5/IMG_4471.JPG?v=1661365445224" width="504"
+         height="378"/>
+</p>
+<p>
+    And a bonus photo of my cat!
+    <br/>
+    <img src="https://cdn.glitch.global/446a4858-9251-41bb-90e3-b3cdc85034e5/IMG_1985.JPG?v=1661365449875" width="612"
+         height="816"/>
+</p>
+
+<!-- Tag Type #4 -->
+<button onclick="rickRoll()">
+    Click here to see more images of my pets!
+</button>
+
+<!-- Tag Type #5 -->
+<small id="sorry"></small>
+
+<p id="funstuff">
+    Try clicking me! (if you don't have epilepsy)
+</p>
+
+<p>
+    I'm a CS major in the BS/MS program working to get the combined degree in 4 years.
+</p>
+I've taken the following CS classes at WPI:
+<p>
+<ul>
+    <li>Introduction to Program Design</li>
+    <li>Accelerated Object-Oriented Design Concepts</li>
+    <li>Systems Programming Concepts</li>
+    <li>Introduction to Machine Organization and Assembly Language</li>
+    <li>Operating Systems</li>
+    <li>Algorithms</li>
+    <li>Computer Networks</li>
+    <li>Database Systems I</li>
+    <li>Foundations of Computer Science</li>
+    <li>Techniques of Programming Language Translation</li>
+    <li>Software Engineering</li>
+    <li>Distributed Computing Systems</li>
+    <li>Analysis of Algorithms</li>
+    <li>Graduate Database Management Systems</li>
+    <li>Graduate Computer Network Security</li>
+    <li>Graduate Computer Networks</li>
+</ul>
+</p>
+
+<h2>Experience</h2>
+<p>
+    Technology/Method Experience
+</p>
+<ul>
+    <li>HTML (some)</li>
+    <li>CSS (some)</li>
+    <li>Java (a lot)</li>
+    <li>JavaScript (some)</li>
+    <li>Ruby (none)</li>
+    <li>Python (a lot)</li>
+    <li>Unit Testing (some)</li>
+</ul>
+</body>
+<script>
+    // Tiny JavaScript animation here
+    function rickRoll() {
+        window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
+        document.getElementById('sorry').innerHTML = 'I\'m sorry';
+        document.getElementById('sorry').style.backgroundColor = 'blue';
+        document.getElementById('sorry').style.color = 'white';
+
+    }
+
+    // Javascript animation is here
+    const funstuff = document.getElementById('funstuff')
+    funstuff.onclick = function () {
+        funstuff.innerHTML = 'Enjoy...?'
+        funstuff.style.fontSize = "25px";
+
+        colors = ['red', 'black', 'blue']
+        let i = 0;
+        const interval = setInterval(() => {
+            funstuff.style.color = colors[i++ % 3]
+            funstuff.style.backgroundColor = colors[(i + 1) % 3];
+            funstuff.style.border = "4px solid " + colors[(i + 2) % 3];
+
+            if (i === 25) {
+                funstuff.innerHTML = 'Okay, that\'s quite enough.'
+                funstuff.style.color = 'black'
+                funstuff.style.backgroundColor = ''
+                funstuff.style.border = '';
+                clearInterval(interval);
+            }
+        }, 100)
+    }
+</script>
 </html>
