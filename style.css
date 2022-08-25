@@ -1,19 +1,41 @@
 body {
-  background-color: #ebccc0;
+  background-color: #9d5c63;
 }
 
 h1 {
-  color: #521f0b;
+  color: #584b53;
   font-family: "Sofia", sans-serif;
-
+  text-align: center;
 }
 h2 {
-  color: #522717;
+  color: #e4bb97;
+}
+h3 {
+  color: #fef5ef;
+  margin-left: 3pt;
 }
 p {
-  color: #9e3c15;
-  margin-left: 10pt;
+  color: #d6e3f8;
+  margin-left: 5pt;
+  font-size: 13pt;
+  font-family: "Rubik", sans-serif;
 }
 ul {
-  color: #d14f1b;
+  color: #d6e3f8;
+  font-size: 13pt;
+  font-family: "Rubik", sans-serif;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+th,
+td {
+  padding: 5px;
+}
+a {
+  color: #fef5ef;
 }
