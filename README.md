@@ -5,7 +5,6 @@ Charlie Snow
 https://a1-csnow99.glitch.me/
 
 This project shows that I can make a website on glitch and also use CSS and JavaScript.
-I had the same issue we had in class, so the version on glitch is different than the version in the repo. There is a comment in index.html explaining more.
 
 ## Technical Achievements
 - **Styled page with CSS**: Changed background color, p color, p highlight color, th hover color, body hover color, body text, and some other things.
