@@ -4,25 +4,84 @@
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
+  <body id="myText">
+    <h1>Hi! My name is Owen Pfannenstiehl, '23</h1>
     <p>
-      [Self introduction]
+      <br> A fun fact about me is:      
+      <br> I am john legend
+      <br> 
+      <br> My favorite quote:
+      <br> "Get Outlook for iOS"
+      <br> -Gloria Gaynor
     </p>
     <p>
-      [Major and other information]
+      I am an RBE/CS double and a senior trying to break the record for speedrunning a CS degree.
+      <br> I took Dr. Racket & object oriented at the start of freshman year, then every RBE class, and
+      <br> then decided to double major and took discrete math, algos, computer graphics, and computer
+      <br> ethics.
     </p>
     <p>
-      [Other things]
+      I once did a research project on laserbees in high school.  It was the only reason I got in to this school.
+
     </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+    <h2>Coding Experience</h2>
+      <li>I have almost no HTML experience</li>
+      <li>I have a lot of CSS experience</li>
+      <li>I have a lot of java experience</li>
+      <li>I have some js experience</li>
+      <li>I have never used or seen ruby</li>
+      <li>I have some python experience</li>
+      <li>I have done a little unit testing with JUnit tests</li>
     </ul>
   </body>
 </html>
+<script>
+  let theBody = document.getElementById("myText");
+  let garfCounterX = 0;
+  let garfCounterY = 0;
+  let garfSwitch = 1;
+  let andrewGarfield = setInterval(translateText, 12);
+  let myRand = 2.5;
+  function translateText() {
+    if ((garfCounterX > -60 && garfCounterX < 60) || (garfCounterY > -60 && garfCounterY < 60)) {
+      if (myRand < 1) {
+        garfCounterX += garfSwitch;
+      } else if (myRand < 2) {
+        garfCounterY += garfSwitch;
+      } else {
+        garfCounterY += garfSwitch;
+        garfCounterX += garfSwitch;
+      }
+    } else {
+      if (Math.random() * 18 < 1) {
+        garfSwitch = -garfSwitch;
+        if (myRand < 1) {
+          garfCounterX += garfSwitch;
+        } else if (myRand < 2) {
+          garfCounterY += garfSwitch;
+        } else {
+          garfCounterY += garfSwitch;
+          garfCounterX += garfSwitch;
+        }
+      } else {
+        if (myRand < 1) {
+          garfCounterX += garfSwitch;
+        } else if (myRand < 2) {
+          garfCounterY += garfSwitch;
+        } else {
+          garfCounterY += garfSwitch;
+          garfCounterX += garfSwitch;
+        }
+        
+        myRand = Math.random() * 3;
+      }
+    }
+
+    theBody.style.color = "rgb("+garfCounterX * 10 % 255+","+garfCounterY * 10 % 255+","+(garfCounterX+garfCounterY) * 10 % 255+")";
+    theBody.style.backgroundColor = "rgb("+garfCounterX % 60+","+garfCounterY % 60+","+(garfCounterX+garfCounterY) % 60+")";
+    theBody.style.transform = "translateY("+garfCounterY+"px) translateX("+garfCounterX+"px)";
+    //console.log("garfhead");
+  }
+</script>
+
