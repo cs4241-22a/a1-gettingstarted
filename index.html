@@ -1,28 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <h1>Information about Charlie Snow</h1>
+    <p>Class of 2023</p>
+    <p>CS Major, Theatre Minor</p>
+    <p>I've taken a lot of CS courses: Softeng, Databases 1 and 2, and a lot of other courses</p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <h2>Experience</h2> 
+    <table style="width: 500px">
+      <tr style="font-size: 24px">
+        <th>A lot</th>
+        <th>Some</th>
+        <th>None</th>
+      </tr>
+      <tr>
+        <th>HTML</th>
+        <th>Python</th>
+        <th>Ruby</th>
+      </tr>
+      <tr>
+        <th>CSS</th>
+        <th>Unit Testing</th>
+        <th></th>
+      </tr>
+      <tr>
+        <th>Java</th>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr>
+        <th>JavaScript</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </table>
+    <br /><hr /><br />
+    <a href="https://color.adobe.com/create/color-wheel">Color wheel creator</a>
+    <img id="color" src="colorwheel.png" />
   </body>
 </html>
+<script>
+  var transform = 0
+  id = setInterval(rotateImage, 20);
+  function rotateImage(){
+    var img = document.getElementById("color");
+    img.style.transform = "rotate(" + transform + 1 + "deg)";
+    transform++;
+  }
+</script>
