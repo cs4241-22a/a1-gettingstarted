@@ -1,28 +1,76 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
+<head>
+  <title>CS4241 Assignment 1</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="bg">
+    <img class='pic' src="pic.PNG">
+    <h1 class="header">Jacob Adams</h1>
+    <h1 class="header">Class of 2024</h1>
+    <p class="intro">
+      I'm a CS major, am on the ski team, and enjoy playing video games
     </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+    <div class="horizontal">
+      <div class="container">
+        <ul class="classes" id="classes">
+          <li>1101</li>
+          <li>2103</li>
+          <li>2022</li>
+          <li>2223</li>
+          <li>2303</li>
+          <li>2011</li>
+          <li>3431</li>
+          <li>3043</li>
+          <li>3733</li>
+        </ul>
+      </div>
+      <div class="container">
+        <ul>
+          <li>HTML little over summer</li>
+          <li>CSS little over summer</li>
+          <li>Java alot</li>
+          <li>JavaScript little over summer</li>
+          <li>Ruby none</li>
+          <li>Python a bit</li>
+          <li>unit testing some</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function animation() {
+      let id = null
+      console.log('animation')
+      let names = ['Introduction To Program Design', 'Accelerated Object-Oriented Design Concepts', 'Discrete', 'Algorithms', 'Systems Programming Concepts', 'Introduction To Machine Organization And Assembly Language', 'Databases I', 'Social Implications', 'Software Engineering']
+      let numbers = [1101, 2103, 2022, 2223, 2303, 2011, 3431, 3043, 3733]
+      let list = document.getElementById('classes')
+      let nums = true
+      clearInterval(id)
+      id = setInterval(changeText,5000);
+      function changeText() {
+        setText(list.childNodes, nums ? names : numbers)
+        nums = !nums
+      }
+    }
+
+    function setText(list, txt) {
+      let ind = 0
+      for(let i = 0; i < list.length; i++){
+        if(i%2 != 0){
+          list[i]['textContent'] = txt[ind]
+          ind ++
+        }
+      }
+    }
+    animation()
+  </script>
+</body>
+
 </html>
