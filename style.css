@@ -1,0 +1,26 @@
+* {
+    font-family: 'PT Sans Narrow';
+}
+
+body {
+    background-color: #417980;
+}
+
+h1{
+    color: #81F2FF;
+}
+
+h2 {
+    color: #68C2CC;
+}
+
+p, li {
+    color: #CFFAFF;
+}
+
+img {
+    border: 8px solid #677D80;
+    width: 400px;
+    max-width: 50%;
+    height: auto;
+}
