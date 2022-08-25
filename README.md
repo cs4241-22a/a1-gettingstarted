@@ -3,6 +3,8 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 
 *DUE: Monday, August 30th by 11:59 AM (before the start of class!)*  
 
+//edited readme
+
 This assignment is a "warm-up" exercise. 
 You will simply deploy the starting Web site that you will use this term to [Glitch](http://www.glitch.com/). 
 
