@@ -7,7 +7,7 @@ Sample Readme (delete the above when you're ready to submit, and modify the text
 Natalie McClain
 http://a1-othernatalie.glitch.me
 
-This project shows ...
+This project acts as a brush up on HTML, CSS and Git, as well as figuring out Glitch
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the h1, h2, p, ul, body, table, th and td. Mostly changed text color, but also the background color for h1 and body, and added a border to h2 and the table
