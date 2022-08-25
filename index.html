@@ -1,28 +1,81 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia|Rubik"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <h1 id="header">Information about Cather Zhang</h1>
+    <p>I am a junior at <a href="https://www.wpi.edu/"> WPI </a> with CS major. I plan on doing BS/MS. I like cats.</p>
+    <img
+      src="https://www.pcc.edu/online/wp-content/uploads/sites/78/2015/02/computer-cat.jpg"
+      alt="Programmer cat"
+      height="400pt"
+      width="530pt"
+    />
 
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+    <h3>Working experience</h3>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>Draeger system engineer</li>
+      <li>Draeger software/algorithm progammer</li>
     </ul>
+    <h3>Classes taken at WPI</h3>
+    <table style="color:#fef5ef;">
+      <tr>
+        <th>Course #</th>
+        <th>Course name</th>
+        <th>Language Used</th>
+      </tr>
+      <tr>
+        <td>1101</td>
+        <td>Introduction To Program Design</td>
+        <td>Dr. Racket</td>
+      </tr>
+      <tr>
+        <td>2102</td>
+        <td>Object-Oriented Design Concepts</td>
+        <td>Java</td>
+      </tr>
+      <tr>
+        <td>2303</td>
+        <td>System Programming Concepts</td>
+        <td>C/C++</td>
+      </tr>
+      <tr>
+        <td>2223</td>
+        <td>Algorithm</td>
+        <td>Java</td>
+      </tr>
+      <tr>
+        <td>3733</td>
+        <td>Software Engineering</td>
+        <td>Java/MySQL</td>
+      </tr>
+      <tr>
+        <td>3013</td>
+        <td>Operating Systems</td>
+        <td>C</td>
+      </tr>
+      <tr>
+        <td>4432</td>
+        <td>Database Systems II</td>
+        <td>Java</td>
+      </tr>
+    </table>
+    <script>
+      var i = 0;
+      function change() {
+        var element = document.getElementById("header");
+        var color = ["pink", "lightblue", "white", "lightgreen"];
+        element.style.backgroundColor = color[i++ % 4];
+      }
+      setInterval(change, 500);
+    </script>
   </body>
 </html>
