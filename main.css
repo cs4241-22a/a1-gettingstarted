@@ -9,6 +9,10 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+ul {
+    list-style-type: none;
+}
+
 body::-webkit-scrollbar {
     display: none;
 }
@@ -40,4 +44,22 @@ body::-webkit-scrollbar {
 
 .home-button:hover {
     transform: scale(1.5);
+}
+
+.home-accordion {
+    list-style-type: none;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+
+.home-accordion:hover {
+    opacity: 1;
+}
+
+.accordion-item {
+    height: var(--home-buttom-diameter);
+    width:  var(--home-buttom-diameter);
+    border-radius: 50%;
+    border: 2px solid white;
 }
