@@ -23,7 +23,7 @@ This assignment requires that your website is both contained in a GitHub reposit
 ## Option 1 - Clone to computer, push to Github, import to Glitch (recommended)
 
 1. Fork the starting project code in GitHub. This repo contains:
-    * the server code, `server.js`
+    * the server code, `server.ts`
     * A starting `index.html` file that you will edit as described below
     * A package.json file that helps configure Glitch
     * This README
@@ -40,7 +40,7 @@ This assignment requires that your website is both contained in a GitHub reposit
         * Python
         * unit testing
 4. Complete some technical and/or design achievements (see below).
-5. Test your project to make sure that when someone goes to your main page, it displays correctly. You can do this locally by simply running `node server.js` from within the assignment directory.
+5. Test your project to make sure that when someone goes to your main page, it displays correctly. You can do this locally by simply running `node server.ts` from within the assignment directory.
 
 6. Modify the README file according to the specification below.
 7. Commit and push all your changes to GitHub. 

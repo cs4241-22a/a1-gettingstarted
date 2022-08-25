@@ -4,6 +4,12 @@
   "description": "WPI CS 4241 first assignment",
   "author": "Charlie Roberts",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.ts"
+  },
+  "dependencies": {
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.13"
   }
 }
