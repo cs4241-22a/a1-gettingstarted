@@ -3,6 +3,7 @@ const http = require('http'),
       port = 3000
 
 const server = http.createServer( function( request,response ) {
+  console.log("Got request for " + request.url)
   switch( request.url ) {
     case '/':
       sendFile( response, 'index.html' )
