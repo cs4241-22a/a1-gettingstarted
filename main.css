@@ -1,0 +1,54 @@
+:root {
+    --topbar-height: 40px;
+}
+
+body {
+    margin: 0;
+    top: 0;
+    bottom: auto;
+    overflow-x: hidden;
+}
+
+.header-box {
+    height: calc(100vh - var(--topbar-height));
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header-circle {
+    height: 100vh;
+    width: 100vh;
+    background-color: white;
+    position: absolute;
+    bottom: calc(-50vh);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-circle-title {
+    margin-top: 25vh;
+}
+
+.topbar {
+    width: 100%;
+    height: var(--topbar-height);
+    display: flex;
+    flex-direction: row;
+}
+
+.topbar-menu-item {
+    background-color: white;
+}
+
+.topbar-menu-item .hover {
+    background-color: lightgray;
+}
+
+.topbar-menu-item .selected {
+    background-color: lightgray;
+}
