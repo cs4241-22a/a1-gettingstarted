@@ -1,8 +1,27 @@
 body {
     font-family: 'Roboto Mono', monospace;
     font-size: 17px;
+    background-image: linear-gradient(#A8CDE6, #99E6F0, #96D9CD, #99F0C5, #93E6A4);
+    background-attachment: fixed;
+    text-align: center;
 }
 
 h1 {
     font-style: italic;
+}
+
+li {
+    list-style: none;
+}
+
+div {
+    border-style: dashed;
+    margin: auto;
+    max-width: fit-content;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.PerInfo {
+    font-size: 19px;
 }

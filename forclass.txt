@@ -1,0 +1,17 @@
+//Objects
+- a = {}
+- a.test = 10
+- a.test2 = {0,1,2,3}
+- b = Object.create(a)
+
+//Closure, func with scope
+- outer = function() {
+    const test = 42
+    const inner = function() {
+        console.log(test)
+    }
+    return inner
+}
+- returnedInner = outer()
+//checks outwards for variables outside its scope
+

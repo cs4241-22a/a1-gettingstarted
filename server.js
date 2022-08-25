@@ -13,6 +13,9 @@ const server = http.createServer( function( request,response ) {
     case '/main.css':
       sendFile( response, 'main.css' )
       break
+    case '/assets/profile_pic.jpg':
+      sendFile( response, 'profile_pic.jpg' )
+      break
     default:
       response.end( '404 Error: File Not Found' )
   }
@@ -22,7 +25,26 @@ server.listen( process.env.PORT || port )
 
 const sendFile = function( response, filename ) {
    fs.readFile( filename, function( err, content ) {
-     file = content
      response.end( content, 'utf-8' )
    })
 }
+
+// const server = http.createServer( function( request,response ) {
+//   const url = '.' + request.url
+//   switch( url ) {
+//     case './':
+//       sendFile( response, 'index.html' )
+//       break
+//     default:
+//       response.end(url)
+//       //previous: '404 Error: File Not Found'
+//   }
+// })
+
+// server.listen( process.env.PORT || port )
+
+// const sendFile = function( response, filename ) {
+//   fs.readFile( filename, function( err, content ) {
+//     response.end( content, 'utf-8' )
+//   })
+// }
