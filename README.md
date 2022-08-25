@@ -24,6 +24,7 @@ This project shows the usage of basic features in HTML including p, li, ol, ul, 
 - **Removed underline from links in 'a' tag**: Difficult to figure out what method removed underlining
 - **Changed font size of dropdown menu**: Not too difficult, just needed to select 'details' tag
 - **Bolded the intro**: Challenging to figure out how to select the class, had to guess and check a couple times
+- **Changed background color**: realized this was necessary after importing into glitch (dark mode was enabled previously)
 
 ### Design Achievements
 - **Used the Anek Telugu Font from Google Fonts**: I used Anek Telugu as the font for the primary copy text in my site. 
