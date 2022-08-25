@@ -4,6 +4,7 @@ body {
     font-family: Poppins, sans-serif;
     background-color: #210099;
     color: #FFE921;
+    margin: 5rem 25vw;
 }
 
 h1 {
@@ -16,6 +17,7 @@ div {
     background-color: #5730E6;
     border: 2px solid #FFE921;
     border-radius: 2rem;
+    padding: 2rem;
 }
 
 p {
