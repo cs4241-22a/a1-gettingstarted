@@ -4,7 +4,7 @@ README
 Samara Holmes
 http://a1-holmes1000.glitch.me
 
-This project shows:
+This project shows the usage of basic features in HTML including p, li, ol, ul, and a tags, while also adding in a few features such as a footer, checkboxes, a color palette, and a dropdown menu.
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the p, li, and a selectors
