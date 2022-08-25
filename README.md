@@ -30,4 +30,4 @@ This project shows some basic information about me!
 - **Used Colors generated from https://color.adobe.com/:** I used as #2C3E50 the underline color for my header, #79AADB
   as the color that appears when hovering over an item in the table, #56799C as the boarder color in my table, #32475C
   as the background color of the two boxes, and #1D2A36 as the background color for the page
-<img src="color-wheel.png" alt="Screenshot of Color Wheel used">
+  <img src="color-wheel.png" alt="Screenshot of Color Wheel used">
