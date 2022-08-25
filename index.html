@@ -2,17 +2,35 @@
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <meta charset="utf-8" />
+    <script>
+      window.onload = () => {
+        const link = document.getElementById("website-link");
+        const colors = ["30516B", "#B3D3EE", "#6AB2EB", "#505F6B", "#538AB8"];
+        let colorIndex = 0;
+        setInterval(() => {
+          link.style.backgroundColor = colors[colorIndex++ % 3];
+        }, 1000);
+      };
+    </script>
   </head>
   <body>
     <header>
       <section id="content">
-        <h1>Information about Alex Bolduc</h1>
+        <h1>
+          Information about <span style="color: #6ab2eb">Alex Bolduc</span>
+        </h1>
         <p>Hello, my name is Alex and I'm a student here at WPI.</p>
         <p>
           I am a senior studying Computer Science and will be graduating in
-          December of this year
+          December of this year as a member of the class of 2023
         </p>
         <p>
           I like to follow Boston's sports team mostly the Boston Red Sox, but I
@@ -22,7 +40,7 @@
       <section id="about-me">
         <img src="me.jpeg" />
         <br />
-        <a href="https://axbolduc.com">Visit My Website</a>
+        <a id="website-link" href="https://axbolduc.com">Visit My Website</a>
       </section>
     </header>
     <h2>Experience</h2>
