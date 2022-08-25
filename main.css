@@ -1,0 +1,55 @@
+*{
+    background-color: black;
+    color: white;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+
+
+.headingName{
+    color:#47E6AA
+}
+
+.pHighlight{
+    color:#E65E94
+}
+
+.headingTitle{
+    color:#E67F6A
+}
+
+.paraTitle{
+    color:#C553E6
+}
+
+.tableColName{
+    color:#BCE675
+}
+
+.techExpTable{
+    border:2px solid white;
+    text-align: center;
+    border-collapse : collapse;
+}
+.techExpTable td{
+    border-left:1px solid white;
+}
+.techExpTable th{
+    border-left:1px solid white;
+}
+
+
+.liIndented{
+    padding-left: 20px;
+}
+
+th, td {
+    padding: 10px;
+}
+
+#animation{
+    
+    border:2px solid white;
+    width : "100%";
+    height : 50 px;
+}
