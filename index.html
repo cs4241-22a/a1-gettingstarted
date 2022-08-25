@@ -1,28 +1,90 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+<h1 class="header">Information about Michael Emerson</h1>
+<div class="grid-container">
+    <div class="box">
+        <h2>About Me</h2>
+        <p>
+            I am a Junior in the class of 2024. I enjoy hiking and traveling as well as playing video games.
+        </p>
+        <img
+                height="450px"
+                width=auto
+                alt="Michael on a hike in the Dolomites with mountains in the background"
+                src="https://media.discordapp.net/attachments/695113708288081953/1012118902442033293/E7014C14-9F76-4970-BC1A-C49CF0CF10B3_1_102_o.jpeg?width=736&height=982"/>
+    </div>
+    <div class="experience-container box">
+        <h2>Experience</h2>
+        Technologies:
+        <table>
+            <tr>
+                <th>Technology</th>
+                <th>Experience Level</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Some</td>
+            </tr>
+            <tr>
+                <td>css</td>
+                <td>Some</td>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>A lot</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>A lot</td>
+            </tr>
+            <tr>
+                <td>Ruby</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>A lot</td>
+            </tr>
+            <tr>
+                <td>Unit Testing</td>
+                <td>Some</td>
+            </tr>
+        </table>
+        Other Classes:
+        <ul>
+            <li>CS 1102 - Accelerated Introduction To Program Design</li>
+            <li>CS 2103 - Accelerated Object-Oriented Design Concepts</li>
+            <li>CS 2303 - Systems Programming Concepts</li>
+            <li>CS 2011 - Introduction To Machine Organization And Assembly Language</li>
+            <li>CS 2223 - Algorithms</li>
+            <li>CS 3733 - Software Engineering</li>
+            <li>CS 3013 - Operating Systems</li>
+        </ul>
+    </div>
+</div>
+<script>
+    window.onload = () => {
+        const body = document.body;
+        let opacity = 0;
+        const interval = setInterval(() => {
+            console.log('here')
+            if (opacity < 1) {
+                opacity += 0.1;
+                body.style.opacity = opacity;
+            } else {
+                clearInterval(interval);
+            }
+        }, 50)
+    };
+</script>
+</body>
 </html>

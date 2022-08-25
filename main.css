@@ -1,0 +1,62 @@
+/*
+#2C3E50 ✓
+#79AADB ✓
+#56799C ✓
+#32475C ✓
+#1D2A36 ✓
+*/
+
+body {
+    background: #1D2A36;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.93em;
+    text-align: center;
+    color: white;
+    opacity: 0;
+}
+
+.grid-container {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    display: grid;
+    gap: 2vw;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.header {
+    text-decoration: underline #2C3E50;
+    text-underline-offset: 0.4em;
+}
+
+.box {
+    background-color: #32475C;
+    border-radius: 0.5rem;
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+table, th, td {
+    margin: auto;
+    text-align: center;
+    border: 1px solid #56799C;
+    border-collapse: collapse;
+    padding: 1vh 1vw;
+}
+
+.experience-container {
+    text-align: left;
+}
+
+.experience-container h2 {
+    text-align: center;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #79AADB;
+}
