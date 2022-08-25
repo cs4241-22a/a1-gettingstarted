@@ -1,0 +1,26 @@
+body {
+  background-color: #4a7856;
+}
+h1 {
+  background-color: #345830;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  background-color: #1e3f20;
+  color: white;
+  text-align: center;
+}
+
+h3 {
+  background-color: #94ecbe;
+}
+
+p {
+  color: #1a1f16;
+}
+
+a {
+  color: white;
+}
