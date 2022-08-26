@@ -34,13 +34,13 @@ a:hover {
 
 hr {
     color: #DB8A74;
-    width: 80%
+    width: 60%;
+    margin-left: 10%;
 }
 
 img#avatar {
-    border-radius: 50%;
-    display: inline;
     float: right;
+    border-radius: 50%;
     max-width: 8%;
     height: auto;
     transition: all .05s linear;
@@ -48,7 +48,6 @@ img#avatar {
 
 img#avatar:hover {
     border-radius: 15%;
-    display: inline;
     float: right;
     max-width: 25%;
     height: auto;
