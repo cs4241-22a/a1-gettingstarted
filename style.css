@@ -1,0 +1,59 @@
+html
+{
+    background-color: #4D9E66;
+    font-family: 'Arsenal', sans-serif;
+}
+
+body
+{
+    text-align: center;
+}
+
+#about{
+}
+
+h1
+{
+    color: #EB865C;
+}
+
+h2
+{
+    color: #2E719E;
+}
+
+p
+{
+    color: #67EB8F;
+}
+
+ul
+{
+    color: #67EB8F;
+}
+
+table
+{
+    width: 40%;
+    padding: 0;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table tr
+{
+    background-color: #2E719E;
+}
+
+table tr:nth-child(even)
+{
+    background-color: #50ADEB;
+}
+
+img
+{
+    width: 40%;
+}
+
+
+

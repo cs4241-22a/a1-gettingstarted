@@ -3,26 +3,84 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal:wght@700&display=swap" rel="stylesheet"> 
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <div id="about">
+      <h1>Travis Thompson</h1>
+      <p>
+        Hi, my name is Travis. I like to do a lot of stuff, my hobbies include art, climbing, surfing, hiking, and exploring cool places. Below are some pictures I like.
+      </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+      <div>
+        <img id="photo1" onclick="increaseSize()" src="photos/img_1.jpg">
+        <img src="photos/img_2.jpg">
+      </div>
+      <div>
+        <a href="https://satellitesinspace.com">A cool website I made</a>
+      </div>
+    </div>
+    <div id="major">
+      <h2>Major</h2>
+      <p>
+        Computer Science</br>
+        Electrical & Computer Engineering
+      </p>
+    </div>
+
+    <div id="cs-history">
+      <h2>Previous Computer Science Courses</h2>
+      <ul>
+        <li>CS 1102</li>
+        <li>CS 2223</li>
+        <li>CS 2303</li>
+        <li>CS 2011</li>
+        <li>CS 3013</li>
+        <li>CS 3733</li>
+        <li>CS 480x</li>
+        <li>CS 4731</li>
+        <li>CS 4341</li>
+        <li>CS 3431</li>
+        <li>CS 3133</li>
+      </ul>
+    </div>
+
+    <div id="language-experience">
+      <h2>Language Experience</h2>
+      <table>
+        <tr>
+          <th>HTML</th>
+          <th>a lot</th>
+        </tr>
+        <tr>
+          <th>CSS</th>
+          <th>some</th>
+        </tr>
+        <tr>
+          <th>Java</th>
+          <th>a lot</th>
+        </tr>
+        <tr>
+          <th>Java Script</th>
+          <th>a lot</th>
+        </tr>
+        <tr>
+          <th>Ruby</th>
+          <th>none</th>
+        </tr>
+        <tr>
+          <th>Python</th>
+          <th>some</th>
+        </tr>
+        <tr>
+          <th>Unit Testing</th>
+          <th>some</th>
+        </tr>
+      </table>
+    </div>
   </body>
 </html>
