@@ -1,5 +1,5 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
-=======
+===
 Cole Manning
 https://a1-rvrx.glitch.me/
 
