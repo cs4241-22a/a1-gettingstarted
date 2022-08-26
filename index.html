@@ -3,38 +3,94 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet"> 
   </head>
   <body>
-    <h1>Information about Ted Clifford</h1>
-    <p>
+    <h1>Information about <span id="titlename">Ted Clifford</span></h1>
+    <img id="avatar" src="./media/sf_ted.jpeg">
+    <p class="overview">
       Student at WPI studying Computer Science and Electrical and Computer 
       Engineering. Passion for all things software and engineering. Currently 
       involved in the WPI High Powered Rocketry competition team writing 
       software and developing RF capabilities for ground station. Studies 
       focus on embedded software development and cryptography.
     </p>
-    <p>
+    <p class="overview">
       Outside of school and work, I enjoy being outdoors playing disc golf 
       or hitting the beach. I care about access to education and preserving 
       the environment. I'm always looking for opportunities to apply my 
       experiences to a new challenge and make a positive difference.
     </p>
-    <p>
-      Computer Science, Electrical \& Computer Engineering: Class of 2023
+    <p class="overview">
+      Computer Science, Electrical & Computer Engineering: Class of 2023
     </p>
+    <hr/>
+
     <h2>Experience</h2>
     <p>
       Programming experience
     </p>
+
     <ul>
-      <li>HTML: A lot</li>
-      <li>CSS: A lot</li>
-      <li>Java: Some</li>
-      <li>JavaScript: A lot</li>
-      <li>Ruby: None</li>
-      <li>Python: A lot</li>
-      <li>Unit Testing: What's that?</li>
-      Just kidding :)
+      <li><a href="https://en.wikipedia.org/wiki/Theological_Markup_Language">HTML</a>: A lot</li>
+      <li><a href="https://en.wikipedia.org/wiki/Chirp_spread_spectrum">CSS</a>: A lot</li>
+      <li><a href="https://en.wikipedia.org/wiki/Coffee_production_in_Indonesia#Java">Java</a>: Some</li>
+      <li><a href="https://en.wikipedia.org/wiki/Node">JavaScript/Node.js</a>: A lot</li>
+      <li><a href="https://en.wikipedia.org/wiki/Ruby">Ruby</a>: None</li>
+      <li><a href="https://en.wikipedia.org/wiki/Python_(genus)">Python</a>: A lot</li>
+      <li><a href="https://en.wikipedia.org/wiki/Hell">Unit Testing</a>: Some</li>
     </ul>
+
+    <footer>
+      <p>
+        (c) 2022 Ted Clifford
+      </p>
+    </footer>
   </body>
+
+
+  <script type="text/javascript">
+    const alpha_low = "abcdefghijklmnopqrstuvwxyz";
+    const alpha_up = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const titleName = document.getElementById('titlename');
+    const titleNameTextOrig = titleName.innerText;
+    let scrambler = "";
+
+    titleName.addEventListener('mouseenter', (e) => {
+      // Setup word scrambler
+      scrambler = setInterval(function() {titleName.innerText = scramble(titleName.innerText)}, 50)
+    });
+
+    titleName.addEventListener('mouseleave', (e) => {
+      // Reset word scrambler
+      titleName.innerText = titleNameTextOrig;
+      clearInterval(scrambler);
+    });
+
+    function scramble(text) {
+      // Slowly scrambles the text of an element
+      let idx = "";
+      const randChar = Math.floor(Math.random() * alpha_low.length);
+      
+      do {
+        idx = Math.floor(Math.random() * text.length);
+      } while (text[idx] === " ");
+
+      text = text.split('');
+      if (alpha_low.includes(text[idx])) {
+        text[idx] = alpha_low[randChar];
+      }
+      else {
+        text[idx] = alpha_up[randChar];
+      }
+      text = text.join('');
+
+      return text;
+    }
+
+
+  </script>
 </html>
