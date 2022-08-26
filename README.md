@@ -93,8 +93,10 @@ http://a1-charlieroberts.glitch.me
 
 This project shows ...
 
-## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
+### Technical Achievements
+- **Styled page with CSS**: Added rules for the body, div, h1, h2, p, ul, table, and td. The body rule sets the font and background color, the div rule sets the color of each section, and the other rules set information about the text. 
+- **
 
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Created a color palette using color.adobe.com** I used a color palette featuring purple as the primary color with a complementary harmony rule. The color wheel is attached to this repository as colors.PNG
+- **Used the Rubik Font from Google Fonts**: I used Rubik as the font for the primary copy text in my site.
