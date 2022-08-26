@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Aboreto&display=swap');
+
+body {
+  background-color: #9FC2D7;
+}
+
+h1 {
+  color: #D1AF66;
+  text-align: center;
+  font-family: "Aboreto", serif;
+}
+
+p {
+  color:#717069;
+}
+
+h2{
+  color:#9E933E;
+  font-family: "Aboreto", serif;
+}
+
+li{
+  color:#3E939E;
+}
