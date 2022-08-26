@@ -4,7 +4,20 @@
     font-family: 'Share Tech Mono', monospace;
 }
 
+html {
+    display: table;
+    margin: auto;
+}
 
+body {
+    background-color: black;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.ulCicle{
+    list-style-type: circle;
+}
 
 .headingName{
     color:#47E6AA
@@ -47,9 +60,18 @@ th, td {
     padding: 10px;
 }
 
-#animation{
-    
-    border:2px solid white;
-    width : "100%";
-    height : 50 px;
+#myCanvas{
+    width : 100%;
+    height : 30px;
+    margin:auto;
+}
+
+.flexContainer{
+    display: flex;
+    align-items:center;
+}
+.flexContainer div{
+    margin:auto;
+    margin-top: 0em;
+   
 }
