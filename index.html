@@ -1,28 +1,94 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      window.onload = function () {
+        const avatars = [
+          "https://cdn.glitch.global/1323efa2-a4a1-4bbe-9861-701f14210710/pusheen_av.jpg",
+          "https://cdn.glitch.global/1323efa2-a4a1-4bbe-9861-701f14210710/thumbnails%2Fpusheen_av2.jpg?1661462124960",
+          "https://cdn.glitch.global/1323efa2-a4a1-4bbe-9861-701f14210710/thumbnails%2Fpusheen_av3.jpg?1661464050023",
+        ];
+        let i = 1;
+        setInterval(function () {
+          document.getElementById("myImageId").src = avatars[i++ % 3];
+        }, 1000);
+      };
+    </script>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <h1>Information about Kseniia Romanova</h1>
+    <img
+      id="myImageId"
+      src="https://cdn.glitch.global/1323efa2-a4a1-4bbe-9861-701f14210710/pusheen_av.jpg"
+    />
+    <div><p></p></div>
+    <div class="dividers" id="intro">
+      <h2>Introduction</h2>
+      <p><a href="https://www.wpi.edu/">WPI</a> Class of 2024</p>
+      <p>
+        Hello! I'm Kseniia but I go by Casey. I like to play video games in my
+        free time.
+      </p>
+    </div>
+    <div class="dividers" id="major">
+      <h2>Major/Minor</h2>
+      <p>I'm majoring in CS and minoring in IMGD.</p>
+    </div>
+    <div class="dividers" id="courses">
+      <h2>Previous CS Courses</h2>
+      <ul>
+        <li>CS 1101 - Introduction To Program Design</li>
+        <li>CS 2102 - Object-Oriented Design Concepts</li>
+        <li>
+          CS 2011 - Introduction To Machine Organization And Assembly Language
+        </li>
+        <li>CS 2303 - Systems Programming Concepts</li>
+        <li>CS 2022 - Discrete Mathematics</li>
+        <li>CS 2223 - Algorithms</li>
+        <li>CS 3013 - Operating Systems</li>
+        <li>CS 3043 - Social Implications Of Information Processing</li>
+      </ul>
+    </div>
+    <div class="dividers" id="exp">
+      <h2>Experience</h2>
+      <table>
+        <tr>
+          <th>Technology</th>
+          <td>HTML</td>
+          <td>CSS</td>
+          <td>Java</td>
+          <td>JavaScript</td>
+          <td>Ruby</td>
+          <td>Python</td>
+          <td>Unit Testing</td>
+        </tr>
+        <tr>
+          <th>Experience</th>
+          <td>Some</td>
+          <td>Some</td>
+          <td>A lot</td>
+          <td>Some</td>
+          <td>None</td>
+          <td>Some</td>
+          <td>A lot</td>
+        </tr>
+      </table>
+    </div>
+    <div><p></p></div>
+    <div class="dividers" id="fact">
+      <details>
+        <summary><b>Fun Fact!</b></summary>
+        <p>I'm fluent in 3 languages: Ukranian, Russian, and English :)</p>
+      </details>
+    </div>
   </body>
 </html>
