@@ -6,9 +6,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.css"/>
   </head>
-  <body>
-    <div>
-      <img src="/assets/profile_pic.jpg" alt="Theo's profile picture">
+  <body id = "body">
+    <div id="Profile">
+      <img id="ProfPic" name="ProfPic" src="./profile_pic.jpg" alt="Theo's profile picture" width="220" height="220" style="margin-top: 5%;"><br>
+      <button onclick="spin()">spin</button>
       <h1>Theo Coppola</h1>
       <p class="PerInfo">
         Class of 2024
@@ -21,7 +22,7 @@
       </p>
     </div>
     <h2>Experience</h2>
-    <p>
+    <p style="font-weight: bold;">
       Previous CS courses:
     </p>
     <ul>
@@ -36,7 +37,7 @@
       <li>CS3431 - Database Systems I</li>
       <li>CS3733 - Software Engineering</li>
     </ul>
-    <p>
+    <p style="font-weight: bold;">
       Technology and Methods:
     </p>
     <ul>
@@ -48,5 +49,11 @@
       <li>Python - Some experience</li>
       <li>Unit Testing - A lot of experience</li>
     </ul>
+    <iframe style="padding-top: 20px;" width="560" height="315" src="https://www.youtube.com/embed/sVYlkLauPlY?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p style="font-family: 'Sans-serif'; font-size: 18px"><q cite="George W. Bush">One of the great things about books is sometimes there are some fantastic pictures.</q><br> - George W. Bush</p>
+    <label for="textColor" style="font-family: 'Sans-serif'; font-size: 18px">Pick a color, any color</label><br>
+    <input type="color" id="textColor" name="textColor" oninput='document.getElementById("body").style.color = document.getElementById("textColor").value' onclick="stopParty()"><br>
+    <button onclick="autoColorChange()" id="party" name="party" style="background-image: linear-gradient(to bottom right, red, orange, yellow, green, blue, purple);">Party Mode</button>
+    <script src="./script.js"></script>
   </body>
 </html>

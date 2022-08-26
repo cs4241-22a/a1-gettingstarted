@@ -25,3 +25,7 @@ div {
 .PerInfo {
     font-size: 19px;
 }
+
+q {
+    font-style: italic;
+}
