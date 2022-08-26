@@ -2,7 +2,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
 
 Greg Klimov
-[http://a1-charlieroberts.glitch.me](http://a1-gregklimov.glitch.me)
+http://a1-gregklimov.glitch.me
 
 This project shows ...
 
