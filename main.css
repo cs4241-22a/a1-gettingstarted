@@ -1,0 +1,64 @@
+/* 
+Color Palette:
+264653
+2A9D8F
+E9C46A
+F4A261
+E76F51
+*/
+
+body {
+    background-color: #264653;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: black;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2A9D8F;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.cat-slide.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2A9D8F;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.cat-slide {
+    display: none;
+}
+
+.cat-slide img {
+    max-height: 500px
+}
+
+.prev:hover, .next:hover {
+    color: #E9C46A;
+    cursor: pointer;
+}
+
+.prev, .next {
+    color: #E9C46A;
+    font-size: 40px;
+    cursor: pointer;
+}

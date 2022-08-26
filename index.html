@@ -3,14 +3,77 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <script type="text/javascript" defer>
+      let current_slide = 0;
+      let slides = document.getElementsByClassName("cat-slide");
+      function plusSlides(n) {
+        //set the old slide to inactive
+        slides[current_slide].classList.remove("active");
+  
+        console.log("current slide: " + current_slide);
+        current_slide += n;
+        if(current_slide === -1) {
+          current_slide = slides.length - 1;
+        }else {
+          current_slide %= slides.length;
+        }
+
+        console.log("new current slide: " + current_slide);
+  
+        //set the new slide to active
+        slides[current_slide].classList.add("active");
+      }
+      
+    </script>
+  <link rel="stylesheet" href="./main.css">
+
   </head>
+  
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1 class="header">Information about Nathan Pollock</h1>
+    <!-- A section on what I like to do -->
+    <div class="section-container"> 
+      <h2>
+        <span class="section-header">Things I like to do</span>
+      </h2>
+      <ul>
+        <li>
+          <span class="section-item">Programming</span>
+        </li>
+        <li>
+          <span class="section-item">Petting Cats</span>
+        </li>
+        <li>
+          <span class="section-item">Working Out</span>
+        </li>
+        <li>
+          <span class="section-item">Playing video games</span>
+        </li>
+        <li>
+          <span class="section-item">Playing music</span>
+        </li>
+      </ul>
+      <div class="slideshow-container">
+        <div class="cat-slide active">
+          <div class="numbertext">1 / 3</div>
+          <img src="https://cdn.discordapp.com/attachments/1012552520415072318/1012573709439074314/8eb455a2-28ce-4b98-82e6-13929c9aae5d.jpg" alt="1/3">
+        </div>
+        <div class="cat-slide">
+          <div class="numbertext">2 / 3</div>
+          <img src="https://cdn.discordapp.com/attachments/1012552520415072318/1012552572889993216/Millie1.jpeg" alt="2/3">
+        </div>
+        <div class="cat-slide">
+          <div class="numbertext">3 / 3</div>
+          <img src="https://cdn.discordapp.com/attachments/1012552520415072318/1012572485587324928/IMG_1215.jpg" alt="3/3">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
     <p>
-      [Self introduction]
+      Test
     </p>
     <p>
-      [Major and other information]
+      Computer Science Student at Worcester Polytechnic Institute
     </p>
     <p>
       [Other things]

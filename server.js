@@ -2,6 +2,8 @@ const http = require('http'),
       fs   = require('fs'),
       port = 3000
 
+console.log( 'Server running at http://localhost:' + port + '/' )
+
 const server = http.createServer( function( request,response ) {
   console.log("Got request for " + request.url)
   switch( request.url ) {
@@ -11,7 +13,11 @@ const server = http.createServer( function( request,response ) {
     case '/index.html':
       sendFile( response, 'index.html' )
       break
+      case '/main.css':
+      sendFile( response, 'main.css' )
+      break
     default:
+      console.log(request.url + " not found")
       response.end( '404 Error: File Not Found' )
   }
 })
