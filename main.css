@@ -1,0 +1,16 @@
+body{
+  font-family:courier;
+  background: black;
+  color: white;
+}
+li{
+  font-size:20px;
+  color:grey
+}
+a{
+  color:red
+}
+p{
+  font-size:20px;
+}
+
