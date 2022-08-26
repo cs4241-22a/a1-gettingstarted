@@ -1,0 +1,32 @@
+/* CSS HEX */
+/*
+--color1: #3A64E0;
+--color2 #A8D96C;
+--color3: #F7850A;
+--color4: #6B67DB;
+--color5: #F21C11;
+*/
+
+body {
+  background-image: url(https://cdn.discordapp.com/attachments/804546891260887130/1012802730970071060/unknown.png)
+}
+
+h1 { 
+  font-family: Brush Script MT, Brush Script Std;
+  text-align: center;
+  border: 10px solid yellow;
+  background-color:#3A64E0 } /*color1*/
+
+
+p {  
+  margin: 25px 50px 75px 100px; 
+  background-color:#A8D96C; } /*color2*/
+
+h2 { background-color:#F7850A}  /*color3*/
+h3 { background-color:#6B67DB } /*color4*/
+ul { background-color:#F21C11} /*color5*/
+
+h4 {
+  background-color:lime}
+
+
