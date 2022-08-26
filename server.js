@@ -7,12 +7,8 @@ const server = http.createServer( function( request,response ) {
     case '/':
       sendFile( response, 'index.html' )
       break
-    case '/index.html':
-      sendFile( response, 'index.html' )
-      break
     default:
-      response.end( '404 Error: File Not Found' )
-  }
+      sendFile( response, request.url.substring(1))  }
 })
 
 server.listen( process.env.PORT || port )
