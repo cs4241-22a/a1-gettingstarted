@@ -4,6 +4,24 @@
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Silkscreen">
+  <style>
+    body {
+    font-family: "Silkscreen", Bryant;
+    }
+  </style>
+    <script>
+      window.onload = function() {
+        const colors = ['#A8FA2D','#397DE3','#FA4339']
+        let i = 0
+        setInterval(
+          function() {
+            document.getElementsByTagName("h1")[0].style="color:" + colors[i++ % 3]
+          },
+          1000
+        )
+      }
+    </script>
   </head>
   <body>
     <h1>Information about Zaq Humphrey</h1>
@@ -11,16 +29,16 @@
       Hello, I am Zaq Humphrey and I am a Junior at WPI and will graduate in 2024.
     </p>
     <p>
-      I major in Cybersecurity
+      I major in Cybersecurity at <a href="https://wpi.edu">WPI</a>
     </p>
     <p>
       Some things I enjoy doing outside of college is playing the guitar and video games.
     </p>
 
     <h2>Experience</h2>
-    <p>
+    <p2>
       Working experience
-    </p>
+    </p2>
     <ul>
       <link rel="stylesheet" href="./main.css" .>
       <li>HTML: Little</li>
@@ -29,7 +47,7 @@
       <li>JavaScript: None</li>
       <li>Ruby: None</li>
       <li>Python: A lot</li>
-      <li>unit testing: None</li>
+      <li>Unit testing: None</li>
     </ul>
   </body>
 </html>

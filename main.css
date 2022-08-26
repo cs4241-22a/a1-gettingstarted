@@ -1,6 +1,30 @@
+body {
+  background-color:indigo
+}
 p {
-  background:green
+  background-color:#A8FA2D;
+  color:#FA4339;
+}
+p2 {
+  background-color:#397DE3;
+  color:white;
 }
 ul {
-  background:red
+ background-color:blue;
+ color:#E3DF74;
+}
+h1 {
+  /*color:green;*/
+  margin-left:420px;
+  border:solid red;
+  margin-top:10px;
+  margin-bottom:5px;
+  margin-right:420px;
+  outline:solid #0DCBFF;
+}
+h2 {
+  color:green;
+  margin-left:675px;
+  border:double blue;
+  margin-right: 675px;
 }
