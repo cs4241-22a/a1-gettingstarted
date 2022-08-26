@@ -9,7 +9,11 @@
 
 <body>
   <div class="bg">
-    <img class='pic' src="pic.PNG">
+    <div class="outerimage">
+      <img class='pic' id="profilepic" src="pic.PNG" style="border-color: aqua;
+      border-style: solid;
+      border-width: 2px;">
+    </div>
     <h1 class="header">Jacob Adams</h1>
     <h1 class="header">Class of 2024</h1>
     <p class="intro">
@@ -17,6 +21,7 @@
     </p>
     <div class="horizontal">
       <div class="container">
+        <h1>Courses</h1>
         <ul class="classes" id="classes">
           <li>1101</li>
           <li>2103</li>
@@ -31,13 +36,13 @@
       </div>
       <div class="container">
         <ul>
-          <li>HTML little over summer</li>
-          <li>CSS little over summer</li>
-          <li>Java alot</li>
-          <li>JavaScript little over summer</li>
-          <li>Ruby none</li>
-          <li>Python a bit</li>
-          <li>unit testing some</li>
+          <li>HTML - Some</li>
+          <li>CSS - Some</li>
+          <li>Java - A Lot</li>
+          <li>JavaScript - Some</li>
+          <li>Ruby - None</li>
+          <li>Python - A Lot</li>
+          <li>Unit Testing - Some</li>
         </ul>
       </div>
     </div>
@@ -47,7 +52,6 @@
   <script>
     function animation() {
       let id = null
-      console.log('animation')
       let names = ['Introduction To Program Design', 'Accelerated Object-Oriented Design Concepts', 'Discrete', 'Algorithms', 'Systems Programming Concepts', 'Introduction To Machine Organization And Assembly Language', 'Databases I', 'Social Implications', 'Software Engineering']
       let numbers = [1101, 2103, 2022, 2223, 2303, 2011, 3431, 3043, 3733]
       let list = document.getElementById('classes')
@@ -59,7 +63,6 @@
         nums = !nums
       }
     }
-
     function setText(list, txt) {
       let ind = 0
       for(let i = 0; i < list.length; i++){
@@ -69,6 +72,29 @@
         }
       }
     }
+    // let width = 0
+    // let speed = 100
+    // let int = setInterval(expand,speed)
+    // function expand(){
+    //   let pic = document.getElementById('profilepic')
+    //   pic.style.borderWidth = width + 'px'
+    //   width++
+    //   if(width == 11){
+    //     clearInterval(int)
+    //     int = setInterval(contract,speed)
+    //     width = 9
+    //   }
+    // }
+    // function contract(){
+    //   let pic = document.getElementById('profilepic')
+    //   pic.style.borderWidth = width + 'px'
+    //   width--
+    //   if(width == -1){
+    //     clearInterval(int)
+    //     int = setInterval(expand,speed)
+    //     width = 1
+    //   }
+    // }
     animation()
   </script>
 </body>

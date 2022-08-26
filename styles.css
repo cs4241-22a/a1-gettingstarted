@@ -7,6 +7,10 @@ p{
     font-family: lato;
 }
 
+h1 {
+    font-family: lato;
+}
+
 
 .bg {
     background-color: #FAFAFA;
@@ -35,8 +39,7 @@ p{
 
 .pic {
     border-radius: 50%;
-    border-color: aqua;
-    border-style: solid;
+    height: 350px;
     display: block;
     margin-top: 15px;
     margin-left: auto;
