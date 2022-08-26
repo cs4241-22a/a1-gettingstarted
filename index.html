@@ -1,28 +1,120 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Gideon Roman', cursive;
+        font-family: 'Roboto Slab', serif;
+        background-color: #EAE5BB; /* adobe color (2)*/
+        color: #666133;
+      }
+
+      a {
+        color: #666452;
+      }
+
+      button {
+        background-color: #E6DA73;
+        color: #B3AA59;
+        font-weight: bolder;
+      }
+
+      .positive {
+        color: darkgreen;
+        font-weight: bold;
+        background-color: rgba(0, 102, 0, 0.33);
+      }
+
+      .negative {
+        color: darkred;
+        font-weight: bold;
+        background-color: rgba(139, 0, 0, 0.33);
+      }
+
+      table {
+        border: dashed 0.15em;
+      }
+
+      td {
+        border-bottom: 1px solid black;
+      }
+    </style>
+    <script type="text/javascript">
+      function showEXP() {
+    document.getElementById("exp").outerHTML = "<table><thead>\n" +
+            "          <tr>\n" +
+            "            <th colspan=\"2\">Experience with web technologies:</th>\n" +
+            "          </tr>\n" +
+            "        </thead>\n" +
+            "        <tbody>\n" +
+            "          <tr>\n" +
+            "            <td>HTML</td>\n" +
+            "            <td class=\"positive\" align=\"left\">++</td>\n" +
+            "          </tr>\n" +
+            "          <tr>\n" +
+            "            <td>CSS</td>\n" +
+            "            <td class=\"positive\">++</td>\n" +
+            "          </tr>\n" +
+            "          <tr>\n" +
+            "            <td>Java</td>\n" +
+            "            <td class=\"positive\">++</td>\n" +
+            "          </tr>\n" +
+            "          <tr>\n" +
+            "            <td>JS</td>\n" +
+            "            <td class=\"positive\">+</td>\n" +
+            "          </tr>\n" +
+            "          <tr>\n" +
+            "            <td>Ruby</td>\n" +
+            "            <td class=\"negative\">--</td>\n" +
+            "          </tr>\n" +
+            "          <tr>\n" +
+            "            <td>Python</td>\n" +
+            "            <td class=\"positive\">+</td>\n" +
+            "          </tr>\n" +
+            "          <tr>\n" +
+            "            <td>Unit Testing</td>\n" +
+            "            <td class=\"positive\">+</td>\n" +
+            "          </tr>\n" +
+            "        </tbody></table>";
+}
+    </script>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+  <h1>Information about <em>Cole Manning</em></h1>
+    <p>Hi!</p>
+    <p>I am a member of the class of '23 and a CS major here at WPI.</p>
+    <p>Find me online at <a href="https://colermanning.com" target="_blank">colermanning.com</a> and <a href="https://rvrx.dev" target="_blank">rvrx.dev</a> </p>
+    <br>
+    <p>Previous CS classes I have taken at WPI are:</p>
+    <ul>
+      <li>Algorithms — CS 2223</li>
+      <li>Object-Oriented Design Concepts — CS 2102</li>
+      <li>Systems Programming Concepts — CS 2303</li>
+      <li>Discrete Mathematics — CS 2022</li>
+      <li>Intro to Program Design — CS 2102</li>
+      <li>Introduction to Machine Organization and Assembly Language — CS 2011</li>
+      <li>Operating Systems — CS 3013</li>
+      <li>Software Engineering — CS 3733</li>
+      <li>Mobile and Ubiquitous Computing — CS 4518</li>
+      <li>Social Implications of Information Processing — CS 3043</li>
+      <li>Advanced Networks – CS 4516</li>
+    </ul><br>
     <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
+      <button type="button" onclick="showEXP();" id="exp">Show Experience w/ Web Languages</button>
     </p>
 
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+    <p>Working experience</p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>Interned @ MojoTech this past summer</li>
+      <li>Clerk @ Local Package Store for last year + &half;</li>
+      <li>Support Technician @ WPI ME Dept. for the past few years</li>
     </ul>
   </body>
 </html>
+
