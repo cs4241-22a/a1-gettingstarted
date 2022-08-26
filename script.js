@@ -3,24 +3,23 @@
 let id = null;
 let increaseSize = (element) => {
     let photoID = document.getElementById("photo1")
-    let size = 40;
+    let size = 20;
     let increasing = true;
     id = setInterval(() => {
-        console.log(size)
 
         if(increasing) {
-            size++;
+            size += .5;
             photoID.style.width = size + "%"
-            if(size >= 80)
+            if(size >= 30)
             {
                 increasing = false;
             }
         } 
         else
         {
-            size--;
+            size -= .5;
             photoID.style.width = size + "%"
-            if(size == 40)
+            if(size == 20)
             {
                 clearInterval(id)
             }

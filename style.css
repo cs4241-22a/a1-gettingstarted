@@ -52,7 +52,8 @@ table tr:nth-child(even)
 
 img
 {
-    width: 40%;
+    width: 20%;
+    margin: 2%;
 }
 
 
