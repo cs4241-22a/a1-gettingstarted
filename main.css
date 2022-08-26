@@ -1,0 +1,108 @@
+body {
+    background-color:#2E3440;
+    font-family: Ubuntu;
+}
+h1 {
+    color: #ECEFF4;
+    text-align: center;
+    font-size: 45px;
+}
+
+h2 {
+    color: #ECEFF4;
+    text-align: center;
+    font-size: 45px;
+}
+
+h3 {
+    color: #ECEFF4;
+    text-align: center;
+    font-size: 45px;
+}
+
+p {
+    color: #81A1C1;
+    font-size: 25px;
+
+}
+
+li {
+    color: #5E81AC;
+    font-size: 25px;
+}
+
+li span {
+    color: #88C0D0;
+    font-size: 25px;
+}
+
+a {
+    color: #5E81AC;
+
+}
+
+.links {
+    text-align: center;
+}
+
+.underline {
+    text-decoration: underline;
+    color: #ECEFF4;
+    font-weight: bold;
+
+}
+
+em {
+    font-size: 25px;
+    color: #ECEFF4;
+
+}
+
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    font-size: 25px;
+    color: #ECEFF4;
+}
+th, td {
+    background-color: #5E81AC;
+}
+
+.title-banner {
+    animation: color-animation 4s linear infinite;
+}
+
+.title-information {
+    --color-1: #ECEFF4;
+    --color-2: #5E81AC;
+    --color-3: #88C0D0;
+}
+
+.title-about {
+    --color-1: #88C0D0;
+    --color-2: #ECEFF4;
+    --color-3: #5E81AC;
+}
+
+.title-mason {
+    --color-1: #88C0D0;
+    --color-2: #5E81AC;
+    --color-3: #ECEFF4;
+}
+
+.title-powell {
+    --color-1: #88C0D0;
+    --color-2: #5E81AC;
+    --color-3: #ECEFF4;
+}
+
+@keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+}
+
