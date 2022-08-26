@@ -1,7 +1,7 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 
 Ted Clifford
-http://a1-tedclifford.glitch.me
+http://a1-edwardclifford.glitch.me
 
 This project shows standing up a basic static webpage with js and css animations. It says a little bit about myself, too :)
 
