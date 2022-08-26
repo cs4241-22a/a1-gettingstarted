@@ -16,11 +16,11 @@ After completing the "base" assignment (warm-up), I went ahead and included **Te
 ### Technical Achievements
 - (5 pts) **HTML Tags**:
 I've experimented with a few HTML tags that were unfamiliar to me. Here are the ones I used: <ul>
-  <li>1) Used '<a>' tag to hyperlink 'WPI'</li> 
-  <li>2) Used '<label>' tag for labeling progress bar</li>
-  <li>3) Used '<progress>' tag for make progress bar</li> 
-  <li>4) Used '<u>' tag to mark misspelled word - "Computtterer"</li>
-  <li>5) Used '<s>' tag to cross out information that is not correct - "500000%"</li> 
+  <li>1) Used 'a' tag to hyperlink 'WPI'</li> 
+  <li>2) Used 'label' tag for labeling progress bar</li>
+  <li>3) Used 'progress' tag for make progress bar</li> 
+  <li>4) Used 'u' tag to mark misspelled word - "Computtterer"</li>
+  <li>5) Used 's' tag to cross out information that is not correct - "500000%"</li> 
 </ul>
  
 
