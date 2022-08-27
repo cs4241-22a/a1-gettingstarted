@@ -21,7 +21,6 @@ const server = http.createServer( function( request,response ) {
 server.listen( process.env.PORT || port )
 
 const sendFile = function( response, filename ) {
-   console.log("Hello World");
    fs.readFile( filename, function( err, content ) {
      response.end( content, 'utf-8' )
    })
