@@ -15,13 +15,13 @@ Achievements
 
 **Technical Achievements**
 
-- **Implemented CSS Style rules** such as:
+- **Implemented 5+ CSS Style rules** such as:
     - Added both weighted and outset borders
     - Applying unique background colors to specific sections
     - Added style rules to move the text surrounding my resume by designating a class and using the margin- rule for that paragraph
     - Added style rules to the audio control panel to reposition and recolor the player for a smoother look
     - Added rules to resize and reposition an image of myself I included
-- **Additional HTML tags** such as (max 5 points) Experiment with other HTML tags (links, images, tables etc.)
+- **Additional HTML tags** such as
   -  **Linked an image** of myself by adding the file to my repo and using the <img> tag inside of a container
   - **Added linked audio and controls** Tried to implement autoplay but was blocked by google chrome- so I used the <audio> tag to include smooth jazz (see above)
  - 2. (5 points) Add a simple JavaScript animation to the page.
