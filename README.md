@@ -7,7 +7,8 @@ This project shows
 2. 
 3. other HTML links used: main, footer, article, table, td, trl, a, div, figure, img
 
+
 ## Design Achievements
 1. Color Pallete added under "Color Pallete A1"
-
+Add photo here ---------------------------------------------------------------------------------------------------------
 2. Used the Roboto Font from Google Fonts: I used Roboto as the font for the  text in my site.
