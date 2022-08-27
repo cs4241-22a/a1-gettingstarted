@@ -1,11 +1,37 @@
 li {
-font-style: italic;
-}
-
+    font-style: italic;
+    }
+    
 p {
     font-weight: bold;
 }
 
 blockquote {
     font-style: italic;
+    font-family: "Quicksand";
+    color: #ff3d0f;
+    font-weight: bold;
+}
+
+body {
+    background-color: #aaaaff;
+    }
+
+table {
+    background-color: #0ddec3;
+}
+
+div.header {
+    background-color: #74f51b;
+    white-space: nowrap;
+    overflow-x: hidden;
+    position: relative;
+}
+
+div.experience {
+    background-color: #dea80d;
+    white-space: nowrap;
+    overflow-x: hidden;
+    position: relative;
+    margin-top: 40px;
 }

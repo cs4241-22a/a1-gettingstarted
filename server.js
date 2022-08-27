@@ -10,6 +10,15 @@ const server = http.createServer( function( request,response ) {
     case '/index.html':
       sendFile( response, 'index.html' )
       break
+    case '/style.css':
+      sendFile(response, 'style.css')
+      break
+    case '/profile.jpg':
+      sendFile(response, 'profile.jpg')
+      break
+    case '/https://fonts.googleapis.com/css?family=Quicksand':
+      sendFile(response, 'https://fonts.googleapis.com/css?family=Quicksand')
+      break;
     default:
       response.end( '404 Error: File Not Found' )
   }
