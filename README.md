@@ -1,5 +1,7 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 
+Preview of website: https://htmlpreview.github.io/?https://github.com/nkuchipudi2020/a1-gettingstarted/blob/main/index.html
+
 README
 ---
 
