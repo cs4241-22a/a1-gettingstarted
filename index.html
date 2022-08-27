@@ -5,11 +5,38 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap">
     <meta charset="utf-8">
+
+    <script>
+
+      var image;
+
+      function init() {
+        image = document.getElementById("dog");
+        image.style.position = "relative";
+        image.style.left = "0px";
+      }
+
+      function moveDog() {
+        var pos = 0;
+
+        var movement = setInterval(function(){
+          pos += 2;
+          image.style.left = parseInt(image.style.left) + pos + "px";
+          if(pos == 50) {
+            clearInterval(movement)
+          }
+        } , 10);
+      }
+
+      window.onload = init;
+    </script>
+
   </head>
+  
   <body>
     <h1>Information about Sean O'Connor</h1>
     <p>
-      I'm a student at Worcester Polytechnic Institue in the class of 2023. 
+      I'm a student at <a href="https://www.wpi.edu/">Worcester Polytechnic Institue</a> in the class of 2023. 
     </p>
     <p>
       I'm currently working towards a B.S. in Computer Science and Interactive Media and Game Development Minor.
@@ -17,7 +44,9 @@
     <p>
       Outside of classes, I am in the fraternity Phi Kappa Theta and am raising a dog for the Guide Dog Foundation.
     </p>
-    <img src="dog.jpg" alt="Guide Dog Chip at Fountain">
+    
+    <img src="dog.jpg" alt="Guide Dog Chip at Fountain" id="dog">
+    <p><button onClick="moveDog()">Click Here!</button></p>
 
     <h2>Experience</h2>
     <p>
