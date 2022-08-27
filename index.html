@@ -7,53 +7,42 @@
     <script src="index.js" ></script>
   </head>
   <body>
-    <div class="home-container" id="home">
-      <div class="home-title-container">
+    <div class="app-container" id="app">
+      <div class="slide home-container" id="home">
         <h1 class="home-title">Joe Dobbelaar</h1>
-        <div class="home-button" id="home-button"></div>
-        <div class="home-accordion" id="home-accordion">
-          <ul>
-            <li>
-              <div class="accordion-item">
-
-              </div>
-            </li>
-            <li>
-              <div class="accordion-item">
-                
-              </div>
-            </li>
-            <li>
-              <div class="accordion-item">
-
-              </div>
-            </li>
-            <li>
-              <div class="accordion-item">
-
-              </div>
-            </li>
-          </ul>
+        <div class="menu-container">
+          <div class="left">
+            <img src="./assets/Sword.svg" class="menu-sword" id="menu-sword">
+          </div>
+          <div class="center">
+            <ul class="home-menu-list">
+              <li>
+                <a href="#introduction" data-label="Introduction" id="anchor-introduction">Introduction</a>
+              </li>
+              <li>
+                <a href="#wpi" data-label="WPI" id="anchor-wpi">WPI</a>
+              </li>
+              <li>
+                <a href="#experience" data-label="Experience" id="anchor-experience">Experience</a>
+              </li>
+              <li>
+                <a href="#contact" data-label="Contact" id="anchor-contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="right"></div>
+        </div>
+      </div>
+      <div class="slide content-page" id="content-page">
+        <div class="left">
+          <img class="back-arrow" id="back-arrow" src="./assets/backArrow.svg" >
+        </div>
+        <div class="right">
+          <h1 id="content-page-title">Content Title</h1>
+          <h2 id="content-page-subtitle">Content Subtitle</h2>
+          <p id="content-page-paragraph">Content Paragraph</p>
         </div>
       </div>
     </div>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
   </body>
 </html>

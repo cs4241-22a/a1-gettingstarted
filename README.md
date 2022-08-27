@@ -85,16 +85,17 @@ If you need a JavaScript/HTML/CSS refresher, see [HTML & CSS](https://wpi.primo.
 
 If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.com/categories/bootcamp/), the [GitHub Guides](https://guides.github.com/) (especially the ones on Hello World, and Understanding the GitHub Flow, and Forking Projects), and [CodeSchool's Try Git Course](https://www.codeschool.com/courses/try-git).
 
-Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
+Submission Details
 ---
 
-Charlie Roberts
+Joseph Dobbelaar
 http://a1-charlieroberts.glitch.me
 
 This project shows ...
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
-
+- **Styled page with CSS**: Added rules for ul, body, root, li, h1, a, and some custom div classes
+- **JavaScript Animation**: I made an animation for menu items where the text is cut by a sword before being dragged off to show a new page!
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Google Font**: Implemented the [BebasNeue-Regular](https://fonts.google.com/specimen/Bebas+Neue#styles) font from Google Fonts
+- **Color Pallete**: Created an analogous color pallete with [color.adobe.com](https://color.adobe.com). This color pallete is used alongside the colors white and black on the whole site. The background, which used the adobe color pallete, was created using [Haikei](https://app.haikei.app/)— a web app for generating curvy, multicolored SVG images. I generated a set of waves that I liked using the "layered waves" tool, brought it into photoshop, and replaced the colors with the ones from adobe.
