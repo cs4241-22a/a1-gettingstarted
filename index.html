@@ -3,26 +3,116 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arimo">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <div id="background">
+      <div id="midbox">
+      <h1>Information about Mark Renzi, WPI class of 2024</h1>
+      <p>
+        My name is Mark, and I spend my days making fun personal projects. 
+        I have done various things from building an arcade machine on 
+        a raspberry pi to learning some basic 3D modeling and game design.
+      </p>
+      <p>
+        I am majoring in computer science on track to complete the B.S./M.S. 
+        program. Below are the CS courses I have taken at WPI.
+      </p>
+      <img src="https://cdn.discordapp.com/attachments/121797037942374400/1013124217748852766/unity.jpg" alt="My Unity Scene" width="650" height="300" id="mainimg">
+      <img src="https://cdn.discordapp.com/attachments/121797037942374400/1013176039897305138/DVD_logo-MARK-80.png" alt="Bouncing logo" width="80" height="38" id="logo">
+    </div>
+      <h2>
+        WPI CS Experience
+      </h2>
+      <table>
+        <tr>
+          <th>No.</th>
+          <th>Course Title</th>
+        </tr>
+        <tr>
+          <td>1102</td>
+          <td>Accelerated Introduction to Program Design</td>
+        </tr>
+        <tr>
+          <td>2103</td>
+          <td>Accelerated Object-Oriented Design Concepts</td>
+        </tr>
+        <tr>
+          <td>2011</td>
+          <td>Introduction to Machine Organziation and Assembly Language</td>
+        </tr>
+        <tr>
+          <td>2303</td>
+          <td>Systems Programming Concepts</td>
+        </tr>
+        <tr>
+          <td>2022</td>
+          <td>Discrete Mathematics</td>
+        </tr>
+        <tr>
+          <td>2223</td>
+          <td>Algorithms</td>
+        </tr>
+        <tr>
+          <td>3043</td>
+          <td>Social Implications of Information Processing</td>
+        </tr>
+        <tr>
+          <td>3013</td>
+          <td>Operating Systems</td>
+        </tr>
+      </table>
+      <h2>Experience</h2>
+      <div id="experience">
+      <h3>
+        Relevant Skills
+      </h3>
+      <ul>
+        <li>Java</li>
+        <li>C/C++</li>
+        <li>x86 Assembly</li>
+        <li>C#</li>
+        <li>Python</li>
+        <li>Unit Testing</li>
+        <li>Git</li>
+        <li>Bluetooth Low Energy</li>
+        <li>MIDI</li>
+        <li>Raspberry Pi and Arduino</li>
+        <li>Solidworks 2021 CAD Software</li>
+        <li>Blender (3D modelling and animation)</li>
+        <li>Unity</li>
+      </ul>
+      <h3>
+        Qualifications
+      </h3>
+      <ul>
+        <li>CPR Certified</li>
+        <li>Eagle Scout</li>
+      </ul>
+      <h3>
+        Working experience
+      </h3>
+      <ul>
+        <li>UPS Driver Helper</li>
+        <li>Dave's Marketplace Night Crew</li>
+      </ul>
+    </div>
+    </div>
+    <script>
+      var i = 5;
+      var j = 5;
+      const x1 = document.getElementById("midbox").offsetLeft;
+      const y1 = document.getElementById("midbox").offsetTop;
+      const x2 = document.getElementById("midbox").offsetLeft + document.querySelector("midbox").offsetWidth;
+      const y2 = document.getElementById("midbox").offsetTop + document.querySelector("midbox").offsetHeight;
+      function move() {
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+        //if () {
+
+        //}
+      }
+      setInterval(move, 5);
+    </script>
   </body>
 </html>
