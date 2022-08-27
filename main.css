@@ -30,6 +30,7 @@ body {
     border-collapse: collapse;
     border: 2px solid #6DA6A5;
     background-color: #94F2F0;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.329);
   }
   
   ul {
@@ -48,14 +49,17 @@ body {
     padding: 10px 20px 10px 20px;
     background-color: #F2EBC4;
     border: 2px solid #A66597;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.329);
   }
 
   #experience {
     margin-left: 40px;
+    margin-bottom: 20px;
     display:inline-block;
     padding: 10px 20px 10px 10px;
     border: 2px solid #6DA6A5;
     background-color: #94F2F0;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.329);
   }
 
   #mainimg {
