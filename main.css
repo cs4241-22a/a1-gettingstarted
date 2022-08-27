@@ -1,0 +1,43 @@
+h1 {
+    font-family: "Aboreto", serif;
+    color: #E69C57;
+}
+
+body {
+    background-color: #B8BBA8;
+}
+
+p {
+    font-family: "Comic Sans MS", sans-serif;
+    color: #4D82D2;
+}
+
+li {
+    color: #8B7CC4;
+}
+
+#wpiLogo {
+    width: 200px;
+}
+
+#wpiDiv {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+}
+
+#courseList {
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+table, td, th, tr {
+    border: 1px solid black;
+}
+
+th {
+    color: #E65F57;
+}
+
+.tableLogo {
+    width: 50px;
+}

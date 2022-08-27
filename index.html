@@ -3,26 +3,102 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" type="image/png" href="lettuce.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aboreto">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about Colby Frechette</h1>
+    <div id="wpiDiv">
+      <p>
+        WPI Class of 2023
+      </p>
+      <img src="wpilogo.png" alt="WPI Logo" id="wpiLogo" onclick="myMove()">
+    </div>
+
+    <script>
+      function myMove() {
+        console.log("worked")
+        let id = null;
+        const elem = document.getElementById("wpiLogo");
+        let opacity = 100;
+        clearInterval(id);
+        id = setInterval(frame, 5);
+        function frame() {
+          if (opacity == 0) {
+            clearInterval(id);
+          } else {
+            opacity--;
+            elem.style.opacity = opacity + "%";
+          }
+        }
+      }
+    </script>
+
     <p>
-      [Self introduction]
+      Double majoring in Computer Science and Environmental and Sustainability Studies with a minor in History
     </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <pi>
+      I enjoy hiking, climbing, cooking, and being outside. And travelling. Travelling is cool too.
+    </pi>
 
     <h2>Experience</h2>
     <p>
       Working experience
     </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+    <table>
+      <tr>
+        <th>Years</th>
+        <th>Job</th>
+        <th>Logo</th>
+      </tr>
+      <tr>
+        <td>2018-2018</td>
+        <td>Maine Robotics Summer Camp</td>
+        <td>
+          <img src="mainerobotics.png" class="tableLogo" alt="Maine Robotics Logo">
+        </td>
+      </tr>
+      <tr>
+        <td>2019-2021</td>
+        <td>WPI Helpdesk</td>
+        <td>
+          <img src="wpilogo.png" alt="WPI Logo" class="tableLogo">
+        </td>
+      </tr>
+      <tr>
+        <td>2021-Present</td>
+        <td>SimpliSafe</td>
+        <td>
+          <img src="simplisafe.png" alt="SimpliSafe Logo" class="tableLogo">
+        </td>
+      </tr>
+    </table>
+    </ul>
+    <p>
+      I have some knowledge of HTML, CSS, JavaScript, and Pyton from highschool as well as here at WPI, however,
+      I have had much more experience with Java and Kotlin from my internship on the Android team at SimpliSafe.
+      Unit testing is a large part of that job, so I have some experience there. I have never touched Ruby.
+    </p>
+    <p>
+      WPI Class Experience
+    </p>
+    <ul id="courseList">
+      <li>CS 1102</li>
+      <li>CS 2011</li>
+      <li>CS 2223</li>
+      <li>CS 3013</li>
+      <li>CS 3133</li>
+      <li>CS 3043</li>
+      <li>CS 3733</li>
+      <li>CS 3041</li>
+      <li>CS 4241</li>
+      <li>CS 4802</li>
+      <li>CS 4342</li>
+      <li>CS 4341</li>
+      <li>CS 4120</li>
+      <li>CS 2102</li>
+      <li>CS 2303</li>
     </ul>
   </body>
 </html>
