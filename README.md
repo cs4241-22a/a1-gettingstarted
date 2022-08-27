@@ -28,6 +28,7 @@ Achievements
 
 **Design Achievements**
 - **Created Custom Adobe Color Palette** in various shades of soft green that I found pleasing as it is my favorite color!
+    ![image](https://github.com/sophiastrano/a1-sophiastrano/blob/main/ColorWheelScreenshot.PNG)
 - **Used Arvo font from google fonts** in various sizes to add a smooth aesthetic to my website. (https://fonts.googleapis.com/css?family=Arvo)
 
 Resources Used
