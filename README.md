@@ -73,12 +73,67 @@ Below are some suggested technical and design achievements. You can use these to
 
 *Technical*
 1. (max 5 points) Style your page using CSS. Each style rule you apply will get you 1 extra point for a maximum of 5 points. Be sure to describe your style rules in your README.
-2. (5 points) Add a simple JavaScript animation to the page.
-3. (max 5 points) Experiment with other HTML tags (links, images, tables etc.) Each extra tag you use will get you 1 extra point for a maximum of 5 points. Be sure to describe the links you use in your README.
+
+The 5 style rules :
+
+h1 {
+    color: #4130F2;
+    text-shadow: 500px;
+    font-size: 50px;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-family: 'Rubik Maze', cursive;
+  }
+  p {
+    color: #2154DB;
+  }
+  
+  .wavy {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #D926FF;
+  }
+
+  .white-text-with-blue-shadow {
+    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+    color: white;
+    font: 1.5em Georgia, serif;
+  }
+
+  .verticalText {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    text-decoration-color: #7521DB;
+  }
+
+
+
+3. (5 points) Add a simple JavaScript animation to the page.
+
+> I added an animated color-changing box at the bottom of my website
+
+
+
+5. (max 5 points) Experiment with other HTML tags (links, images, tables etc.) Each extra tag you use will get you 1 extra point for a maximum of 5 points. Be sure to describe the links you use in your README.
+
+I used 5 tags including:
+   >link
+   >img
+   >details
+   >meta
+   >a
+   >del
+   >ins
+   
 
 *Design*
 1. (10 points) Create a color palette using [color.adobe.com](https://color.adobe.com). Use all the colors in the palette in your webpage by implementing the appropriate CSS. Add a small screenshot of the color wheel for your color palette to your repo.
-2. (5 points) Use a font from [Goolge Fonts](https://fonts.google.com) in your website.
+
+>
+![screenshot of the color wheel for my color palette](https://user-images.githubusercontent.com/30932390/187049995-cb8909de-3749-4eef-b97f-65224db6f8f8.png)
+
+
+3. (5 points) Use a font from [Goolge Fonts](https://fonts.google.com) in your website.
+> used the font Rubik Maze from google fonts
 
 Resources
 ---
