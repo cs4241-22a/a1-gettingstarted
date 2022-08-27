@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+body {
+    background-color: var(--color-dark-blue);
+    font-family: 'Courier Prime', monospace;
+}
+
+h1, h2, h3 {
+    color: var(--color-light-blue);
+}
+
+p,li {
+    color: var(--color-light-brown);
+}
+
+table{  
+    border-collapse: collapse;  
+    width: 100%;   
+}  
+
+th,td{
+    color: var(--color-light-brown);
+    border: 2px solid var(--color-dark-brown);   
+    padding: 10px;
+}  
+
+
+:root {
+    --color-dark-blue: #517D99;
+    --color-middle-blue: #91C5E6;
+    --color-light-blue: #BAE4FF;
+    --color-dark-brown: #9E9486;
+    --color-light-brown: #EBC692;
+}
