@@ -1,0 +1,36 @@
+body{
+  font-family:courier;
+  background: black;
+  color: white;
+}
+li{
+  font-size:20px;
+  color:grey
+}
+a{
+  color:red
+}
+p{
+  font-size:20px;
+}
+table, th, td{
+  border-spacing: 0.5cm;
+  border:1px solid yellow;
+  font-size: larger;
+  font-family: 'Courier New', Courier, monospace;
+}
+#java{
+  color:#65B4FD;
+}
+#python{
+  color:#5BC5E3;
+}
+#C{
+  color:#70FAF2;
+}
+#HTML{
+  color:#5BE3B6;
+}
+#unit{
+  color:#65FD9F
+}
