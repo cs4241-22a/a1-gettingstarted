@@ -1,0 +1,49 @@
+body {
+    background-color: #1E2647;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Fredoka One", sans-serif;
+    color: #495DAD;
+    background-color: #2E3B6E;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Fredoka One", sans-serif;
+    color: #495DAD;
+}
+
+p {
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+    color: #bdcaff;
+}
+
+table, th, td {
+    border: 1px solid;
+    font-family: "Varela Round", sans-serif;
+    color: #bdcaff;
+  }
+
+tr:hover {
+    background-color: coral;
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+a {
+    color: #bdcaff;
+}
+
+ul, li {
+    color:#bdcaff;
+    font-family: "Varela Round", sans-serif;
+    text-align: center;
+    list-style-position: inside;
+}
