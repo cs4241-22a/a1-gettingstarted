@@ -1,0 +1,22 @@
+h1 {
+    font-family: 'Archivo Black', sans-serif;
+    color: #DEFFF1;
+  }
+  
+  h2 {
+    font-family: 'Archivo Black', sans-serif;
+    color: #8DCCB1;
+  }
+  
+  div {
+    border: 10px solid #F0B2A8;
+    background-color: #F0B2A8;
+  }
+  
+  body {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 500;
+    color: #3C8062;
+    margin: 20px;
+    background-color: #80483E;
+  }
