@@ -2,10 +2,10 @@ h1 {
     color: black;
     font-family: 'Play', sans-serif;
     font-size: 50px;
-    margin: 100px 50px 75px 100px;
+    margin: 100px 20px 75px 100px;
 }
 p {
-  margin: -40px 50px 75px 100px;
+  margin: -50px 50px 20px 100px;
  font-family: 'Montserrat';
  font-size: 18px;
  line-height: 25px;
@@ -17,6 +17,22 @@ h2 {
  font-size: 18px;
  font-weight: 800;
  line-height: 25px;
+}
+
+button{
+  font-family: 'Montserrat';
+  margin: 10px 100px 100px 100px;
+  background-color: white;
+  padding: 17px;
+  border-radius: 200px;
+  border-color:black;
+  box-shadow: 5px 7px #FFB19C;
+  transition: ease-in, 0.3s;
+}
+
+button:hover{
+  color: white;
+  background-color: #242424;
 }
 
 li{
