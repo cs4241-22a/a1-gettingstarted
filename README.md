@@ -3,7 +3,7 @@ Readme
 Tia Mehta
 http://a1-charlieroberts.glitch.me
 
-This project shows ...
+This project shows Tia Mehta's introduction website. 
 
 ## Technical Achievements
 - **Styled page with CSS**: 
@@ -14,8 +14,10 @@ This project shows ...
     - For the table, th, td, I gave it a border to make it look more organized and changed the font and color to match the paragraphs (p). I also edited the tr to change the color of the boxes in the table when someone hovers over it.
     - For the unordered list (ul + li), I gave it the same color and font as the p and table text. I also center aligned it and make it so the bullet points are next to the list items.
 
-    - I added hyperlinks in my table that lead to the webpage describing the corresponding CS class
+    - I added hyperlinks in my table that lead to the webpage describing the corresponding CS class and I used a table to outline my CS classes.
 
 
 ### Design Achievements
 - **Used Google Fonts**: I used two fonts from Google Fonts. One was Fredoka One which I used for my headers, and the other was Varela Round which I used for the other texts. 
+
+- **Used color palette from color.adobe.com**: I used a color palette to inspire the color scheme behind my website. I did edit the colors once they were on my site to look better.
