@@ -108,8 +108,9 @@
       var logo = document.getElementById("logo");
       var posx = offsets.left;
       var posy = offsets.top;
-      var i = 1;
-      var j = 1;
+      const speed = (offsets.right - offsets.left)/200;
+      var i = speed;
+      var j = speed;
       function move() {
         offsets = document.getElementById("midbox").getBoundingClientRect();
         x1 = offsets.left;
@@ -121,19 +122,19 @@
         posx += i;
         posy += j;
         if (posx <= x1){
-          i = 1;
+          i = speed;
         }
         if (posy <= y1){
-          j = 1;
+          j = speed;
         }
         if (posx + 80 >= x2){
-          i = -1;
+          i = -speed;
         }
         if (posy + 38 >= y2){
-          j = -1;
+          j = -speed;
         }
       }
-      setInterval(move, 5);
+      setInterval(move, 20);
     </script>
   </body>
 </html>

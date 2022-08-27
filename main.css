@@ -25,6 +25,12 @@ body {
     margin-left: 40px;
     padding: 5px
   }
+
+  table {
+    border-collapse: collapse;
+    border: 2px solid #6DA6A5;
+    background-color: #94F2F0;
+  }
   
   ul {
     margin-left: 40px;
@@ -70,10 +76,4 @@ body {
     height: 38px;
     min-height: 38px;
     opacity: 0.5;
-  }
-
-  table {
-    border-collapse: collapse;
-    border: 2px solid #6DA6A5;
-    background-color: #94F2F0;
   }
