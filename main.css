@@ -69,6 +69,7 @@ body {
     min-width: 80px;
     height: 38px;
     min-height: 38px;
+    opacity: 0.5;
   }
 
   table {

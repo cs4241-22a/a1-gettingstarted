@@ -9,7 +9,7 @@
   <body>
     <div id="background">
       <div id="midbox">
-      <h1>Information about Mark Renzi, WPI class of 2024</h1>
+      <h1 id="header">Information about Mark Renzi, WPI class of 2024</h1>
       <p>
         My name is Mark, and I spend my days making fun personal projects. 
         I have done various things from building an arcade machine on 
@@ -100,17 +100,38 @@
     </div>
     </div>
     <script>
-      var i = 5;
-      var j = 5;
-      const x1 = document.getElementById("midbox").offsetLeft;
-      const y1 = document.getElementById("midbox").offsetTop;
-      const x2 = document.getElementById("midbox").offsetLeft + document.querySelector("midbox").offsetWidth;
-      const y2 = document.getElementById("midbox").offsetTop + document.querySelector("midbox").offsetHeight;
+      var offsets = document.getElementById("midbox").getBoundingClientRect();
+      var x1 = offsets.left;
+      var y1 = offsets.top;
+      var x2 = offsets.right;
+      var y2 = offsets.bottom;
+      var logo = document.getElementById("logo");
+      var posx = offsets.left;
+      var posy = offsets.top;
+      var i = 1;
+      var j = 1;
       function move() {
-
-        //if () {
-
-        //}
+        offsets = document.getElementById("midbox").getBoundingClientRect();
+        x1 = offsets.left;
+        y1 = offsets.top;
+        x2 = offsets.right;
+        y2 = offsets.bottom;
+        logo.style.left = posx + "px";
+        logo.style.top = posy + "px";
+        posx += i;
+        posy += j;
+        if (posx <= x1){
+          i = 1;
+        }
+        if (posy <= y1){
+          j = 1;
+        }
+        if (posx + 80 >= x2){
+          i = -1;
+        }
+        if (posy + 38 >= y2){
+          j = -1;
+        }
       }
       setInterval(move, 5);
     </script>
