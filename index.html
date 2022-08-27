@@ -1,9 +1,25 @@
 <!doctype html>
 <html lang="en">
   <head>
+
+    
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
      <link rel="stylesheet" href ="./main.css" />
+    
+    <script>
+      window.onload = function() {
+        const colors = ['yellow','white','gray']
+        let i=0
+        setInterval(
+          function(){
+            document.getElementsByTagName('h1')[0].style="background-color:" + colors[i++%3];
+          },
+          910
+          )
+      }
+    </script>
+    
   </head>
   <body>
     

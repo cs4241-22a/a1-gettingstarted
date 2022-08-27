@@ -22,6 +22,9 @@ I've experimented with a few HTML tags that were unfamiliar to me. Here are the 
   <li>4) Used 'u' tag to mark misspelled word - "Computtterer"</li>
   <li>5) Used 's' tag to cross out information that is not correct - "500000%"</li> 
 </ul>
+
+- (5 pts) **JavaScript Animation**:
+I've added a simple JavaScript animation where the h1 tag changes colors between white, yellow, and gray.
  
 
 - (5 pts) **CSS Page Style**:
