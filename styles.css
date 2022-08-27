@@ -1,0 +1,28 @@
+
+.none {
+  color:#FA432A
+}
+.some {
+  color:#FAB143
+}
+.alot {
+  color:#AEFA55
+}
+h1{
+ color:#1E9CFA
+}
+li{
+list-style: square;
+}
+body{
+  background-color:#F6DEFA
+}
+
+#experience {
+  text-align: center
+}
+
+* {
+  font-family: "montserrat"
+}
+
