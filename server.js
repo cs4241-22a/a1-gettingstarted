@@ -10,6 +10,9 @@ const server = http.createServer( function( request,response ) {
     case '/index.html':
       sendFile( response, 'index.html' )
       break
+      case 'styles.css':
+      sendFile( response, 'style.css' )
+      break
     default:
       response.end( '404 Error: File Not Found' )
   }
@@ -23,3 +26,19 @@ const sendFile = function( response, filename ) {
      response.end( content, 'utf-8' )
    })
 }
+
+$(document).on("scroll", function() {
+  var pageTop = $(document).scrollTop();
+  var pageBottom = pageTop + $(window).height();
+  var tags = $(".tag");
+
+  for (var i = 0; i < tags.length; i++) {
+    var tag = tags[i];
+
+    if ($(tag).position().top < pageBottom) {
+      $(tag).addClass("visible");
+    } else {
+      $(tag).removeClass("visible");
+    }
+  }
+});
