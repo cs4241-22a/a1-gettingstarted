@@ -1,7 +1,7 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
 
-Miles Gregg: link here
+Miles Gregg: https://a1-MilesGregg.glitch.me
 
 For this project I created a webpage that displayed some personal infomration using HTML, CSS, and JavaScript. The webpage displays two different sections About me and Experience. The website is ran on a NodeJS server instance and is also hosted on glitch in the link above. I completed this assignment with Option 1 - Clone to computer, push to Github, import to Glitch.
 
