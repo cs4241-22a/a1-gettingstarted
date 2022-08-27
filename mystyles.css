@@ -1,0 +1,57 @@
+h1 {
+    color: black;
+    font-family: 'Play', sans-serif;
+    font-size: 50px;
+    margin: 100px 50px 75px 100px;
+}
+p {
+  margin: -40px 50px 75px 100px;
+ font-family: 'Montserrat';
+ font-size: 18px;
+ line-height: 25px;
+}
+
+h2 {
+  margin: -40px 50px 75px 100px;
+ font-family: 'Montserrat';
+ font-size: 18px;
+ font-weight: 800;
+ line-height: 25px;
+}
+
+li{
+  margin: -60px 10px 70px 60px;
+  list-style: none;
+ font-family: 'Montserrat';
+ font-size: 18px;
+}
+.ideasLabel:hover, ideasLabel:hover span {
+ background-color: #DAD0FF;
+}
+
+.oracleLabel:hover, oracleLabel:hover span {
+  background-color: #A4EBE5;
+ }
+ 
+a{
+  color: inherit;
+}
+
+svg.svgwave {
+ margin-top: 50px;
+width: 100%;
+height: auto;
+overflow: visible;
+}
+
+svg.svgwave path {
+fill:transparent;
+stroke:white;
+stroke-width:1px;
+}
+
+svg.svgwave text {
+font-size: 4px;
+font-family: 'Play', sans-serif;
+fill: black;
+}

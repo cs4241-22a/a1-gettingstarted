@@ -1,28 +1,81 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital@1&family=Montserrat:wght@500;700&family=Play:wght@700&family=Playfair+Display:ital@1&family=Spectral:ital,wght@1,300&family=Unna:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="mystyles.css">
+  <title>CS4241 Assignment 1</title>
+  <meta charset="utf-8">
+</head>
+<svg class="svgwave" xmlns="http://www.w3.org/2000/svg" width="301" height="21" viewBox="0 0 301 21">
+  <path id="wavepath"
+    d="M0,.5c30.0978,0,30.0978,20,60.1956,20S90.2948.5,120.394.5s30.1,20,60.2,20c30.1015,0,30.1015-20,60.203-20s30.1014,20,60.2029,20">
+  </path>
+  <text text-anchor="middle">
+    <textPath class="my-text" href="#wavepath" startOffset="50%">
+      <animate attributeName="startOffset" from="-200%" to="300%" begin="0s" dur="20s" repeatCount="indefinite">
+      </animate>
+      nice to meet you ✽ nice to meet you ✽ nice to meet you ✽ nice to meet you ✽ nice to meet you ✽ nice to meet you ✽ nice to meet you ✽ nice to meet you ✽ nice to meet you ✽ nice to meet you ✽ nice to meet you ✽ nice to meet you ✽ nice to meet you ✽ nice to meet you ✽ nice to meet you ✽ nice to meet you ✽ nice to meet you ✽ nice to meet you ✽ nice to meet you ✽ nice to meet you ✽ nice to meet you ✽ nice to meet you ✽ nice to meet you ✽ nice to meet you ✽ nice to meet you ✽ 
+    </textPath>
+</svg>
+<body>
+  <h1 id="greeting" onmouseover="changeText()" onmouseout="changeback()">hi, i'm neha ☺✽</h1>
+  <script type="text/javascript">
+    function changeText() {
+      var display = document.getElementById('greeting');
+      var smiley = document.getElementById('smiley');
+      var peace = document.getElementById('peace');
+      var star = document.getElementById('star');
+      var smallstar = document.getElementById('smallstar');
+      smiley.style.visibility = 'visible';
+      peace.style.visibility = 'visible';
+      star.style.visibility = 'visible';
+      smallstar.style.visibility = 'visible';
+      greeting.style.fontSize = '50px';
+      greeting.style.letterSpacing = '-2px';
+      greeting.style.fontFamily = 'Unna', serif;
+    }
+    function changeback() {
+      var display = document.getElementById('greeting');
+      var smiley = document.getElementById('smiley');
+      var peace = document.getElementById('peace');
+      smiley.style.visibility = 'hidden';
+      peace.style.visibility = 'hidden';
+      star.style.visibility = 'hidden';
+      smallstar.style.visibility = 'hidden';
+      greeting.style.fontSize = '50px';
+      greeting.style.letterSpacing = '0px';
+      greeting.style.fontFamily = 'Play', sans - serif;
+    }
+  </script>
+  <p> I'm Neha Kuchipudi, a third-year undergraduate student (class of '24) studying a custom major in
+    Human-Computer Interaction.
+  </p>
+  <h2><strong>Work Experience:</strong>
+  </h2>
+  <ol>
+    <li>➥ Front-end Developer <span class="ideasLabel">@ <strong><u><a href="https://ids.wpi.edu/">WPI IDeaS Studio</a></u></strong></span></li>
+    <li>➥ UX Design Intern <span class="oracleLabel">@ <strong><u><a href="https://design.oracle.com/index.html">Oracle</a></u></strong></span></li>
+  </ol>
+  <h2><strong>Previous CS Courses:</strong>
+  </h2>
+  <ol>
+    <li>● Software Engineering </li>
+    <li>● Operating Systems</li>
+    <li>● Algorithms</li>
+    <li>● Social Implications of Information Processing </li>
+    <li>● Program Design</li>
+  </ol>
+  <h2><strong>Technology Experience:</strong>
+  </h2>
+  <ol>
+    <li>▶ HTML - Basic </li>
+    <li>▶ CSS - Intermediate</li>
+    <li>▶ Java - Advanced</li>
+    <li>▶ JavaScript - Intermediate </li>
+  </ol>
+  <img src="happysmiley.png" id="smiley" alt="Girl in a jacket" style="visibility: hidden; width:40px;height:40px; top: 270px; left:300px;; position:absolute; transform: rotate(10deg)">
+  <img src="peace.png" id="peace" alt="Girl in a jacket" style="visibility: hidden; width:35px;height:50px; top:250px; left:70px; position:absolute; transform: rotate(-15deg)">
+  <img src="star.png" id="star" alt="Girl in a jacket" style="visibility: hidden; width:30px;height:30px; top: 310px; left: 55px; position:absolute;">
+  <img src="smallstar.png" id="smallstar" alt="Girl in a jacket" style="visibility: hidden; width:30px;height:30px; top: 270px; left:200px; position:absolute;">
+</body>
 </html>
