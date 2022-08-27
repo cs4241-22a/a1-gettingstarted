@@ -1,7 +1,7 @@
 Readme
 
 Tia Mehta
-http://a1-charlieroberts.glitch.me
+http://a1-tiatmehta.glitch.me
 
 This project shows Tia Mehta's introduction website. 
 
