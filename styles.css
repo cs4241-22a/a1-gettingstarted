@@ -1,5 +1,5 @@
 body {
-    background: #274280;
+    background: #386efa;
     color: white;
     font-family: 'Sora', sans-serif;
     opacity: 0;
@@ -33,27 +33,31 @@ table, th, td {
 #header2first {
     border-radius: 10px;
     height: 5px;
-    box-shadow: 0 5px 0 0 rgb(244, 118, 0);
+    box-shadow: 0 5px 0 0 #ff922e;
 }
 
 #header2second {
     border-radius: 10px;
     height: 5px;
-    box-shadow: 0 5px 0 0 rgb(244, 118, 0);
+    box-shadow: 0 5px 0 0 #ff922e;
+}
+
+a {
+    text-decoration: none;
 }
 
 a:link {
-    color: rgb(0, 204, 255);
+    color: #6ae640;
 }
 
 a:visited {
-    color: rgb(255, 70, 70);
+    color: #e64d47;
 }
 
 a:hover {
-    color: rgb(0, 255, 0);
+    color: #ff922e;
 }
 
 a:active {
-    color: red;
+    color: #fae72f;
 }
