@@ -1,59 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Catamaran&display=swap" rel="stylesheet">  </head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@800&family=Arbutus&family=Archivo+Black&family=Catamaran&family=Galindo&family=Luckiest+Guy&family=UnifrakturCook&display=swap" rel="stylesheet">
+  </head>
   <body>
-    <h1>Information about Jordan Wecler</h1>
+    <h1 id="title">Information about Jordan Wecler</h1>
+    <script>
+      var i = 0; 
+      var fonts = ["'Alegreya', serif ", "'Archivo Black', sans-serif", "'Galindo', cursive", "'Luckiest Guy' cursive", "'Arbutus', cursive", "'UnifrakturCook', cursive"]
+      var elem = document.getElementById("title");
+      function fontSwitch() {
+        if(i > 5) {
+          i = 0;
+        } 
+        elem.style.fontFamily = fonts[i];
+        i++;
+      }
+      setInterval(fontSwitch,400);
+    </script>
     <div>
-        <p>
+      <p>
         Hello world! My name is Jordan Wecler, and I'm in the WPI class of 2024.
       </p>
-      <img id="wpi" src="https://www.wpi.edu/sites/default/files/2016/07/22/about-wpi-hero-1400x650.jpg" alt="Coding picture" style="width:500px">
+      <img
+        id="wpi"
+        src="https://www.wpi.edu/sites/default/files/2016/07/22/about-wpi-hero-1400x650.jpg"
+        alt="Coding picture"
+        style="width: 500px"
+      />
       <p>
-        My major is Computer Science, and I'm looking to minor in Data Science and Environmental and Sustainability Studies.
+        My major is Computer Science, and I'm looking to minor in Data Science
+        and Environmental and Sustainability Studies.
       </p>
-      <script>
-        
-      </script>
     </div>
     <h2>Experience</h2>
     <div>
-      <p>
-        CS Courses
-      </p>
+      <p>CS Courses</p>
       <ul>
         <li>Software Engineering</li>
-        <li>Operating Systems</li>  
-        <li>Machine Organization and Assembly Language</li>  
-        <li>Systems Programming Concepts</li>  
+        <li>Operating Systems</li>
+        <li>Machine Organization and Assembly Language</li>
+        <li>Systems Programming Concepts</li>
         <li>Algorithms</li>
-        <li>And several more...</li> 
+        <li>And several more...</li>
       </ul>
-      <p>
-        Working experience
-      </p>
+      <p>Working experience</p>
       <ul>
         <li>Taekwondo Instructor</li>
         <li>Freeman Gardens Caretaker</li>
         <li>WPI Global Lab Employee</li>
       </ul>
-      <p>
-        Tech Experience
-      </p>
+      <p>Tech Experience</p>
       <ul>
         <li>HTML: none</li>
-        <li>CSS: some</li>  
-        <li>Java: a lot</li>  
-        <li>JavaScript: none</li>  
+        <li>CSS: some</li>
+        <li>Java: a lot</li>
+        <li>JavaScript: none</li>
         <li>Ruby: none</li>
-        <li>Pthon: some</li>    
-        <li>Unit Testing: some</li>        
+        <li>Pthon: some</li>
+        <li>Unit Testing: some</li>
       </ul>
     </div>
   </body>
