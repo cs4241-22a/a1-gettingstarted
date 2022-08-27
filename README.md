@@ -1,7 +1,7 @@
 Wenjie Zhang
 http://a1-charlieroberts.glitch.me
 
-This project shows ...
+This project shows information about Wenjie Zhang (me).
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the body, h1, h2, img, p, hr, and ul. Also added rules for two custom classes.
