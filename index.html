@@ -3,26 +3,70 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link href="./main.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    
+    <script>
+      window.onload = (event) => {
+        setInterval(() => {
+        colors = ['red', 'blue', 'green']
+        document.getElementById("tech").style.color = colors[Math.floor(Math.random() * 3)]
+      }, 500)
+      }
+    </script>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about Harrison Rubin</h1>
+
+    <h3>
+      <a href="#classes">Link to Courses</a>
+      <a href="#tech">Link to Technologies</a>  
+    </h3>
+
+    <img src="./computer-icon-free-vector.webp"/>
+
     <p>
-      [Self introduction]
+      Hi I'm Harry and I'm excited about taking this class!
+    </p>
+
+    <p>
+      Computer Science Major
     </p>
     <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
+      Class of 2024
     </p>
 
     <h2>Experience</h2>
     <p>
-      Working experience
+      <h4>
+        CS Courses Taken
+      </h4>
+      <ul id="classes">
+        <li>CS 1102</li>
+        <li>CS 2103</li>
+        <li>CS 2011</li>
+        <li>CS 2303</li>
+        <li>CS 2223</li>
+        <li>CS 3133</li>
+        <li>CS 3516</li>
+      </ul>
     </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <p>
+      <h4>
+        Technologies
+      </h4>
+      <ul id="tech">
+        <li>HTML - Some</li>
+        <li>CSS - Some</li>
+        <li>Java - A Lot</li>
+        <li>JavaScript - Some</li>
+        <li>Ruby - None</li>
+        <li>Python - Some</li>
+        <li>Unit Testing - A Lot</li>
+      </ul>
+    </p>
   </body>
 </html>
