@@ -1,0 +1,21 @@
+body {
+  background-color: #F0E5A8;
+  font-family: "Oxygen", sans-serif;
+  font-size: 18px;
+}
+h1 {
+  color: #A35288;
+  text-align: center;
+}
+#p1 {
+  color: #F090D0;
+  text-align: left;
+}
+#p2 {
+  color: #78ECF0;
+  text-align: center;
+}
+#p3 {
+  color: #5AA1A3;
+    text-align: right;
+}
