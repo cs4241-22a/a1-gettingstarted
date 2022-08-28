@@ -1,6 +1,6 @@
 ## Assignment 1
 Abby Hyde
-http://a1-charlieroberts.glitch.me (will be changed in next commit)
+https://a1-abbyhyde.glitch.me
 
 This project shows basic HTML, CSS, and JS elements through a website about myself. 
 
