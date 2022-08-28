@@ -44,14 +44,17 @@
       <li>WPI</li>
     </ul>
   <button onclick="ranColor()">Change Name Color!</button>
-  </body>
+  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">click me!</a>
+  <q>this is a quote!</q>
+  <input type="text" value="this textfield does nothing!">
+  <img src="colorPallet.PNG">
+</body>
 </html>
 
 <script>
-  const colors = ['#EDE89A', '#F7B5A1', '#B59DE0', '#A1F7E2', '#F0EFD8'];
+  const colors = ['#EDE89A', '#F7B5A1', '#A1F7E2', '#F0EFD8'];
   function ranColor(){
     console.log()
-    document.getElementById("name").style.color = "RED";
-    //Math.floor(Math.random() * colors.length);
+    document.getElementById("name").style.color = colors[Math.floor(Math.random() * colors.length)];
   }
 </script>

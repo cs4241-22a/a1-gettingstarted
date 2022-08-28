@@ -1,8 +1,7 @@
 body {
     background-color: #B59DE0;
-    
   }
-  h1{
+  #name{
     font-family: "Rubik Maze", sans-serif;
     color: #A1F7E2;
   }
@@ -14,4 +13,7 @@ body {
   }
   li {
     color: #F0EFD8;
+  }
+  button {
+    padding:15px;
   }
