@@ -1,5 +1,6 @@
 body {
     background-color: rgb(207, 199, 199);
+    margin: 20px;
   }
   h1 {
     color: white;
@@ -9,6 +10,20 @@ body {
     margin: 50px;
     text-align: center
   }
+
   p {
-    color: red;
+    color: black;
+  }
+  
+  table {
+    font-family: arial, sans-serif;
+    border:1px solid black;
+    /*border-collapse: collapse;*/
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
   }
