@@ -13,11 +13,11 @@ This project shows introductory uses of JavaScript, HTML, and CSS to display inf
     - added a rectangle at the top of the screen highlighting the title of the page
 - **Add a simple JavaScript animation to the page**: I used a JavaScript function to declare an array of four colors and every second, change the color of the rectangle at the top of the screen. This creates and animation where the colors flash on the screen repeatedly.
 - **Experiment with other HTML tags**:
-    - <link> used to link a Google font and an external CSS style sheet
-    - <script> used to add a JavaScript function
-    - <div> used to create a rectangle and used in the JavaScript function to grab the element and change it's color
-    -<b> used to bold the text "class of 2023"
-    -<u> used to underline the text "Working Experience"
+    - "link" used to link a Google font and an external CSS style sheet
+    - "script" used to add a JavaScript function
+    - "div" used to create a rectangle and used in the JavaScript function to grab the element and change it's color
+    - "b" used to bold the text "class of 2023"
+    - "u" used to underline the text "Working Experience"
 
 ### Design Achievements
 - **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
