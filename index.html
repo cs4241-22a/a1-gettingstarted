@@ -104,14 +104,12 @@
   </div>  
   </div>
     <script>
-      var offsets = document.getElementById("midbox").getBoundingClientRect(); //next 4 lines get sides of yellow box
+      var boundingBox = document.getElementById("midbox");
+      var offsets = boundingBox.getBoundingClientRect(); //next 4 lines get sides of yellow box
       var x1 = offsets.left;
       var y1 = offsets.top;
       var x2 = offsets.right;
       var y2 = offsets.bottom;
-      var bgoffsets = document.getElementById("background").getBoundingClientRect(); //get side of pink box
-      var bgx1 = bgoffsets.left;
-      var bgx2 = bgoffsets.right;
       var logo = document.getElementById("logo");
       var posx = offsets.left; //x and y pos of dvd logo
       var posy = offsets.top;
@@ -124,20 +122,17 @@
       var up = true;
       function move() {
         //check for window changes
-        offsets = document.getElementById("midbox").getBoundingClientRect();
+        offsets = boundingBox.getBoundingClientRect();
         x1 = offsets.left;
         y1 = offsets.top;
         x2 = offsets.right;
         y2 = offsets.bottom;
-        bgoffsets = document.getElementById("background").getBoundingClientRect(); //get side of pink box
-        bgx1 = bgoffsets.left;
-        bgx2 = bgoffsets.right;
         //
         logo.style.left = posx + "px";
         logo.style.top = posy + "px";
         posx += i;
         posy += j;
-        if (posx + (x1-bgx1-22) <= x1){
+        if (posx <= x1){ 
           i = speed;
           posx += speed;
         }
@@ -145,11 +140,11 @@
           j = speed;
           posy += speed;
         }
-        if (posx + 80 >= bgx2 - 20){ // 80 image width (extra 2px for div border)
+        if (posx >= x2 - 82){ // 80 image width (extra 2px for div border)
           i = -speed;
           posx -= speed;
         }
-        if (posy + (y1-offsety) + 40 >= y2){ // 38 image height (extra 2px for div border)
+        if (posy + (y1-offsety) >= y2 - 40){ // 38 image height (extra 2px for div border)
           j = -speed;
           posy -= speed;
         }

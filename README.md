@@ -30,7 +30,7 @@ Added rules for body, h1, h2, h3, p, table, th, td, ul, div, and img. These rule
     - box-shadow
 
 - **Simple Javascript Animation**: 
-Added an animation that bounces an image around a bounding box that resizes with your window. Also aded animation with rotating sticker.
+Added an animation that bounces an image around a bounding box that resizes with your window. Also added animation with rotating sticker.
 
 - **Other HTML tags**: 
 Added table, th, tr, td, script, div, and img.
