@@ -9,11 +9,11 @@ html,
   h1{
       color: white;
       font-size: 4rem;
-      top: -20px;
+      top: 10px;
       text-align: center;
     }
   section {
-      height: 15vh;
+      height: 25vh;
     }
     
   .tag {
@@ -42,7 +42,7 @@ html,
     
   
 	.blink-bg{
-		color: #fff;
+		color: #ffffff;
 		padding: 14px;
 		display: inline-flexbox;
 		border-radius: 5px;
@@ -63,6 +63,8 @@ html,
 
   p {
     text-align: center;
+    margin-bottom: 15pt;
+    margin-top: 1pt;
   }
 
   p1{
@@ -78,8 +80,9 @@ html,
   }
 
   .name{
-    color: #fff;
+    color: #ffffff;
     font-family: 'Pacifico', cursive;
+    padding-bottom: 0pt;
   }
 
   
