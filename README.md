@@ -15,4 +15,4 @@ This project shows a little about me and my experience
 ### Design Achievements
 - **Used the Lobster Font from Google Fonts**: I used Lobster as the font for the header text in my site.
 - **Used the following color palette from Coolors**:
-
+![Assignment 1 Color Palette](https://user-images.githubusercontent.com/74080772/187084022-c92f48ce-2d01-4d33-94c3-6e4e1c35a85d.png)
