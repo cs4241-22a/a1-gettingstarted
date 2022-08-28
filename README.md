@@ -30,5 +30,5 @@ This project shows basic information about me.
     * #E9C46A - Card Background and Header Color
     * #E76F51 - Button Color
     * #F4A261 - Table Border/Hover Color
-    * 2A9D8F - Card Border Color
+    * #2A9D8F - Card Border Color
 
