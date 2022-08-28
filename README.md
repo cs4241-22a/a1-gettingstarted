@@ -1,5 +1,5 @@
 Jin Ryoul Kim
-<insert glitch url>
+https://a1-jrkim-wpi.glitch.me
 
 ## Technical Achievements
 - CSS Styel: 1-Background color, 2-text color, 3-btn size, 4-font on name, 5-spacing on name
