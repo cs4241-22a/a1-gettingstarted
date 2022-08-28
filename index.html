@@ -1,28 +1,71 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
+
+<head>
+  <title>CS4241 Assignment 1</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="mainbody">
+
+  <h1>Information about Kawane Moene</h1>
+  <div id="jsmove">
+    <img src="https://cdn.glitch.global/4cc130da-b174-4ab1-9702-d949e58112b1/wpi.png?v=1661709162768" alt="WPI quad">
+    <p id="lange">Hello and welcome!</p>
     <p>
-      [Self introduction]
+      Hello everyone! I am Kawane Moene! Currently taking CS4241 and I can't wait to study how to build websites!
     </p>
     <p>
-      [Major and other information]
+      <a href="https://www.wpi.edu/academics/departments/interactive-media-game-development">IMGD Major</a>
     </p>
     <p>
-      [Other things]
+      I like to create mini games but they all feels like tech demos instead of fully featured games...
     </p>
 
     <h2>Experience</h2>
-    <p>
-      Working experience
+    <p class="csc">
+      CS Courses
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>Intro to OOP</li>
+      <li>Discrete Math</li>
+      <li>Databases</li>
+      <li>Networks</li>
+      <li>HCI</li>
     </ul>
-  </body>
+    <p class="csc">
+      Language Experience
+    </p>
+    <ul>
+      <li>C#</li>
+      <li>C</li>
+      <li>Java</li>
+      <li>Intro JavaScript</li>
+      <li>Intro CSS</li>
+      <li>Intro Kotlin</li>
+    </ul>
+  </div>
+</body>
+<script>
+  let element = document.getElementById("jsmove")
+  let bodyelement = document.getElementById("mainbody")
+  let rightmargin = element.style.marginRight
+  let flag = 5;
+  let pixel = -400.0
+  let deltapix = 0
+
+  setInterval(() => {
+    if (pixel <= 0) {
+      element.style.marginLeft = pixel + "px";
+      element.style.marginRight = (rightmargin - pixel) + "px";
+      pixel += deltapix;
+      deltapix += 0.4
+    } else {
+      element.style.marginLeft = 0 + "px";
+    }
+  }, 10);
+</script>
+
 </html>

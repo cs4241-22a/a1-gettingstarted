@@ -1,6 +1,6 @@
-Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
-===
+Kawane Moene
 
+<<<<<<< Updated upstream
 *DUE: Monday, August 29th by 11:59 AM (before the start of class!)*  
 
 This assignment is a "warm-up" exercise. 
@@ -89,12 +89,16 @@ Sample Readme (delete the above when you're ready to submit, and modify the text
 ---
 
 Charlie Roberts
+=======
+>>>>>>> Stashed changes
 http://a1-charlieroberts.glitch.me
 
-This project shows ...
+This project shows my basic information in WPI. It really looks like an old WPI webpage which is what I was looking for.
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
-
+- **Styled page with CSS**: Added background colour and text colour. Added margin to body.
+- **other tags**: Added an image of WPI quad. Used `div` `link` `img` `a`
+- **Added Javascript animation**
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Used Adobe to created a colour set**
+- **Used the Roboto Font from Google Fonts**: I used IBM Plex Mono as the font for the list item text in my site.
