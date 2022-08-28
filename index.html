@@ -22,6 +22,7 @@
       <img src="https://cdn.discordapp.com/attachments/121797037942374400/1013124217748852766/unity.jpg" alt="My Unity Scene" width="650" height="300" id="mainimg">
       <img src="https://cdn.discordapp.com/attachments/121797037942374400/1013176039897305138/DVD_logo-MARK-80.png" alt="Bouncing logo" width="80" height="38" id="logo">
     </div>
+    <div id = "alignbox">
       <h2>
         WPI CS Experience
       </h2>
@@ -100,43 +101,59 @@
       </ul>
     </div>
     <img src="https://cdn.discordapp.com/attachments/121797037942374400/1013266086793330748/arcade_machine.png" alt="Arcade cabinet" width="300" height="371" id="arcade">
-    </div>
+  </div>  
+  </div>
     <script>
-      var offsets = document.getElementById("midbox").getBoundingClientRect();
+      var offsets = document.getElementById("midbox").getBoundingClientRect(); //next 4 lines get sides of yellow box
       var x1 = offsets.left;
       var y1 = offsets.top;
       var x2 = offsets.right;
       var y2 = offsets.bottom;
+      var bgoffsets = document.getElementById("background").getBoundingClientRect(); //get side of pink box
+      var bgx1 = bgoffsets.left;
+      var bgx2 = bgoffsets.right;
       var logo = document.getElementById("logo");
-      var posx = offsets.left;
+      var posx = offsets.left; //x and y pos of dvd logo
       var posy = offsets.top;
+      const offsetx = x1;//these two offsets are to sync up the static posx posy coordinate system with the scrolling page
+      const offsety = y1; //they keep track of the difference between the original position of x1 and y1, so we can see how the scroll or zoom affects the values.
       const speed = (offsets.bottom - offsets.top)/200;
       var i = speed;
       var j = speed;
       var timer = 0;
       var up = true;
       function move() {
+        //check for window changes
         offsets = document.getElementById("midbox").getBoundingClientRect();
         x1 = offsets.left;
         y1 = offsets.top;
         x2 = offsets.right;
         y2 = offsets.bottom;
+        bgoffsets = document.getElementById("background").getBoundingClientRect(); //get side of pink box
+        bgx1 = bgoffsets.left;
+        bgx2 = bgoffsets.right;
+        //
         logo.style.left = posx + "px";
         logo.style.top = posy + "px";
         posx += i;
         posy += j;
-        if (posx <= x1){
+        if (posx + (x1-bgx1-22) <= x1){
           i = speed;
+          posx += speed;
         }
-        if (posy <= y1){
+        if (posy + (y1-offsety) <= y1){
           j = speed;
+          posy += speed;
         }
-        if (posx + 80 >= x2){
+        if (posx + 80 >= bgx2 - 20){ // 80 image width (extra 2px for div border)
           i = -speed;
+          posx -= speed;
         }
-        if (posy + 38 >= y2){
+        if (posy + (y1-offsety) + 40 >= y2){ // 38 image height (extra 2px for div border)
           j = -speed;
+          posy -= speed;
         }
+        //arcade cabinet
         timer += 20;
         if (timer >= 1000){
           timer = 0;

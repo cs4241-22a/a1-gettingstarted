@@ -23,6 +23,7 @@ Added rules for body, h1, h2, h3, p, table, th, td, ul, div, and img. These rule
     - left
     - width
     - min-width
+    - max-width
     - height
     - min-height
     - opacity

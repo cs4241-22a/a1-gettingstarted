@@ -1,6 +1,7 @@
 body {
   background-color: rgb(238, 238, 238);
   font-family: "Arimo";
+  padding: 20px;
 }
 
 h1 {
@@ -38,18 +39,22 @@ ul {
 }
 
 #background {
-  margin: 20px 10px 20px 10px;
-  padding: 10px 10px 10px 10px;
+  margin: 0px auto;
+  padding: 20px;
   background-color: #F3ADE3;
   border: 2px solid #A66597;
+  max-width: 1220px;
+  min-width: 740px;
 }
 
 #midbox {
-  margin: 10px 10px 10px 10px;
-  padding: 10px 20px 10px 20px;
+  margin: 0px auto;
+  padding: 10px 20px;
   background-color: #F2EBC4;
   border: 2px solid #A66597;
   box-shadow: 5px 10px rgba(0, 0, 0, 0.329);
+  max-width: 1200px;
+  min-width: 700px;
 }
 
 #experience {
@@ -60,6 +65,11 @@ ul {
   border: 2px solid #6DA6A5;
   background-color: #94F2F0;
   box-shadow: 5px 10px rgba(0, 0, 0, 0.329);
+}
+
+#alignbox{
+  margin: 0px auto;
+  max-width: 800px;
 }
 
 #mainimg {
