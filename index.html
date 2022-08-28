@@ -3,26 +3,49 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
+    <link href="./main.css" rel="stylesheet"/>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about Dillon McCarthy</h1>
     <p>
-      [Self introduction]
+      My name is Dillon and I am from NH. I enjoy staying active and playing basketball or football in my free time, or going kayaking or hiking. I also enjoy playing card games and board games with friends and family.
     </p>
     <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
+      I am in the <b>class of 2023</b> here at WPI as a Computer Science major with an Electrical and Computer Engineering minor. The following are some of the computer science courses I have taken so far:
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>Machine Learning</li>
+      <li>Introduction to Artifical Intelligence</li>
+      <li>Operating Systems</li>
+      <li>Software Engineering</li>
+      <li>Algorithms</li>
     </ul>
+    <p>
+      I am looking forward to senior year and excited about the opportunities it will bring!
+    </p>
+
+    <h2 style="font-family: 'Courier New', Courier, monospace">Experience</h2>
+    <p>
+      <u>Working experience</u>
+    </p>
+    <ul>
+      <li>HTML - a little</li>
+      <li>CSS - a little</li>
+      <li>Java - a lot</li>
+      <li>JavaScript - none</li>
+      <li>Ruby - none</li>
+      <li>Python - a lot</li>
+      <li>unit testing - a little</li>
+    </ul>
+    <script>
+      let i = 0;
+      function changeColor() {
+        const colors = ["#A3FFA5", "#99E8B9", "#99DAE8", "#A8D0FF"];
+        document.getElementById("rectangle").style.background = colors[i++ % 4];
+      }
+      setInterval(changeColor, 1000);
+    </script>
+    <div id="rectangle"></div>
   </body>
 </html>
