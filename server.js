@@ -11,6 +11,9 @@ const server = http.createServer( function( request,response ) {
       break
     default:
       sendFile( response, url )
+    case '/Herb Ellis & Remo Palmier - A1 Windflower (1978).mp3' :
+        sendFile( response, 'Herb Ellis & Remo Palmier - A1 Windflower (1978).mp3')
+      break
   }
 })
 
