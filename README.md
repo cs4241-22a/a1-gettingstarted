@@ -35,3 +35,5 @@ I used Roboto at the 100 font weight for my primary font. The import code can be
 #### Use a Color Palette
 
 I used **Lyft’s ColorBox** to generate a color palette for my page (approved on Discord). This color palette can be seen below and is specifically utilized in _experience.html_. Because the theme of my page is black and white, it was difficult to find a good place to use it. I eventually decided to use the colors on my skill graph on this page and it gives it a nice look.
+
+![Alt text](./palette.png "Color Palette")
