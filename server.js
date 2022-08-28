@@ -16,8 +16,11 @@ const server = http.createServer(function( request,response ) {
     case '/main.js':
       sendFile(response, 'main.js')
       break
-    case '/img.jpg':
-      sendFile(response, 'img.jpg')
+    case '/myGif.gif':
+      sendFile(response, 'myGif.gif')
+      break
+    case '/colorPallete.jpg':
+      sendFile(response, 'colorPallete.jpg')
       break
     default:
       response.end('404 Error: File Not Found' )
@@ -28,7 +31,6 @@ server.listen( process.env.PORT || port )
 
 const sendFile = function( response, filename ) {
    fs.readFile( filename, function( err, content ) {
-     file = content
      response.end( content, 'utf-8' )
    })
 }

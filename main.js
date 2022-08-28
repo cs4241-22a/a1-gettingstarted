@@ -1,47 +1,26 @@
-/*
-TODO:
-*Technical* 
-1. (max 5 points) Style your page using CSS. Each style rule you apply 
-    will get you 1 extra point for a maximum of 5 points. 
-    Be sure to describe your style rules in your README.
-2. (5 points) Add a simple JavaScript animation to the page.
-
-      -ADD Animation for sin wave and stuff after HEAD
-
-3. (max 5 points) Experiment with other HTML tags 
-    (links, images, tables etc.) Each extra tag you use will get 
-    you 1 extra point for a maximum of 5 points. 
+var canvas, ctx, fadeIntervalTime, sinIntervalID, currentX, currentY, radius, startTime,deltaRadius, fadebubbleIntervalID, bubbleIntervalID, sinIntervalTime, bubbleIntervalTime;
 
 
-*Design*
-1. (10 points) Create a color palette using 
-    [color.adobe.com](https://color.adobe.com). 
-    Use all the colors in the palette in your webpage by 
-    implementing the appropriate CSS. Add a small screenshot 
-    of the color wheel for your color palette to your repo.
-
-    -Mint Works well, mint, white and blackbg
-
-2. (5 points) Use a font from [Goolge Fonts](https://fonts.google.com) 
-    in your website. 
-    - (DONE), loaded font and applied to head
-    */
-
-var canvas, ctx, fadeIntervalTime, sinIntervalID, currentX, currentY, radius, startTime,deltaRadius, fadebubbleIntervalID, bubbleIntervalID, intervalTime;
-
-
-var animationChangeTime = 3000; // time in ms
+var animationChangeTime = 4000; // time in ms
 const lineWidth = 3; 
 const colors = ["#47E6AA","#E65E94","#E67F6A","#C553E6","#BCE675"];
 var cicleCenters = [];
 var colorIndex = -1;
 deltaRadius = 3
-intervalTime = 40; //in ms
+sinIntervalTime = 90; //in ms
+bubbleIntervalTime = 30;
 fadeIntervalTime = 10;
+
+const toggleSwitch = document.getElementById("themeToggle");
+
+toggleSwitch.addEventListener('change', ()=>{
+    // elements that need to be toggled
+    document.body.classList.toggle('light-theme');
+    document.getElementById('techExpTable').classList.toggle('light-theme');
+  })
 
 function animate(){
     startTime = Date.now();
-  
     canvas = document.getElementById("myCanvas");
     // getting real canvas height and width
     canvas.width = canvas.getBoundingClientRect().width;
@@ -49,16 +28,8 @@ function animate(){
     ctx = canvas.getContext('2d');
     ctx.lineWidth = lineWidth;
     currentX = 0; currentY = canvas.height/2;
-    sinIntervalID =  setInterval(drawSin,intervalTime);
-
-    
-    
-    //initBubbleDraw();
-    
+    sinIntervalID =  setInterval(drawSin,sinIntervalTime);  
 }
-
-
-
 
 function getYSin(x){
     return canvas.height/2 + (canvas.height/2 - 4) * Math.sin(x/10);
@@ -84,7 +55,7 @@ function drawSin(){
             
             initBubbleDraw();
             startTime =  Date.now();
-            bubbleIntervalID = setInterval(drawExpandingBubbles,intervalTime);
+            bubbleIntervalID = setInterval(drawExpandingBubbles,bubbleIntervalTime);
             return;
         }
         // else repeat animation loop back
@@ -108,7 +79,6 @@ function drawSin(){
 function randomInt(min, max) {
     return Math.floor(Math.random() * (max - min) ) + min;
 }
-
 
 // second animation
 function drawExpandingBubbles(){
@@ -138,7 +108,7 @@ function fadeBubble(){
         clearInterval(fadebubbleIntervalID);
         ctx.clearRect(0,0,canvas.width,canvas.height);
         startTime =  Date.now();
-        sinIntervalID =  setInterval(drawSin,intervalTime);
+        sinIntervalID =  setInterval(drawSin,sinIntervalTime);
         return;
     } 
     ctx.beginPath();

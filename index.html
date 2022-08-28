@@ -7,11 +7,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9c56610553.js" crossorigin="anonymous"></script>
     <title>CS4241-A1-sppradhan</title>
     <meta charset="utf-8">
   </head>
   <body>
-    <h1>Information about <span class="headingName">Siddhartha Pradhan</span></h1>
+    <div class="headingFlexContainer">
+      <h1>Information about <span class="headingName">Siddhartha Pradhan</span></h1>
+      <div>
+        <input type="checkbox" class="themeToggle" id="themeToggle">
+        <label for="themeToggle" class="label">
+          <i class='fas fa-sun'></i>
+          <i class="fas fa-moon"></i>
+        
+        <div class='centerBall'></div>
+      </label>
+    </div>
+  </div>
     <canvas id="myCanvas"></canvas>
     <p>
       Hi! I am Siddhartha, I usually go by Sid. I am an international student, hailing from Kathmandu, Nepal.
@@ -19,9 +31,10 @@
     <p>
       I have two majors, <span class="pHighlight"> Computer Science </span> and <span class="pHighlight"> Data Science. </span>
     </p>
+    <br>
     <div class="flexContainer">
       <div>
-    <h2 class="headingTitle"> Classes I have taken: </h2>
+    <h2 class="headingTitle" style="text-decoration: underline;"> Classes I have taken: </h2>
     <ul class="ulCircle">
       <li class="liIndented">Algorithms</li>
       <li class="liIndented">Foundations</li>
@@ -34,14 +47,15 @@
       <li class="liIndented">OOD Concepts</li>
     </ul>
   </div>
-    <img src="img.jpg" alt="CoolImageLOL">
+  <div><img class="gif" src="myGif.gif" alt="CoolGifLOL"> </div>
 
   </div>
-    <h2 class="headingTitle">Experience</h2>
+  <br>
+    <h2 class="headingTitle" style="text-decoration: underline;">Experience:</h2>
     <div class="flexContainer">
       <div class="techExp">
-    <h3 class="paraTitle">Technical experience:</h3>
-    <table class="techExpTable">
+    <h3 class="paraTitle" style="text-align: center;">Technical experience:</h3>
+    <table class="techExpTable" id="techExpTable">
       <tr class="tableColName">
           <th>Skill</th>
           <th>Experience Level</th>
@@ -78,7 +92,7 @@
     </table>
   </div>
   <div class="workExp">
-    <h3 class="paraTitle">Work experience:</h3>
+    <h3 class="paraTitle" style="text-align: center;">Work experience:</h3>
     <ul>
       <li class="liIndented">Reseach Assistant (MAPLE LAP WPI) </li>
       <li class="liIndented"><a href="https://www.youtube.com/watch?v=H8ZH_mkfPUY&ab_channel=EderKFCard">Super-Top-Secret Project I am working on</a></li>
