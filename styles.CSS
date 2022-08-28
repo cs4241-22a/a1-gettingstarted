@@ -1,8 +1,13 @@
 body {
-    background-color: powderblue;
+    background-color: rgb(207, 199, 199);
   }
   h1 {
-    color: blue;
+    color: white;
+    background-color: red;
+    padding: 30px;
+    border: 2px solid rgb(235, 41, 225);
+    margin: 50px;
+    text-align: center
   }
   p {
     color: red;
