@@ -19,6 +19,9 @@ const server = http.createServer( function( request,response ) {
     case '/https://fonts.googleapis.com/css?family=Quicksand':
       sendFile(response, 'https://fonts.googleapis.com/css?family=Quicksand')
       break;
+    case '/server.js':
+      sendFile(response, 'server.js')
+      break;
     default:
       response.end( '404 Error: File Not Found' )
   }
@@ -32,3 +35,24 @@ const sendFile = function( response, filename ) {
      response.end( content, 'utf-8' )
    })
 }
+
+
+function welcomeText(id)
+{
+  const text = ["W", "E", "L", "C", "O", "M", "E", " ", "T", "O", " ", "M", "Y", " ", "P", "A", "G", "E", "!"];
+  i=0;
+
+  function loop()
+  {
+    setTimeout(function() {
+      id.innerHTML = id.innerHTML + text[i]; i++; 
+      if(i<19) {
+        loop();
+      }
+    }, 250)
+  }
+
+  loop();
+}
+
+

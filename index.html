@@ -5,8 +5,9 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <script src="server.js"></script>
   </head>
-  <body>
+  <body onload="welcomeText(welcomeAnimation)">
     <div class="header">
     <h1>Information about Reagan Brunelle</h1>
     <p>
@@ -18,11 +19,12 @@
   </div>
     <div>
       <img src="profile.jpg" alt="Reagan Brunelle" style="width:175px;">
+      <span id="welcomeAnimation">Hello! </span>
     </div>    
     <a href="https://www.linkedin.com/in/reagan-brunelle-39186a1a3/">Check out my linkedin page!</a>
     <blockquote>Highly motivated, coachable Senior with internship experience and practice with various programming languages</blockquote>
 
-    <h2>CS Courses By Year</h2>
+    <h2><span class="section">CS Courses By Year</span></h2>
     <table>
     <tr><td>Freshmen</td><td>Intro to Program Design, Object-Oriented Design Concepts, Systems Programming Concepts, Intro to Machine Organization and Assembly Language</td></tr>
     <tr><td>Sophomore</td><td>Operating Systems, Discrete Math, Algorithms, Foundations of CS, Software Engineering</td></tr>
@@ -31,12 +33,12 @@
     </table>
     
     <div class="experience">
-    <h2>Experience</h2>
+    <h2><span class="section">Experience</span></h2>
     <p>
       Education and Work
     </p>
     <ul>
-      <li>CommScope Inc.</li>
+      <li><span class="highlight">CommScope Inc.</span></li>
       <li>WPI</li>
     </ul>
     <p>
@@ -47,8 +49,8 @@
       <li>CSS: some</li>
       <li>JavaScript: none</li>
       <li>Ruby: none</li>
-      <li>Java: a lot</li>
-      <li>Python: a lot</li>
+      <li><span class="highlight">Java: a lot</span></li>
+      <li><span class="highlight">Python: a lot</span></li>
       <li>Unit testing: some</li>
     </ul>
   </div>

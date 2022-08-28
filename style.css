@@ -28,10 +28,14 @@ div.header {
     position: relative;
 }
 
-div.experience {
+span.section {
     background-color: #dea80d;
-    white-space: nowrap;
-    overflow-x: hidden;
-    position: relative;
-    margin-top: 40px;
+}
+
+span.highlight {
+    background-color: #74f51b;
+}
+
+#welcomeAnimation {
+    font-size: 25px;
 }
