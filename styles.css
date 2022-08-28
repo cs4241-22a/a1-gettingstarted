@@ -7,19 +7,23 @@ body {
     margin: 5rem 25vw;
 }
 
-h1 {
+h1, h2 {
     color: #FFE921;
 }
-h2 {
-    color: #FFE921;
-}
+
 div {
     background-color: #5730E6;
     border: 2px solid #FFE921;
     border-radius: 2rem;
     padding: 2rem;
+ 
 }
 
 p {
     color: #FFE921;
+}
+
+img {
+    height: 35rem;
+    border-radius: 2rem;
 }
