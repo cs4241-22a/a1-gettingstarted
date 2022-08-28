@@ -16,4 +16,4 @@ three different colors
 ### Design Achievements
 - **#1 Color Palette: Color Wheel is saved as MasonPowellColorWheel.PNG, I used the colors #81A1C1, #5E81AC, #88C0D0,
 #ECEFF4 for text and #2E3440 for the background
-- **#2 Used the Roboto Font from Google Fonts**: I used Unbuntu as the font for the primary copy text in my site.
+- **#2 Used the Roboto Font from Google Fonts**: I used Ubuntu as the font for the primary copy text in my site.
