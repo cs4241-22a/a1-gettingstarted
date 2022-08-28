@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  height: 100vh;
+  width: 100%;
+  background-color: #DEB8D4;
+}
+
+.leftheader{
+  font-family: Sacramento;
+  font-size: 75px;
+  padding-left: 25px;
+  color: #EBDD96;
+  animation: colorRotate 10s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+  from {
+    color: #EBDD96;
+  }
+  10% {
+    color: #EB7FD0;
+  }
+  50% {
+    color: #67EBE9;
+  }
+  75% {
+    color: #4D9E9D;
+  }
+  100% {
+    color: #EBDD96;
+  }
+}
+
+.rightheader{
+  font-family: Alice;
+  font-size: 27px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  color: #4D9E9D;
+}
+
+.underline1{
+  width: 1000;
+  height: 10px;
+  background-color: #EB7FD0;
+  border: none;
+}
+
+.underline2{
+  width: 1000;
+  height: 10px;
+  background-color: #4D9E9D;
+  border: none;
+}
+
+.underline3{
+  width: 1000;
+  height: 10px;
+  background-color: #EBDD96;
+  border: none;
+}
+
+.underline4{
+  width: 1000;
+  height: 10px;
+  background-color: #67EBE9;
+  border: none;
+}
+
+.aboutme{
+  font-family: Alice;
+  font-size: 25px;
+  color: #4D9E9D;
+  padding-left: 15px;
+
+}
+
+.cscourses{
+  font-family: Alice;
+  font-size: 25px;
+  color: #4D9E9D;
+  padding-left: 15px;
+  padding-top: 25px;
+}
+
+.technology{
+  font-family: Alice;
+  font-size: 25px;
+  color: #4D9E9D;
+  padding-left: 15px;
+  padding-top: 25px;
+}
+
+
+
+
+
+
