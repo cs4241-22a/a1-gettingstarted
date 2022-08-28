@@ -35,7 +35,7 @@ body::-webkit-scrollbar {
 .app-container {
     display: flex;
     flex-direction: row;
-    width: 200vw;
+    width: 300vw;
     transform: rotate(90deg), translateY(-100vh);
     transform-origin: top left;
     transition: transform 2s ease;
@@ -43,6 +43,10 @@ body::-webkit-scrollbar {
 
 .app-container.panned {
     transform: translateX(-100vw);
+}
+
+.app-container.panned-far {
+    transform: translateX(-200vw);
 }
 
 .slide {
@@ -209,6 +213,10 @@ h1 {
     transform: scale(1.2);
 }
 
+.back-arrow.hidden {
+    display: none;
+}
+
 .content-page .left {
     flex: 2;
     display: flex;
@@ -289,3 +297,11 @@ h1 {
         transform: rotate(-15deg);
     }
 }  
+
+.music-page {
+    background: green;
+    background-position-y: bottom;
+    background-position-x: right;
+    display: flex;
+    flex-direction: row;
+}

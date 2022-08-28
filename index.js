@@ -64,8 +64,28 @@ function startMusic() {
         PTV.play();
         musicPlaying = true;
         document.getElementById("music-hint").innerHTML = "click to change music";
-        document.getElementById("music-button").classList.add("playing");
+        const musicButton = document.getElementById("music-button");
+        musicButton.classList.add("playing");
+        musicButton.addEventListener("mousedown", () => {        
+            document.getElementById("app").classList.add("panned-far");
+            clearContentPage();
+        })
     }
+    setUpMusicPage();
+}
+
+function clearContentPage() {
+    contentPageTitle.innerHTML = "";
+    contentPageSubtitle.innerHTML = "";
+    contentPageParagraph.innerHTML = "";
+    backArrow.classList.add("hidden");
+}
+
+function setUpMusicPage() {
+    document.getElementById("music-back-arrow").addEventListener("mousedown", () => {
+        document.getElementById("app").classList.remove("panned-far");
+        backArrow.classList.remove("hidden");
+    })
 }
 
 /**
