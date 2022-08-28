@@ -3,26 +3,108 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <script>
+      window.onload = function() {
+        const doccolors = ['blue', 'lightpurple']
+        let index = 0
+        setInterval(
+          function() {
+          document.getElementsByTagName("p")[0].style="color:" + doccolors[index++ % 2]
+          },
+          1000
+        )
+      }
+    </script>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <a name="top"></a>
+    <h1>Information about Frank McShan</h1>
     <p>
-      [Self introduction]
+      I am a member of the class of 2023.
     </p>
     <p>
-      [Major and other information]
+      I am majoring in Computer Science and
+      minoring in Chinese Studies at <a href="https://wpi.edu">WPI</a>.
     </p>
     <p>
-      [Other things]
+      Previous Computer Science Courses
     </p>
+    <ul>
+      <li>CS 1101</li>
+      <li>CS 2011</li>
+      <li>CS 2022</li>
+      <li>CS 2102</li>
+      <li>CS 2223</li>
+      <li>CS 2303</li>
+      <li>CS 3013</li>
+      <li>CS 3043</li>
+      <li>CS 3133</li>
+      <li>CS 3431</li>
+      <li>CS 3733</li>
+      <li>CS 4233</li>
+      <li>CS 4341</li>
+      <li>CS 4432</li>
+    </ul>
 
     <h2>Experience</h2>
+
+    <p>
+      Experience With Technologies/Methods
+    </p>
+
+    <table border="1">
+      <tr>
+        <th>Technology/Method</th>
+        <th>Experience Level</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td>A lot</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>Ruby</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>Unit Testing</td>
+        <td>Some</td>
+      </tr>
+    </table>
+
     <p>
       Working experience
     </p>
     <ul>
-      <li>IBM/Rational</li>
+      <li>iRobot</li>
       <li>WPI</li>
     </ul>
+
+    <img width="400" height="300" src="https://www.wpi.edu/sites/default/files/inline-image/Offices/Marketing-Communications/WPI_Inst_Prim_FulClr.png"
+    alt="wpi.edu">
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/RttHBjXGiWA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <button>
+      <a href="#top">Back to Top</a>
+    </button>
   </body>
 </html>
+

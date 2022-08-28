@@ -1,0 +1,19 @@
+h1 {
+    color: rgb(122, 127, 230);
+    font-family: "Montserrat", serif;
+    font-size: 150%;
+    border: darkslategray;
+    margin-bottom: 1%;
+}
+h2 {
+    color: rgb(228, 179, 255);
+}
+p {
+    color: rgb(157, 111, 222);
+}
+li {
+    color: rgb(201, 216, 255);
+}
+table {
+    border-color: rgb(205, 196, 245);
+}
