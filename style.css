@@ -1,0 +1,52 @@
+/*
+Colour designed from Adobe:
+#450606
+#CE5050
+#C4122E
+#656565
+#910D0D
+*/
+
+html, body {
+	min-height: 100%;
+	background: #ffffff;
+	color: #000;
+}
+
+body {
+	font-size: 1.3rem;
+	text-rendering: optimizeLegibility;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: #ffffff;
+}
+
+h1 {
+    background-color: #C4122E;
+    color: #ffffff;
+}
+
+h2 {
+    background-color: #656565;
+    color: #ffffff;
+}
+li {
+    font-family: "IBM Plex Mono";
+    color: #CE5050;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.csc {
+    color: #450606;
+}
+
+#lange {
+    color: #910D0D;
+}
