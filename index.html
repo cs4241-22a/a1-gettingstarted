@@ -2,27 +2,59 @@
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik+Maze">
     <meta charset="utf-8">
-  </head>
+  </head>    
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1 id="name">JR Kim (Jin Ryoul Kim)</h1>
+    <h2>
+      Information About Me
+    </h2>
     <p>
-      [Self introduction]
+      Hi, I'm JR, a class of 2023 majoring in CS.
     </p>
     <p>
-      [Major and other information]
     </p>
     <p>
-      [Other things]
+      Technologies and Methods (none, some, lot)
+      <ul>
+        <li>HTML: some</li>
+        <li>CSS: some</li>
+        <li>Java: lot </li>
+        <li>JavaScript/TypeScript: lot</li>
+        <li>Ruby: none</li>
+        <li>Python: lot</li>
+        <li>Unit Testing: none</li>
+      </ul>
     </p>
 
     <h2>Experience</h2>
     <p>
-      Working experience
+      Classes on WPI<br>
+      Object Oriented Design Concept, Algorithms, Systems Programming Concept,<br>
+      Operating Systems, Database Systems (I, II), Software Engineering,<br>
+      Artificial Intelligence, Machine Learning
+    </p>
+    <p>
+      Work Experience
     </p>
     <ul>
-      <li>IBM/Rational</li>
+      <li>Internship in Assistments: Etrials</li>
       <li>WPI</li>
     </ul>
-  </body>
+  <button onclick="ranColor()">Change Name Color!</button>
+  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">click me!</a>
+  <q>this is a quote!</q>
+  <input type="text" value="this textfield does nothing!">
+  <img src="colorPallet.PNG">
+</body>
 </html>
+
+<script>
+  const colors = ['#EDE89A', '#F7B5A1', '#A1F7E2', '#F0EFD8'];
+  function ranColor(){
+    console.log()
+    document.getElementById("name").style.color = colors[Math.floor(Math.random() * colors.length)];
+  }
+</script>
