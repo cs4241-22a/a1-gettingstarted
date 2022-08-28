@@ -3,26 +3,119 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <style>
+      h1 {
+        color: #A77CA5;
+        text-align:center;
+        font-family: "Lobster"
+      }
+      h2 {
+        color: #A77CA5;
+        text-align:center;
+        font-family: "Lobster"
+      }
+      p {
+        color: #E1DEE9;
+        text-align:center;
+      }
+      li {color: #E1DEE9}
+      ul {
+        text-align:center; 
+        list-style-position:inside;
+        list-style-type: square;
+      }
+      a {
+        color: #B6A6CA;
+        display: block;
+        width: 210px;
+        margin: auto;
+      }
+      img {color: #E1DEE9; 
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .pfp {
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #animation img {
+          display: none;
+      }
+      #animation img:first-child {
+          display: block;
+      }
+      table, th, td {
+        color: #E1DEE9;
+        border: 1px solid;
+      }
+      .exp {
+        width: 800px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      body {background-color: #311B3E}
+    </style>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about Yasmine Aoua</h1>
+    <div class="pfp">
+      <img src="images/me.jpg" alt="Picture of Yasmine Aoua">
+    </div>
     <p>
-      [Self introduction]
+      Hello! My name is Yasmine and I am in the class of 2023!
     </p>
     <p>
-      [Major and other information]
+      I am an RBE and CS double major. A few of the CS courses I have taken at WPI:</br>
+      <ul>
+        <li>CS 2102</li>
+        <li>CS 2223</li>
+        <li>CS 2301</li>
+        <li>CS 3013</li>
+        <li>CS 3043</li>
+        <li>CS 3733</li>
+        <li>CS 534</li>
+      </ul>
     </p>
+    <div id="animation">
+      <img src="images/robot1.png" />
+      <img src="images/robot2.png" />
+    </div>
+    <script>
+      const frames = document.getElementById("animation").children;
+      const frameCount = frames.length;
+      let i = 0;
+      setInterval(function () { 
+          frames[i % frameCount].style.display = "none";
+          frames[++i % frameCount].style.display = "block";
+      }, 100);
+    </script>
     <p>
-      [Other things]
+      I have prior experience with HTML, CSS, Java, Python, unit testing, and JavaScript.
     </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <h2>Work Experience</h2>
+    <table class="exp">
+      <tr>
+        <th>Collins Aerospace</th>
+        <th>WPI</th>
+        <th>Raytheon Technologies</th>
+        <th>Synopsys</th>
+      </tr>
+      <tr>
+        <td><img src="images/collins.png" alt="Collins Aerospace Logo"></td>
+        <td><img src="images/wpi.png" alt="WPI Logo"></td>
+        <td><img src="images/raytheon.png" alt="Raytheon Technologies Logo"></td>
+        <td><img src="images/synopsys.png" alt="Synopsys Logo"></td>
+      </tr>
+    </table>
+    <a href="http://www.linkedin.com/in/yasmine-aoua">See my LinkedIn for more info!</a>
   </body>
 </html>
