@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/674a932b-6929-4b16-81a5-6fb0918534ec/dog_small.jpg?v=1661395217788">
     <style>
+      body{
+        font-family: "Roboto", serif
+      }
       p {
         background: #E08BD9;
         text-align: center;
@@ -13,12 +16,10 @@
         padding-left: 50px;
         border-style: dotted;
         border-color: #948446;
-        font-family: "Roboto", serif
       }
       h1 {
         background: #E0C75E;
         color: #3E948B;
-        font-family: "Roboto", serif
       }
       a{
         color:#75E0D6;
@@ -26,17 +27,14 @@
       
       h2 {
         color: #3E948B;
-        font-family: "Roboto", serif
       }
       img {
         max-width:50%
       }
       li{
         background:#75E0D6;
-        font-family: "Roboto", serif
       }
       #tab{
-        font-family: "Roboto", serif
         border-collapse: collapse;
         width: 100%;
       }
@@ -48,32 +46,34 @@
         color: black;
       }
     </style>
-    <!--script>
-      //const vals = [#3E948B, #3E948B]
-      function frameMove(){
+    <script>
+      window.onload = function frameMove(){
         let i = 0;
-        let id = null;
-        const id = document.getElementById("dog");
-        clearInterval(id)
-        id = setInterval(frame, 5);
-        function frame(){
-          i++;
-          if (i%2 = 0){
-             id.width = 50;
-             id.height = 50;
-          }
-          else{
-            id.width = 100;
-            id.height = 100;
-          }
-        }
+        const id = document.getElementById("animate");
+        console.log(id);
+        //console.log("hello");
+        setInterval(
+          function frame(){
+            if (i%2 = 0){
+              id.width = 50;
+              id.height = 50;
+              //clearInterval(id);
+            }
+            else{
+              id.width = 100;
+              id.height = 100;
+            }
+            i++;
+          },
+          500
+        )
       }
-    </script-->
+    </script>
   </head>
   <body>
     <h1>Information about Kaley</h1>
     
-    <p>I enjoy writing and drawing in my free time.</p>
+    <p>I enjoy writing and drawing in my free time. Some clubs I am a part of include ACM, Green Team, and the Creative Writing Club.</p>
     <p>I am class of 2024 and am majoring in Computer Science</p>
     <p>
       <a href="https://www.wpi.edu/">Innovation</a>
@@ -94,7 +94,7 @@
       <li>Python: Some</li>
       <li>Unit testing: Some</li>
     </ul>
-    <img id="dog" src="https://cdn.glitch.global/674a932b-6929-4b16-81a5-6fb0918534ec/dog_small.jpg?v=1661395137335"/>
+    <img id="dog" src="https://cdn.glitch.global/674a932b-6929-4b16-81a5-6fb0918534ec/dog_small.jpg?v=1661395217788"/>
     <h2>
       A table
     </h2>
@@ -114,7 +114,11 @@
         <td>b2</td>
         <td>b3</td>
       </tr>
-      
-    </table>
+     </table>
+    <h2>Animation</h2>
+    <svg id="animate" width="400" height="110">
+      <rect width="100" height="100" style="fill:#E0C75E"/>
+    </svg>
+   
   </body>
 </html>
