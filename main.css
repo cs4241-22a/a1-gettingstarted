@@ -1,0 +1,37 @@
+body {
+  background-color: #073136;
+}
+h1 {
+  color: #20E1F5;
+}
+p {
+  color: #1DC8DB;
+}
+
+th, td {
+  padding: 15px;
+}
+
+table {
+  border-spacing: 35 px;
+}
+
+h2{
+  color: #20E1F5;
+}
+
+li {
+  color: #1DC8DB;
+}
+
+td{
+  color: #C9FBFF;
+}
+
+th { 
+  Color: #C9FBFF;
+}
+
+table, th, td {
+  border: 1px solid #C9FBFF;
+}
