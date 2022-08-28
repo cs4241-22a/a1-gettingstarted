@@ -1,3 +1,4 @@
+// A bunch of variables that will get referenced throughout this script
 let homeMenuAnchors = null;
 let hoveredElement = null;
 let sword = null;
@@ -100,6 +101,7 @@ function playSelectedBand() {
     loadSelectedBand();
 }
 
+/** Handle a key change in some number of milliseconds */
 async function startKeyChange(newTones, delay) {
     if (keyChangeNeeded) {
         setTimeout(() => {
@@ -109,6 +111,7 @@ async function startKeyChange(newTones, delay) {
     }
 }
 
+/** Load menu tones for whichever band is currently selected */
 function loadSelectedBand() {
     keyChangeNeeded = false;
     switch (selectedBand.id) {
@@ -239,6 +242,10 @@ window.onload = () => {
     })
 }
 
+/**
+ * Play a tone from assets folder based on whichever anchor is hovered
+ * @param {Number} toneIndex index of which tone to play
+ */
 function playTone(toneIndex) {
     const currentTone = menuTones[toneIndex];
     const toneAudio = new Audio("./assets/notes/" + currentTone + ".mp3");
@@ -362,7 +369,3 @@ function loadContentPage() {
             break;
     }
 }
-
-// I've decided to add music!
-// We're going to have a page with band logos that can be clicked to select which one is active.
-// Band's tracks are grabbed from audio tags in the window.onload.
