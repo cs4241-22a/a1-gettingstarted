@@ -1,3 +1,4 @@
+/* CSS RESET */
 * {
   margin: 0;
   padding: 0;
@@ -30,6 +31,7 @@ a:hover {
   opacity: 0.5;
 }
 
+/* CONTENT CLASSES */
 .container {
   box-sizing: border-box;
   display: flex;
@@ -47,6 +49,7 @@ a:hover {
   padding: 2em 3em;
 }
 
+/* PAGE IDS */
 #content-nav {
   align-items: center;
   justify-content: center;
@@ -66,7 +69,7 @@ a:hover {
   height: 3.5em;
 }
 
-#site-header img {
+#site-header a img {
   height: 100%;
 }
 
@@ -75,6 +78,50 @@ a:hover {
   width: 100%;
 }
 
-#skill-container {
-  display: flex;
+/* CHANGE FLEX DIRECTION ON SCREEN WIDTH */
+@media only screen and (max-width: 1200px) {
+  h1 {
+    line-height: 1.5em;
+    margin: 1em 0;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  #content-nav {
+    border-right: none;
+    border-bottom: 1px solid;
+    min-width: 90px;
+    padding: 0 0 1em 0;
+  }
+
+  #content-body {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+/* MAKE PANDA PANIC */
+.shake:active {
+  animation: panic 0.1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes panic {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  25% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  75% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
