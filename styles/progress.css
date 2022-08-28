@@ -1,0 +1,66 @@
+.bar-container {
+  border-radius: 1em;
+  width: 100%;
+}
+
+.bar-container div {
+  text-align: left;
+  padding: 0.2em 1em;
+  border-radius: 16px;
+  margin: 0.5em 0;
+}
+
+#java {
+  width: 100%;
+  background-color: #004a87;
+}
+
+#js {
+  width: 90%;
+  background-color: #005395;
+}
+
+#cpp {
+  width: 90%;
+  background-color: #005ca2;
+}
+
+#c {
+  width: 70%;
+  background-color: #0065ad;
+}
+
+#python {
+  width: 60%;
+  background-color: #006cb7;
+}
+
+#sql {
+  width: 70%;
+  background-color: #0273be;
+}
+
+#react {
+  width: 80%;
+  background-color: #137ec4;
+}
+
+#html {
+  width: 80%;
+  background-color: #288ac8;
+}
+
+#css {
+  width: 75%;
+  background-color: #4397cb;
+}
+
+#unit-testing {
+  width: 80%;
+  background-color: #61a4cd;
+}
+
+#ruby {
+  width: 5%;
+  background-color: #71aace;
+}

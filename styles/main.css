@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Lato, sans-serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  height: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 8rem;
+}
+
+table {
+  padding: 1.5em;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+.container {
+  box-sizing: border-box;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 80vw;
+  padding: 2em 0;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  padding: 2em 3em;
+}
+
+#content-nav {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-right: 1px solid;
+  min-width: 90px;
+  padding-right: 2em;
+}
+
+#content-body {
+  padding-left: 2em;
+  width: 100%;
+}
+
+#site-header {
+  text-align: center;
+  height: 3.5em;
+}
+
+#site-header img {
+  height: 100%;
+}
+
+#course-table {
+  text-align: center;
+  width: 100%;
+}
+
+#skill-container {
+  display: flex;
+}
