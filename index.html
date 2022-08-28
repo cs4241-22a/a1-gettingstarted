@@ -3,26 +3,94 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script>
+      const colors = ['#868F6D', '#CBE6A5'];
+      let i = 0;
+      setInterval(
+        function() {
+          document.getElementsByTagName("span")[0].style = "color: " + colors[i++ % 2];
+        },
+        10000
+      )
+    </script>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about <span>Molly Sunray</span></h1>
+    <h2>Background</h2>
     <p>
-      [Self introduction]
+      I am a member of the class of 2023.
     </p>
     <p>
-      [Major and other information]
+      Majors: Computer Science and Data Science
     </p>
     <p>
-      [Other things]
+      Previous Computer Science Courses
     </p>
-
+    <ul>
+      <li>CS 1101</li>
+      <li>CS 2102</li>
+      <li>CS 2022</li>
+      <li>CS 2223</li>
+      <li>CS 2303</li>
+      <li>CS 2011</li>
+      <li>CS 3013</li>
+      <li>CS 3733</li>
+      <li>CS 3431</li>
+      <li>CS 4233</li>
+      <li>CS 3133</li>
+      <li>CS 4341</li>
+      <li>CS 4432</li>
+    </ul>
     <h2>Experience</h2>
+    <p>
+      Technical experience
+    </p>
+    <table>
+      <tr>
+        <th>Technology/Method</th>
+        <th>Experience</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td>A lot</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>Ruby</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>Unit testing</td>
+        <td>Some</td>
+      </tr>
+    </table>
     <p>
       Working experience
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>Student Assistant for <a href="https://www.wpi.edu/academics/departments/computer-science" target="_blank">WPI Computer Science Department</a></li>
+      <li>Software Development Intern at Chewy</li>
+      <li>Software Engineer Intern at General Dynamics Mission Systems</li>
     </ul>
+    <img src="https://www.wpi.edu/sites/default/files/inline-image/Offices/Marketing-Communications/WPI_Inst_Prim_FulClr_PREVIEW.png" alt="WPI logo">
   </body>
 </html>
