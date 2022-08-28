@@ -13,10 +13,13 @@ const server = http.createServer( function( request,response ) {
     case '/style.css':
       sendFile( response, 'style.css' )
       break
+    case '/images/hpr.jpg':
+      sendFile( response, 'images/hpr.jpg' )
+      break
     default:
       response.end( '404 Error: File Not Found' )
   }
-})
+});
 
 server.listen( process.env.PORT || port )
 

@@ -1,5 +1,53 @@
-#container {
-    position: relative;
-    top: 0;
-    left: 0;
+body {
+    background-color: #b3e0b1;
+}
+
+h1 {
+    font-family: "Comic Sans MS", cursive;
+    margin: auto;
+    color: #54a651;
+    font-size: 40px;
+    border: double #6ed96a;
+    width: 800px;
+    text-align: center;
+    font-weight: 900;
+}
+
+h2 {
+    font-family: "Comic Sans MS", cursive;
+    color: #54a651;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h3 {
+    color: #2d592c;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Comic Sans MS", cursive;
+}
+
+p {
+    color: #475947;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: "Comic Sans MS", cursive;
+}
+
+ol {
+    color: #475947;
+    border: groove #6ed96a;
+    font-size: 17px;
+    width: 500px;
+    font-weight: normal;
+    font-family: "Comic Sans MS", cursive;
+}
+
+ul {
+    color: #475947;
+    border: groove #6ed96a;
+    font-size: 17px;
+    width: 500px;
+    font-weight: normal;
+    font-family: "Comic Sans MS", cursive;
 }
