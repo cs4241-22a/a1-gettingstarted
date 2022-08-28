@@ -87,6 +87,10 @@ a:hover {
 
 /* CHANGE FLEX DIRECTION ON SCREEN WIDTH */
 @media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 95vw;
+  }
+
   h1 {
     line-height: 1.5em;
     margin: 1em 0;
