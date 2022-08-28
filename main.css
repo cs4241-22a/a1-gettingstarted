@@ -1,35 +1,63 @@
 /* 
 Color Palette:
-264653
-2A9D8F
-E9C46A
-F4A261
-E76F51
+264653 dark blue primary
+E9C46A tanish yellow secondary
+E76F51 salmon pink/red accent
 */
 
+:root {
+    --main-color: #264653;
+    --secondary-color: #E9C46A;
+    --accent-color: #E76F51;
+  }
+
 body {
-    background-color: #264653;
+    background-color: var(--main-color);
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 h1 {
-    color: white;
+    color: var(--secondary-color);
+    font-family: 'Bebas Neue';
+    font-size: 3rem;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 
 h2 {
-    color: black;
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+li {
+    color: var(--main-color);
+    font-size: large;
+    margin-top: 3px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
 .section-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    background-color: #2A9D8F;
-    padding: 20px;
-    border-radius: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
+    /* align-items: space-between; */
+    background-color: var(--secondary-color);
+    padding: 10px;
+    margin: 10px;
+    /* margin-top: 10px; */
+    border-radius: 10px; 
+    width: fit-content;
+    /* margin-left: 50px; */
+    /* margin-right: 50px; */
+    height: fit-content;
 }
 
 .cat-slide.active {
@@ -37,11 +65,8 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #2A9D8F;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
 }
 
 .cat-slide {
@@ -53,12 +78,62 @@ h2 {
 }
 
 .prev:hover, .next:hover {
-    color: #E9C46A;
+    color: var(--main-color);
     cursor: pointer;
 }
 
 .prev, .next {
-    color: #E9C46A;
+    color: var(--accent-color);
     font-size: 40px;
     cursor: pointer;
+    user-select: none;
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    color : var(--main-color);
+    /* border: #E76F51 1px solid; */
+}
+
+tr:nth-child(even){background-color: #e76f512b}
+
+.numbertext {
+    color: var(--main-color);
+    font-size: large;
+}
+
+.slide-switcher {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    gap: 10px;
+    width: 100%;
+}
+
+.slideshow-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.second-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
