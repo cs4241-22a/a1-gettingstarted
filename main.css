@@ -1,87 +1,87 @@
 body {
-    background-color: rgb(238, 238, 238);
-    font-family: "Arimo";
-  }
+  background-color: rgb(238, 238, 238);
+  font-family: "Arimo";
+}
 
-  h1 {
-    text-align: center;
-    font-size: xx-large;
-  }
+h1 {
+  text-align: center;
+  font-size: xx-large;
+}
 
-  h2 {
-    margin-left: 10px;
-  }
+h2 {
+  margin-left: 10px;
+}
 
-  h3 {
-    margin-left: 10px;
-  }
+h3 {
+  margin-left: 10px;
+}
 
-  p {
-    margin: 25px 100px 25px 100px;
-  }
+p {
+  margin: 25px 100px 25px 100px;
+}
 
-  table, th, td {
-    border: 1px solid black;
-    margin-left: 40px;
-    padding: 5px
-  }
+table, th, td {
+  border: 1px solid black;
+  margin-left: 40px;
+  padding: 5px
+}
 
-  table {
-    border-collapse: collapse;
-    border: 2px solid #6DA6A5;
-    background-color: #94F2F0;
-    box-shadow: 5px 10px rgba(0, 0, 0, 0.329);
-  }
-  
-  ul {
-    margin-left: 20px;
-  }
+table {
+  border-collapse: collapse;
+  border: 2px solid #6DA6A5;
+  background-color: #94F2F0;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.329);
+}
 
-  #background {
-    margin: 25px 10px 25px 10px;
-    padding: 10px 10px 10px 10px;
-    background-color: #F3ADE3;
-    border: 2px solid #A66597;
-  }
+ul {
+  margin-left: 20px;
+}
 
-  #midbox {
-    margin: 10px 10px 10px 10px;
-    padding: 10px 20px 10px 20px;
-    background-color: #F2EBC4;
-    border: 2px solid #A66597;
-    box-shadow: 5px 10px rgba(0, 0, 0, 0.329);
-  }
+#background {
+  margin: 20px 10px 20px 10px;
+  padding: 10px 10px 10px 10px;
+  background-color: #F3ADE3;
+  border: 2px solid #A66597;
+}
 
-  #experience {
-    margin-left: 40px;
-    margin-bottom: 20px;
-    display:inline-block;
-    padding: 10px 20px 10px 10px;
-    border: 2px solid #6DA6A5;
-    background-color: #94F2F0;
-    box-shadow: 5px 10px rgba(0, 0, 0, 0.329);
-  }
+#midbox {
+  margin: 10px 10px 10px 10px;
+  padding: 10px 20px 10px 20px;
+  background-color: #F2EBC4;
+  border: 2px solid #A66597;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.329);
+}
 
-  #mainimg {
-    border: 2px solid black;
-    margin: 20px 20px 20px 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    object-fit: cover;
-  }
+#experience {
+  margin-left: 40px;
+  margin-bottom: 20px;
+  display:inline-block;
+  padding: 10px 20px 10px 10px;
+  border: 2px solid #6DA6A5;
+  background-color: #94F2F0;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.329);
+}
 
-  #logo{
-    position: absolute;
-    top: 0px;
-    left: 0;
-    width: 80px;
-    min-width: 80px;
-    height: 38px;
-    min-height: 38px;
-    opacity: 0.5;
-  }
+#mainimg {
+  border: 2px solid black;
+  margin: 20px 20px 20px 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+}
 
-  #arcade {
-    display: inline-block;
-  }
+#logo{
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 80px;
+  min-width: 80px;
+  height: 38px;
+  min-height: 38px;
+  opacity: 0.5;
+}
+
+#arcade {
+  display: inline-block;
+}
