@@ -1,0 +1,102 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #0A0908;
+  background-color: #FFFDF7;
+}
+
+header {
+  background-color: #4E598C;
+  color: #FFFDF7;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+ul {
+  margin-top: 0px;
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022";  
+  color: #FF8600; 
+  font-weight: bold; 
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em; 
+}
+
+/* table styling */
+
+thead {
+  background-color: #2ca6a4;
+  color: #FFFDF7;
+}
+
+tr {
+  padding: 16px;
+}
+
+tr th {
+  padding: 16px;
+}
+
+tbody tr {
+	display: table-cell;
+}
+
+td {
+	display: block;
+}
+
+.jumbo {
+  font-size: 64px;
+}
+
+.xlarge {
+  font-size: 24px;
+}
+
+.large {
+  font-size: 18px;
+}
+
+.two-third {
+  width: 66.666%;
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+.pad64 {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.pad32 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.pad16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.container {
+  padding:0.01em 16px
+}
+
+.border {
+  border-style: solid;
+  border-color: #2ca6a4;
+  border-width: 1px;
+}
+
+.margin {
+  margin: 32px;
+}
+

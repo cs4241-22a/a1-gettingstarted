@@ -1,20 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
   </head>
   <body>
-    <h1>Information about May Dong (Class of '24)</h1>
-    <p>
-      I'm still not good at introductions despite having to introduce myself all summer (i.e. instead of a genuine intro, you get this). 
-    </p>
-    <p>
-      Majoring in Computer Science 
-      Minoring in Data Science
-    </p>
-    <p>
-      Previous CS courses taken at WPI
+    <header class="center pad64">
+      <h1 class="jumbo">CS 4241</h1>
+      <p class="xlarge">Assignment 1</p>
+    </header>
+
+    <div class="pad64 container border margin">
+      <h2>Information about May Dong</h2>
+      <p>Class of '24</p>
+      <p>Majoring in Computer Science, Minoring in Data Science</p>
+    </div>
+
+    <div class="pad64 container border margin">
+      <h2>Previous CS courses taken at WPI</h2>
       <ul>
         <li>CS1102 (Acc. Intro to Program Design)</li>
         <li>CS2103 (Acc. Object-Oriented Design Concepts)</li>
@@ -27,24 +35,37 @@
         <li>CS3043 (Social Implications of Information Processing)</li>
         <li>CS3516 (Computer Networks)</li>
       </ul>
-    </p>
+    </div>
 
-    <h2>Experience</h2>
-    <p>
-      Experience with technologies + methods
-    </p>
-    <ul> None
-      <li>JavaScript</li>
-      <li>Ruby</li>
-    </ul>
-    <ul> Some
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>Python</li>
-    </ul>
-    <ul> A lot
-      <li>Java</li>
-      <li>Unit testing</li>
-    </ul>
+    <div class="pad64 container border margin">
+      <h2>Experience</h2>
+      <table class="pad16 center">
+        <thead>
+          <tr>
+            <th>None</th>
+            <th>Some</th>
+            <th>A lot</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>JavaScript</td>
+            <td>Ruby</td>
+          </tr>
+
+          <tr>
+            <td>HTML</td>
+            <td>CSS</td>
+            <td>Python</td>
+          </tr>
+
+          <tr>
+            <td>Java</td>
+            <td>Unit testing</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </body>
 </html>
