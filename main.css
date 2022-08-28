@@ -5,11 +5,11 @@
 }
 
 :root {
-    --adobe-color-a: #216136;
-    --adobe-color-d: #3E614A;
-    --adobe-color-e: #3AAD60;
-    --adobe-color-c: #4CE07E;
-    --adobe-color-b: #93E6AE;
+    --adobe-color-a: #0AF077;
+    --adobe-color-d: #0CF7D3;
+    --adobe-color-e: #00B2E0;
+    --adobe-color-c: #0C77F7;
+    --adobe-color-b: #0C25ED;
     --menu-item-height: 100px;
     --menu-sword-width: 200px;
     --sword-cut-displacement: 50vw;
@@ -61,7 +61,7 @@ body::-webkit-scrollbar {
 }
 
 .home-container {
-    background-image: url('./assets/homeBackground.png');
+    background-image: url('./assets/backgrounds/homeBackground.png');
     background-position-y: bottom;
     background-position-x: right;
 }
@@ -196,7 +196,7 @@ h1 {
 }
 
 .content-page {
-    background-image: url('./assets/otherPageBackground.png');
+    background-image: url('./assets/backgrounds/otherPageBackground.png');
     background-position-y: bottom;
     background-position-x: left;
     display: flex;
@@ -299,9 +299,43 @@ h1 {
 }  
 
 .music-page {
-    background: green;
+    background-image: url("./assets/backgrounds/musicPageBackground.png");
     background-position-y: bottom;
     background-position-x: right;
     display: flex;
     flex-direction: row;
+    user-select: none;
+}
+
+.music-page .left {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.music-page .center {
+    flex: 4;
+}
+
+.music-page .right {
+    flex: 3;
+}
+
+.music-page ul {
+    columns: 2;
+}
+
+.band-icon {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+}
+
+.band-icon:hover {
+    cursor: pointer;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .band-icon.playing {
+        animation: wobble infinite 3s;
+    }
 }

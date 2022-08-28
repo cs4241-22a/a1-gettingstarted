@@ -6,14 +6,14 @@
     <link rel="stylesheet" href="./main.css" />
     <script src="index.js" ></script>
     <audio id="cut-sound" src="./assets/Cut.mp3"></audio> 
-    <audio id="pierce-the-veil" src="./assets/PTV.mp3" loop="true"></audio> 
-    <audio id="korn" src="./assets/Korn.mp3"></audio> 
-    <audio id="cut-sound" src="./assets/Cut.mp3"></audio> 
-    <audio id="cut-sound" src="./assets/Cut.mp3"></audio> 
-    <audio id="cut-sound" src="./assets/Cut.mp3"></audio> 
-    <audio id="cut-sound" src="./assets/Cut.mp3"></audio> 
-    <audio id="cut-sound" src="./assets/Cut.mp3"></audio> 
-    <audio id="cut-sound" src="./assets/Cut.mp3"></audio> 
+    <audio id="pierce-the-veil" src="./assets/music/PTV.mp3" loop="true"></audio> 
+    <audio id="korn" src="./assets/music/Korn.mp3" loop="true"></audio> 
+    <audio id="megadeth" src="./assets/music/Megadeth.mp3" loop="true"></audio> 
+    <audio id="metallica" src="./assets/music/Metallica.mp3" loop="true"></audio> 
+    <audio id="protest-the-hero" src="./assets/music/ProtestTheHero.mp3" loop="true"></audio> 
+    <audio id="system-of-a-down" src="./assets/music/SystemOfADown.mp3" loop="true"></audio> 
+    <audio id="the-human-abstract" src="./assets/music/TheHumanAbstract.mp3" loop="true"></audio> 
+    <audio id="tool" src="./assets/music/TOOL.mp3" loop="true"></audio> 
   </head>
   <body>
     <div class="app-container" id="app">
@@ -25,16 +25,16 @@
           </div>
           <div class="center">
             <ul class="home-menu-list">
-              <li>
+              <li id="introduction-menu-item">
                 <a href="#introduction" data-label="Introduction" id="anchor-introduction">Introduction</a>
               </li>
-              <li>
+              <li id="wpi-menu-item">
                 <a href="#wpi" data-label="WPI" id="anchor-wpi">WPI</a>
               </li>
-              <li>
+              <li id="experience-menu-item">
                 <a href="#experience" data-label="Experience" id="anchor-experience">Experience</a>
               </li>
-              <li>
+              <li id="contact-menu-item">
                 <a href="#contact" data-label="Contact" id="anchor-contact">Contact</a>
               </li>
             </ul>
@@ -58,8 +58,37 @@
       </div>
       <div class="slide music-page" id="music-page">
         <div class="left">
-          <img class="back-arrow" id="music-back-arrow" src="./assets/backArrow.svg" >
+          <img class="back-arrow" id="music-back-arrow" src="./assets/backArrow.svg">
         </div>
+        <div class="center">
+          <ul>
+            <li>
+              <img class="band-icon" src="./assets/bands/PTV.png" alt="Pierce The Veil" id="pierce-the-veil-button">
+            </li>
+            <li>
+              <img class="band-icon" src="./assets/bands/KORN.png" alt="KORN" id="korn-button">
+            </li>
+            <li>
+              <img class="band-icon" src="./assets/bands/Metallica.png" alt="Metallica" id="metallica-button">
+            </li>
+            <li>
+              <img class="band-icon" src="./assets/bands/TheHumanAbstract.png" alt="The Human Abstract" id="the-human-abstract-button">
+            </li>
+            <li>
+              <img class="band-icon" src="./assets/bands/SystemOfADown.png" alt="System of a Down" id="system-of-a-down-button">
+            </li>
+            <li>
+              <img class="band-icon" src="./assets/bands/ProtestTheHero.png" alt="Protest the Hero" id="protest-the-hero-button">
+            </li>
+            <li>
+              <img class="band-icon" src="./assets/bands/Megadeth.png" alt="Megadeth" id="megadeth-button">
+            </li>
+            <li>
+              <img class="band-icon" src="./assets/bands/TOOL.png" alt="TOOL" id="tool-button">
+            </li>
+          </ul>
+        </div>
+        <div class="right"></div>
       </div>
     </div>
   </body>

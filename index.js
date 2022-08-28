@@ -15,6 +15,10 @@ let SystemOfADown = null;
 let ProtestTheHero = null;
 let Megadeth = null;
 let TOOL = null;
+let selectedBand = null;
+let menuTones = ["a", "b", "c", "d"];
+const allBands = ["pierce-the-veil", "korn", "metallica", "the-human-abstract", "system-of-a-down", "protest-the-hero", "megadeth", "tool"];
+let keyChangeNeeded = false;
 
 // Define page data
 const pages = [
@@ -60,8 +64,10 @@ const pages = [
 /** Chromium disallows autoplay so we start music when the page is interacted with */
 let musicPlaying = false;
 function startMusic() {
-    if (!musicPlaying && PTV) {
-        PTV.play();
+    if (!musicPlaying) {
+        const randomBandIndex = Math.floor(Math.random() * 8);
+        selectedBand = document.getElementById(allBands[randomBandIndex]);
+        playSelectedBand();
         musicPlaying = true;
         document.getElementById("music-hint").innerHTML = "click to change music";
         const musicButton = document.getElementById("music-button");
@@ -74,6 +80,73 @@ function startMusic() {
     setUpMusicPage();
 }
 
+/**
+ * Play audio from the currently selected band and update other bands to stop playing
+ */
+function playSelectedBand() {
+    for (const band of allBands) {
+        const bandAudio = document.getElementById(band);
+        if (bandAudio) {
+            bandAudio.pause();
+            bandAudio.currentTime = 0;
+            const bandButton = document.getElementById(band + "-button");
+            console.log(band)
+            bandButton.classList.remove("playing");
+        }
+    }
+    selectedBand.play();
+    const selectedBandButton = document.getElementById(selectedBand.id + "-button");
+    selectedBandButton.classList.add("playing");
+    loadSelectedBand();
+}
+
+async function startKeyChange(newTones, delay) {
+    if (keyChangeNeeded) {
+        setTimeout(() => {
+            menuTones = newTones;
+            console.log("Key change!!!");
+        }, delay);
+    }
+}
+
+function loadSelectedBand() {
+    keyChangeNeeded = false;
+    switch (selectedBand.id) {
+        case "pierce-the-veil":
+            menuTones = ["gb", "g", "a", "b"];
+            break;
+        case "korn":
+            menuTones = ["d", "f", "g", "a"];
+            break;
+        case "metallica":
+            menuTones = ["db", "e", "gb", "a"];
+            keyChangeNeeded = true;
+            startKeyChange(["e", "g", "a", "b"], 50000);
+            break;
+        case "the-human-abstract":
+            menuTones = ["c", "eb", "f", "g"];
+            break;
+        case "system-of-a-down":
+            menuTones = ["db", "e", "gb", "ab"];
+            break;
+        case "protest-the-hero":
+            menuTones = ["db", "e", "gb", "ab"];
+            break;
+        case "megadeth":
+            menuTones = ["e", "g", "a", "b"];
+            break;
+        case "tool":
+            menuTones = ["d", "f", "g", "a"];
+            break;
+        default:
+            menuTones = [0, 0, 0, 0];
+            break;
+    }
+}
+
+/**
+ * Hides everything on the content page for panning to music
+ */
 function clearContentPage() {
     contentPageTitle.innerHTML = "";
     contentPageSubtitle.innerHTML = "";
@@ -81,11 +154,35 @@ function clearContentPage() {
     backArrow.classList.add("hidden");
 }
 
+/** Init stuff on music page. This wasn't used as much as I thought it would be */
 function setUpMusicPage() {
+    
+    // Make anchors play tones
+    document.getElementById("introduction-menu-item").addEventListener("mouseenter", () => {
+        playTone(0);
+    })
+    document.getElementById("wpi-menu-item").addEventListener("mouseenter", () => {
+        playTone(1);
+    })
+    document.getElementById("experience-menu-item").addEventListener("mouseenter", () => {
+        playTone(2);
+    })
+    document.getElementById("contact-menu-item").addEventListener("mouseenter", () => {
+        playTone(3);
+    })
+
     document.getElementById("music-back-arrow").addEventListener("mousedown", () => {
         document.getElementById("app").classList.remove("panned-far");
-        backArrow.classList.remove("hidden");
     })
+    for (const band of allBands) {
+        const bandButton = document.getElementById(band + "-button");
+        if (bandButton) {
+            bandButton.addEventListener("mousedown", () => {
+                selectedBand = document.getElementById(band);
+                playSelectedBand();
+            })
+        }
+    }
 }
 
 /**
@@ -123,17 +220,36 @@ window.onload = () => {
     })
     PTV = document.getElementById("pierce-the-veil");
     PTV.volume = .5;
-    KORN = document.getElementById("KORN");
+    KORN = document.getElementById("korn");
+    KORN.volume = .25;
+    Metallica = document.getElementById("metallica");
+    TheHumanAbstract = document.getElementById("the-human-abstract");
+    SystemOfADown = document.getElementById("system-of-a-down");
+    SystemOfADown.volume = .5;
+    ProtestTheHero = document.getElementById("protest-the-hero");
+    Megadeth = document.getElementById("megadeth");
+    TOOL = document.getElementById("tool");
     const musicButton = document.getElementById("music-button");
     musicButton.addEventListener("mousedown", () => {
         startMusic();
     })
 }
 
+function playTone(toneIndex) {
+    const currentTone = menuTones[toneIndex];
+    const toneAudio = new Audio("./assets/notes/" + currentTone + ".mp3");
+    if (toneAudio) {
+        toneAudio.playbackRate = 1.5;
+        toneAudio.volume = .2;
+        toneAudio.play();
+    }
+}
+
 /**
  * Add "panned" class to app container
  */
 function panAppContainer() {
+    backArrow.classList.remove("hidden");
     appContainer.classList.toggle("panned");
 }
 
