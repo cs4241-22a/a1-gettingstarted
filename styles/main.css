@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
 /* CSS RESET */
 * {
   margin: 0;
@@ -8,7 +10,7 @@
 body {
   background-color: black;
   color: white;
-  font-family: Lato, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   line-height: 2rem;
   height: 100%;
@@ -47,6 +49,11 @@ a:hover {
   flex: 1;
   flex-direction: row;
   padding: 2em 3em;
+}
+
+.site-footer {
+  text-align: center;
+  padding-bottom: 2em;
 }
 
 /* PAGE IDS */
