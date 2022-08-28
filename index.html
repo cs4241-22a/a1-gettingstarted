@@ -64,6 +64,7 @@
         </tr>
       </table>
       <h2>Experience</h2>
+      
       <div id="experience">
       <h3>
         Relevant Skills
@@ -98,6 +99,7 @@
         <li>Dave's Marketplace Night Crew</li>
       </ul>
     </div>
+    <img src="https://cdn.discordapp.com/attachments/121797037942374400/1013266086793330748/arcade_machine.png" alt="Arcade cabinet" width="300" height="371" id="arcade">
     </div>
     <script>
       var offsets = document.getElementById("midbox").getBoundingClientRect();
@@ -111,6 +113,8 @@
       const speed = (offsets.bottom - offsets.top)/200;
       var i = speed;
       var j = speed;
+      var timer = 0;
+      var up = true;
       function move() {
         offsets = document.getElementById("midbox").getBoundingClientRect();
         x1 = offsets.left;
@@ -132,6 +136,18 @@
         }
         if (posy + 38 >= y2){
           j = -speed;
+        }
+        timer += 20;
+        if (timer >= 1000){
+          timer = 0;
+          if (up){
+            document.getElementById("arcade").style.transform = "rotate(10deg)";
+            up = !up
+          } else {
+            document.getElementById("arcade").style.transform = "rotate(0deg)";
+            up = !up
+          }
+          
         }
       }
       setInterval(move, 20);

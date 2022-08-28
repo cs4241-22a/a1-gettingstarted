@@ -81,3 +81,7 @@ body {
     min-height: 38px;
     opacity: 0.5;
   }
+
+  #arcade {
+    display: inline-block;
+  }
