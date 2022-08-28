@@ -1,5 +1,5 @@
 Wenjie Zhang
-[http://a1-charlieroberts.glitch.me](https://glitch.com/~a1-sylarzzz)
+https://glitch.com/~a1-sylarzzz
 
 This project shows information about Wenjie Zhang (me).
 
