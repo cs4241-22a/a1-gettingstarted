@@ -3,6 +3,8 @@ Color Palette:
 264653 dark blue primary
 E9C46A tanish yellow secondary
 E76F51 salmon pink/red accent
+2A9D8F light blue
+F4A261 light orange
 */
 
 :root {
@@ -38,10 +40,13 @@ h2 {
 
 h3 {
     color: var(--main-color);
-    /* font-family: 'Bebas Neue'; */
     font-size: 1.5rem;
     margin-top: 10px;
     margin-bottom: 0;
+}
+
+img {
+    border-radius: 5px;
 }
 
 li {
@@ -69,6 +74,7 @@ ul {
     /* margin-left: 50px; */
     /* margin-right: 50px; */
     height: fit-content;
+    border: #2A9D8F solid 3px;
 }
 
 .cat-slide.active {
@@ -109,10 +115,14 @@ th, td {
     text-align: left;
     padding: 8px;
     color : var(--main-color);
-    /* border: #E76F51 1px solid; */
+    border: #F4A261 1px solid;
 }
 
-tr:nth-child(even){background-color: #e76f512b}
+tr:hover {
+    background-color: #F4A261;
+}
+
+/* tr:nth-child(even){background-color: #e76f512b} */
 
 .numbertext {
     color: var(--main-color);
