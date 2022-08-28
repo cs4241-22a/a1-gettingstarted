@@ -1,5 +1,6 @@
 Siddhartha Pradhan
-http://a1-charlieroberts.glitch.me
+
+https://a1-siddharthapradhan.glitch.me/
 
 This project is a simple website that displays my information and some of my technical skills. I did not use any external libraries, just plain old JS, HTML and CSS.
 
