@@ -1,28 +1,47 @@
 body {
-    background-color: rgb(207, 199, 199);
+    background-color: #D6CA9F;
     margin: 20px;
 }
 
 h1 {
-  color: white;
-  background-color: red;
+  color: #ffffff;
+  font-family: "Michroma", sans-serif;
+  background-color: #F5413D;
   padding: 30px;
   border: 2px solid black;
   margin: 0px;
   text-align: center
 }
 
-p { color: black;}
+h2 {
+  color: #CC4567;
+}
+
+p { 
+  color: #1B213D;
+}
   
-  table {
-    font-family: arial, sans-serif;
-    border:1px solid black;
-    /*border-collapse: collapse;*/
-    width: 100%;
-  }
+table {
+  font-family: arial, sans-serif;
+  border:1px white;
+  /*border-collapse: collapse;*/
+  width: 100%;
+}
   
-  td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+/* unvisited link */
+a:link {
+  color: #CC4567;
+  padding: 8px;
+}
+
+/* visited link */
+a:visited {
+  color: #23EB52;
+  padding: 8px;
+}
