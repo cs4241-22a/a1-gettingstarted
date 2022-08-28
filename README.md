@@ -1,9 +1,6 @@
 Kaley Du  
 https://glitch.com/edit/#!/a1-kdu1
 
-This project shows a basic website created in HTML and with CSS and JavaScript.
-I exported the forked repo to glitch and them imported it to Github.
-
 ## Technical Achievements
 
 - **Styled page with CSS**: Added rules for the p, li, a, h1, and svg selectors.
