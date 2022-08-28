@@ -2,7 +2,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
 
 Alex Bolduc
-https://a1-alexbolduc.glitch.me
+https://a1-axbolduc.glitch.me
 
 This project shows ...
 
