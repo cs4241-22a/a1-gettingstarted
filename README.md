@@ -15,11 +15,11 @@ This project shows a little about me and my experience
 - **Added a simple JavaScript animation**: Added a simple robot animation
 
 - **Experimented with other HTML tags**:
-- used <a href=""> tag to link to my LinkedIn
-- used the <img> tag to add a profile photo and company logos
-- used the <table> tag to put my work experience into a a table
-- used the <div> tag to be able to center my profile photo
-- used </br> tag to add a line break between info about my major and the list of CS classes I have taken at WPI
+- used a href="" tag to link to my LinkedIn
+- used the img tag to add a profile photo and company logos
+- used the table tag to put my work experience into a a table
+- used the div tag to be able to center my profile photo
+- used br tag to add a line break between info about my major and the list of CS classes I have taken at WPI
 
 ### Design Achievements
 - **Used the Lobster Font from Google Fonts**: I used Lobster as the font for the header text in my site.
