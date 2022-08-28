@@ -1,7 +1,9 @@
 Sean O'Connor
 http://a1-s3an0.glitch.me
 
-This project shows ...
+This project shows information for Sean O'Connor. Information includes school, class, major, hobbies, previous computer science courses, and programming experience.
+
+The site was created using HTML, CSS, and Javascript. CSS was used to set the font, colors, and images. Javascript was used for an image animation.
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the body, h1, h2, p, li, and img selectors. The font family for the entire stylesheet was set to the Google Font PT Sans Narrow. The body has a change in background-color. h1, h2, p, and li have changes in font colors. img has a border added, a width of 400 px set, a max-width of 50%, and a height that is automatically set.
