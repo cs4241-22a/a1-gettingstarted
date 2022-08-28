@@ -125,6 +125,10 @@ function loadSelectedBand() {
             break;
         case "the-human-abstract":
             menuTones = ["c", "eb", "f", "g"];
+            keyChangeNeeded = true;
+            startKeyChange(["c", "c", "c", "c"], 67000);
+            startKeyChange(["db", "f", "g", "ab"], 86000);
+            startKeyChange(["c", "eb", "f", "g"], 113000);
             break;
         case "system-of-a-down":
             menuTones = ["db", "e", "gb", "ab"];
