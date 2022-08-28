@@ -1,0 +1,49 @@
+li {
+  background-color: #505F6B;
+  border-radius: 10px;
+  margin: 1rem;
+  padding: .5rem;
+  list-style: none;
+}
+
+ul{
+  max-width: 70%;
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+}
+
+section#about-me img{
+  width: 200px;
+}
+
+section#about-me a{
+  color: red;
+  width: 100%;
+  text-align: center;
+}
+
+section#about-me {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body{
+  background-color: #30516B;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  color: #B3D3EE
+}
+
+h2{
+  text-decoration: underline;
+}
+
+h3{
+  font-weight: lighter;
+}
