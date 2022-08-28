@@ -1,4 +1,3 @@
-// Init. hoveredElement to introduction;
 let homeMenuAnchors = null;
 let hoveredElement = null;
 let sword = null;
@@ -7,6 +6,15 @@ let backArrow = null;
 let contentPageTitle = null;
 let contentPageSubtitle = null;
 let contentPageParagraph = null;
+let cutSound = null;
+let PTV = null;
+let KORN = null;
+let Metallica = null;
+let TheHumanAbstract = null;
+let SystemOfADown = null;
+let ProtestTheHero = null;
+let Megadeth = null;
+let TOOL = null;
 
 // Define page data
 const pages = [
@@ -49,16 +57,29 @@ const pages = [
     }
 ];
 
+/** Chromium disallows autoplay so we start music when the page is interacted with */
+let musicPlaying = false;
+function startMusic() {
+    if (!musicPlaying && PTV) {
+        PTV.play();
+        musicPlaying = true;
+        document.getElementById("music-hint").innerHTML = "click to change music";
+        document.getElementById("music-button").classList.add("playing");
+    }
+}
+
 /**
  * Set elements on load and add event listeners to home menu
  * Also disable sideways scroll so that the user can't just skip the menu
  */
 window.onload = () => {
+
     sword = document.getElementById("menu-sword");
     appContainer = document.getElementById("app");
     contentPageTitle = document.getElementById("content-page-title");
     contentPageSubtitle = document.getElementById("content-page-subtitle");
     contentPageParagraph = document.getElementById("content-page-paragraph");
+    cutSound = document.getElementById("cut-sound");
     homeMenuAnchors = [
         document.getElementById("anchor-introduction"),
         document.getElementById("anchor-wpi"),
@@ -80,6 +101,13 @@ window.onload = () => {
     backArrow.addEventListener("mousedown", () => {
         panAppContainer();
     })
+    PTV = document.getElementById("pierce-the-veil");
+    PTV.volume = .5;
+    KORN = document.getElementById("KORN");
+    const musicButton = document.getElementById("music-button");
+    musicButton.addEventListener("mousedown", () => {
+        startMusic();
+    })
 }
 
 /**
@@ -97,6 +125,7 @@ function panAppContainer() {
  */
 function cutElementHoveredElement() {
     loadContentPage();
+    cutSound.play();
     for (const anchorElement of homeMenuAnchors) {
         anchorElement.classList.remove("cut");
     }
@@ -193,3 +222,7 @@ function loadContentPage() {
             break;
     }
 }
+
+// I've decided to add music!
+// We're going to have a page with band logos that can be clicked to select which one is active.
+// Band's tracks are grabbed from audio tags in the window.onload.

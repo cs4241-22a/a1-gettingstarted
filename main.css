@@ -18,6 +18,7 @@
 body {
     bottom: auto;
     margin: 0;
+    overflow-y: hidden;
     font-family: 'BebasNeue';
 }
 
@@ -243,3 +244,48 @@ h1 {
 .p-divider {
     margin-top: 20px;
 }
+
+.music-button {
+    position: absolute;
+    bottom: 50px;
+    left: 25vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    user-select: none;
+}
+
+.music-button img {
+    height: 40px;
+    width: 40px;
+    transition: all 0.5s ease;
+}
+
+.music-button:hover {
+    cursor: pointer;
+}
+
+.music-button p {
+    margin-left: 10px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .music-button.playing img {
+        animation: wobble infinite 3s;
+    }
+}
+
+@keyframes wobble {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-15deg);
+    }
+}  
