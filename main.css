@@ -1,0 +1,49 @@
+body 
+{
+  background-color:#F8F7FF;
+  font-family: 'Maven Pro', sans-serif;
+  
+}
+
+h1
+{
+  text-align:center;
+}
+
+h2
+{
+  text-align:center;
+}
+
+
+
+.info
+{
+  border: 5px outset #9381FF;
+  background-color: #ffeedd;
+  font-size: 15px;
+  padding: 8px; 
+  margin: auto;
+}
+
+table, th, td 
+{
+  border: 1px solid #F8F7FF;
+  border-collapse: collapse;
+  padding: 5px;
+  margin: auto;
+}
+
+th, td 
+{
+  background-color: #B8B8FF;
+  text-align:center;
+}
+
+td:hover {background-color:#FFD8BE;}
+
+#fact
+{
+  text-align:center;
+}
+

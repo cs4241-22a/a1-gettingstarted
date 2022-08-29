@@ -1,28 +1,72 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <title>CS4241 Assignment 1</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Information about Mary Barsoum!</h1>
+    
+    <h1>Mary Barsoum</h1>
+    <div class="info" style="width:70%">
     <p>
-      Hey Y'all. My Name is Mary Barsoum and I am a member of the 2023 class. 
+      Hey Y'all. My Name is Mary Barsoum and I am a member of the class of 2023. 
     </p>
     <p>
       I am completing my BS/MS at WPI. My undergrad is in Biomedical Engineering, with a minor in Mechanical Engineering. I am hoping to join the MCS Masters program (pending some paperwork).
     </p>
     <p>
-      I haven't really taken many CS courses at WPI. Most of my coding experience is from High School course work and internships. Howvever, I have taken Data Visualization and CS 5007. I am currently taking CS 5008, CS 513, and CS 509, along with this course, towards my MCS. 
+      I haven't really completed many CS courses at WPI. Most of my coding experience is from high school course work and internships. Howvever, I have taken CS480x and CS5008. I am currently taking CS 5008, CS 513, and CS 509, along with this course, towards my MCS. 
     </p>
-
-    <h2>Experience</h2>
     <p>
-      Working experience
+      In my free time I like to cook and bake. I love having people over and using them as guinea pigs for my cooking :). I also love reading and wood burning. 
+      </p>
+    </div>
+    <h2>Experience</h2>
+
+<table style="width:70%">
+  <tr>
+    <th style="width:33%">None</th>
+    <th style="width:33%">Basic</th>
+    <th style="width:33%">Proficient</th>
+  </tr>
+  <tr>
+    <td>JavaScript</td>
+    <td>HTML</td>
+    <td>Python</td>
+  </tr>
+  <tr>
+    <td>Ruby</td>
+    <td>CSS</td>
+    <td></td>
+  </tr>
+   <tr>
+    <td>Unit Testing</td>
+    <td>Java</td>
+    <td></td>
+  </tr>
+</table>
+  
+    <p>
+    
+   <i id="fact" onclick="increaseFontSize()">
+      <b>Fun fact: in high school I was required to make my own <a href="https://users.wpi.edu/~mbarsoum/index.html"> website</a>.
+      I guess its true what they say, things never get deleted off the internet.
+  </b></i>
     </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    
+    <script>
+     function increaseFontSize() {
+    doc = document.getElementById('fact');
+    style = window.getComputedStyle(doc, null).getPropertyValue('font-size');
+    currentSize = parseFloat(style);
+    doc.style.fontSize = (currentSize + 10) + 'px';
+}
+      setInterval(function changebackground(){change(0)},1000);
+      
+    </script>
   </body>
 </html>
