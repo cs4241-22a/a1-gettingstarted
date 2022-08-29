@@ -1,0 +1,52 @@
+body {
+  background-color: #ffeacf; /* same as #ffcc99 */
+}
+
+h1 {
+  color: #b38b56;
+  text-align: center;
+  font-family: "IM Fell DW Pica";
+  font-style: italic;
+}
+
+h2 {
+  color: #4495b3;
+  font-family: "IM Fell DW Pica";
+  text-align: center;
+  font-style: italic;
+}
+
+p {
+  font-family: "Arial";
+  color: 448ab3;
+  background: #91bad1;
+  width: fit-content;
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+}
+
+ul {
+  font-family: "Arial";
+}
+
+div {
+  position: relative;
+  text-align: center;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #ffd194;
+}
