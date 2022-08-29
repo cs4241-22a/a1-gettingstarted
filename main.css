@@ -1,0 +1,77 @@
+p{font-family: 'Silkscreen', cursive;
+  font-weight:bold;
+  font-size:18px;
+  color: white;
+  text-shadow: 0 4px 0 #333333;
+  }
+
+h1{font-family: 'Silkscreen', cursive;
+  font-size:40px;
+  color: #97E3FE;
+  text-shadow: 0 4px 0 #333333;
+}
+
+h2{font-family: 'Silkscreen', cursive;
+   font-size:30px;
+   color: #97E3FE;
+  text-shadow: 0 4px 0 #333333;
+}
+
+li{font-style:italic;
+   font-weight:normal;
+   color: white;
+  text-shadow: 0 4px 0 #333333;
+}
+
+body{
+  background: linear-gradient(140deg, #2843AD, #F394F8);
+  background-size:100%
+}
+
+
+a{
+  
+  position: relative; left:42%; top: 50%; 
+  
+}
+
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+
+.hidden {
+  opacity:0;
+}
+.console-container {
+ 
+  font-family: 'Silkscreen', cursive;
+  font-size:40px;
+  text-align:center;
+  width:600px;
+  display:block;
+  position:relative;
+  color:white;
+  top:0px;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
+
+footer{  
+    clear: both;  
+    display: block;  
+    text-align: center;   
+    margin: 0px auto;  
+    position: relative;  
+    bottom: 0px;  
+    width: 100%;  
+}  
+
+
+
+
