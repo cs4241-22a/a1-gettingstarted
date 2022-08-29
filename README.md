@@ -9,6 +9,6 @@ This repository contains the source code for the website made for Assignment 1. 
 - **Other HTML Tags**: Used ul, li, hr, and small.
         
 
-### Design Achievements
+## Design Achievements
 - **Color Palette**: The screenshot of the color wheel for my color palette can be found in the repository.
 - **Used the Baloo 2 Font from Google Fonts**: I used Baloo 2 as the font for the primary copy text in my site.
