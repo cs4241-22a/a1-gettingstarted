@@ -1,28 +1,98 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+   <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+      <style>
+         body {background-color: #2C405E;
+         font-family: 'Baloo 2', cursive;
+         padding: 1rem;}
+         h1, h2   {color: white;}
+         p    {color: #2C405E;
+         background: #AFC3E3;
+         width: fit-content;
+         padding: 0.3rem;
+         border-radius: 0.2rem;
+         display:inline-block;}
+         #colorPalette {
+         text-align: center;
+         width: 10rem;
+         height: fit-content;
+         border-radius: 0.2rem;
+         padding: 1rem;
+         }
+         .courses {
+         background: #6895DE;
+         }
+         ul {color: white;}
+      </style>
+      <title>CS4241 Assignment 1</title>
+      <meta charset="utf-8">
+   </head>
+   <body>
+      <h1>Information about <u>Eri Kim</u></h1>
+      <p>
+         Class of 2023
+      </p>
+      <p>
+         BS in Computer Science
+      </p>
+      <p>
+         MS in Data Science
+      </p>
+      <hr/>
+      <h2>
+         CS Courses I've taken at WPI
+      </h2>
+      <p class="courses">CS1101</p>
+      <p class="courses">CS2101</p>
+      <p class="courses">CS2303</p>
+      <p class="courses">CS2011</p>
+      <p class="courses">CS2223</p>
+      <p class="courses">CS3133</p>
+      <p class="courses">CS3043</p>
+      <p class="courses">CS3516</p>
+      <p class="courses">CS3431</p>
+      <p class="courses">CS3733</p>
+      <p class="courses">CS4342</p>
+      <p class="courses">CS4341</p>
+      <p class="courses">CS4432</p>
+      <p class="courses">CS4513</p>
+      <hr/>
+      <h2>
+         Technologies and Method
+      </h2>
+      <ul>
+         <li>HTML: a lot</li>
+         <li>CSS: a lot</li>
+         <li>Java: some</li>
+         <li>JavaScript: a lot</li>
+         <li>Ruby: a lot</li>
+         <li>Python: a lot</li>
+         <li>unit testing: some</li>
+      </ul>
+      <hr/>
+      <h2>Experience</h2>
+      <ul>
+         <li>Akamai - Software Engineering Intern</li>
+         <li>Intralinks - Software Engineering Intern</li>
+         <li>WPI Makerspace - Makerspace Manager</li>
+      </ul>
+      <hr/>
+      <div id="colorPalette">Color Palette</div>
+      <small style="color: white;">The screenshot of the color wheel can be found in the repository.</small>
+      <script>
+         window.onload = function() {
+           const colors = ["#2C405E", "#AFC3E3", "#6895DE", "#3C4C66", "#5275AD"];
+           let i = 0;
+           setInterval(
+             function() {
+               document.getElementById("colorPalette").style.backgroundColor = colors[i++ % 5];
+             },
+             500
+           )
+         }
+      </script>
+   </body>
 </html>
