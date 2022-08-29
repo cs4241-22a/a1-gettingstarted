@@ -1,0 +1,48 @@
+body {
+    background-color: #D6CA9F;
+    margin: 20px;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: "Michroma", sans-serif;
+  background-color: #F5413D;
+  padding: 30px;
+  border: 2px solid black;
+  margin: 0px;
+  text-align: center
+}
+
+h2 {
+  color: #CC4567;
+  font-style: italic;
+}
+
+p { 
+  color: #1B213D;
+}
+  
+table {
+  font-family: arial, sans-serif;
+  border:1px white;
+  /*border-collapse: collapse;*/
+  width: 100%;
+}
+  
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+/* for the unvisited link */
+a:link {
+  color: #CC4567;
+  padding: 10px;
+}
+
+/* for the visited link */
+a:visited {
+  color: #23EB52;
+  padding: 10px;
+}
