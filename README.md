@@ -2,7 +2,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
 
 Mary Barsoum
-link to glitch
+[link to glitch](https://a1-barsoumrose.glitch.me)
 
 This project shows ...
 
