@@ -1,0 +1,12 @@
+dependencies:
+  '@splidejs/splide': 4.0.7
+packages:
+  /@splidejs/splide/4.0.7:
+    dev: false
+    resolution:
+      integrity: sha512-aJAOGJN2lwjwou3mxQofc3uhe+RXpw9in0WfysFX7AMT/mj7wSqoetfm41s7J8jU6FJ3ZWaLYgSJIpBAQ5wyqw==
+registry: 'https://registry.npmjs.org/'
+shrinkwrapMinorVersion: 9
+shrinkwrapVersion: 3
+specifiers:
+  '@splidejs/splide': ^4.0.7
