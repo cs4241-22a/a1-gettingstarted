@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "Aboreto"; /* This is an arbitrary name -- whatever works for you */
+  src: url("https://cdn.glitch.global/7a4c6128-745e-441b-8073-c50a9cf5b0b1/Aboreto-Regular.ttf?v=1661462981761")
+    format("truetype");
+}
+
+body {
+  background-color: #e4e1fa;
+  font-family: "Aboreto", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #b929d9;
+}
+
+p {
+  color: #a43af0;
+}
+
+/* ul, li {
+  color: rgb(170, 137, 232);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  list-style: inside;
+} */
+ul,
+li {
+  color: #ff8ef3;
+  text-align: left;
+  position: center;
+  list-style: inside;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  color: #9772db;
+}
+
+h3 {
+  color: #a43af0;
+}
+
+td,
+th {
+  border: 3px solid;
+  padding: 2%;
+  color: #9772db;
+}
+
+table {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  color: #b929d9;
+}
+
+img {
+  width: 50%;
+  padding-top: 10px;
+}
+
+footer {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.work {
+  text-align: left;
+  color: white;
+}
