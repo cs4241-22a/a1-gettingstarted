@@ -19,6 +19,7 @@ let TOOL = null;
 let selectedBand = null;
 let menuTones = ["a", "b", "c", "d"];
 let musicController = null;
+const onGlitch = false;
 const allBands = [
     {
         id: "pierce-the-veil",
@@ -60,6 +61,20 @@ const allBands = [
         url: "https://cdn.glitch.global/9d50777f-8cd6-40cf-afe5-e2614590fe6e/TOOL.mp3?v=1661723626138",
         volume: 1,
     }];
+const allTones = [
+    "https://cdn.glitch.global/9d50777f-8cd6-40cf-afe5-e2614590fe6e/c.mp3?v=1661723622094",
+    "https://cdn.glitch.global/9d50777f-8cd6-40cf-afe5-e2614590fe6e/db.mp3?v=1661723622494",
+    "https://cdn.glitch.global/9d50777f-8cd6-40cf-afe5-e2614590fe6e/d.mp3?v=1661723622243",
+    "https://cdn.glitch.global/9d50777f-8cd6-40cf-afe5-e2614590fe6e/eb.mp3?v=1661723622801",
+    "https://cdn.glitch.global/9d50777f-8cd6-40cf-afe5-e2614590fe6e/e.mp3?v=1661723622646",
+    "https://cdn.glitch.global/9d50777f-8cd6-40cf-afe5-e2614590fe6e/f.mp3?v=1661723622890",
+    "https://cdn.glitch.global/9d50777f-8cd6-40cf-afe5-e2614590fe6e/gb.mp3?v=1661723623086",
+    "https://cdn.glitch.global/9d50777f-8cd6-40cf-afe5-e2614590fe6e/g.mp3?v=1661723622990",
+    "https://cdn.glitch.global/9d50777f-8cd6-40cf-afe5-e2614590fe6e/ab.mp3?v=1661723621651",
+    "https://cdn.glitch.global/9d50777f-8cd6-40cf-afe5-e2614590fe6e/a.mp3?v=1661723623072",
+    "https://cdn.glitch.global/9d50777f-8cd6-40cf-afe5-e2614590fe6e/bb.mp3?v=1661723621938",
+    "https://cdn.glitch.global/9d50777f-8cd6-40cf-afe5-e2614590fe6e/b.mp3?v=1661723621776",
+]
 let keyChangeNeeded = false;
 
 // Define page data
@@ -276,8 +291,40 @@ window.onload = () => {
  * @param {Number} toneIndex index of which tone to play
  */
 function playTone(toneIndex) {
+
+    function getToneUrl(t) {
+        switch (t) {
+            case "c":
+                return allTones[0];
+            case "db":
+                return allTones[1];
+            case "d":
+                return allTones[2];
+            case "eb":
+                return allTones[3];
+            case "e":
+                return allTones[4];
+            case "f":
+                return allTones[5];
+            case "gb":
+                return allTones[6];
+            case "g":
+                return allTones[7];
+            case "ab":
+                return allTones[8];
+            case "a":
+                return allTones[9];
+            case "bb":
+                return allTones[10];
+            case "b":
+                return allTones[11];
+            default:
+                return allTones[0];
+        }
+    }
+
     const currentTone = menuTones[toneIndex];
-    const toneAudio = new Audio("./assets/notes/" + currentTone + ".mp3");
+    const toneAudio = new Audio(onGlitch ? getToneUrl(currentTone) : "./assets/notes/" + currentTone + ".mp3");
     if (toneAudio) {
         toneAudio.playbackRate = 1.5;
         toneAudio.volume = .2;
