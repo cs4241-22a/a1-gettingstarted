@@ -1,0 +1,63 @@
+body 
+{
+    background-color:#93F5E2;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+
+h1
+{
+    color: #B20FFF; 
+    text-align: center;
+
+}
+
+h2
+{
+    color: #EB2702;
+    text-align: left;
+    text-decoration: underline;
+
+}
+
+h3
+{
+    color: #8DE339;
+    text-align: left;
+    background-color: black;
+}
+h4
+{
+    color: #8DE339;
+    text-align: left;
+    background-color: black;
+}
+
+hr 
+{
+    color: white;
+    
+}
+
+p {
+    text-align: left;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-color: #FAC84B;
+    font-weight: bold;
+
+}
+
+.highlight {
+    background-color: yellow;
+
+}
+
+.bold {
+    font-weight: bold;
+
+}
+
