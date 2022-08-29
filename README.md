@@ -88,8 +88,8 @@ If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.c
 Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
 ---
 
-Charlie Roberts
-http://a1-charlieroberts.glitch.me
+Jonathan Palmieri
+http://a1-jdpalmieri1.glitch.me
 
 This project shows ...
 
@@ -98,3 +98,5 @@ This project shows ...
 
 ### Design Achievements
 - **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+
+![alt text](https://github.com/jdpalmieri/a1-gettingstarted/blob/main/ColorWheel.JPG)
