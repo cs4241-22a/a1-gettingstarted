@@ -10,6 +10,9 @@ const server = http.createServer( function( request,response ) {
     case '/index.html':
       sendFile( response, 'index.html' )
       break
+    case '/pictureOfMe.jpg':
+      sendFile(response, 'pictureOfMe.jpg')
+      break
     default:
       response.end( '404 Error: File Not Found' )
   }
