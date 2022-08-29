@@ -4,13 +4,16 @@ const http = require('http'),
 
 const server = http.createServer( function( request,response ) {
   switch( request.url ) {
-    case '/':
+  case '/':
       sendFile( response, 'index.html' )
       break
-    case '/index.html':
+  case '/index.html':
       sendFile( response, 'index.html' )
       break
-    default:
+  case '/index.css':
+      sendFile( response, 'index.css' )
+      break
+  default:
       response.end( '404 Error: File Not Found' )
   }
 })

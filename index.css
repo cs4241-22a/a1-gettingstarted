@@ -1,0 +1,46 @@
+/* LAYOUT */
+body {
+    margin: 40px auto;
+    max-width: 650px;
+    line-height: 1.5;
+    font-size: 18px;
+    color: #444;
+    padding: 0 10px;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+}
+table {
+    border-collapse: collapse;
+}
+th, td {
+    padding-right: 3em;
+    padding-left: 1em;
+}
+
+/* FONT */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* COLOR */
+h1 {
+    color: #4B02D9;
+}
+h2 {
+    color: #9902F8;
+}
+
+a {
+    color: #022DD9;
+}
+
+tr {
+    color: white;
+    background-color: #1D0EF0;
+}
+
+tr:nth-child(even) {
+    background-color: #0274F8;
+}
