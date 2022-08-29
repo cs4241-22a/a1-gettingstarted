@@ -1,5 +1,7 @@
-Charlie Roberts
-http://a1-charlieroberts.glitch.me
+Jack McEvoy
+http://a1-Linkd-Aether.glitch.me
+
+Disclaimer: This was was tested by directly opening index.html in browser. Functionality is not guaranteed when opening the site through node.js.
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the h1, h2, and main selectors, as well as the custom bgimg, bgcont, and bgtext selectors. Main was given a colored background and a border, and a filter that blurs any background elements. h1 and h2 were given a separate background color, text decorations, and a drop shadow. h1 also has a custom margin. bgimg, bgcont, and bgtext are given absolute positions, with each type having a different role on the page to position the background image and animated text. bgtext in particular rotates the contained text 90 degrees.
