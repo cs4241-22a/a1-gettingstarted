@@ -1,6 +1,7 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
-**Sophia Strano** (link here)
+**Sophia Strano https://a1-sophiastrano.glitch.me**
+
 This project is a basic overview of using git, github, and [Glitch](http://www.glitch.com/) to deploy a starter-website containing basic information about myself. 
 ![image](https://github.com/sophiastrano/a1-sophiastrano/blob/main/WebsiteScreenshoot.PNG)
 
