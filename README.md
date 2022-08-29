@@ -9,12 +9,12 @@ For this project I created a webpage that displayed some personal infomration us
 
 ### Technical Achievements
 - **Styled page with CSS**:
-    - body
-    - h1
-    - h2
-    - table, th, td
-    - a (and a:link, a:visited, a:hover, a:active)
-    - created various other CSS classes
+    - body: added font-family, opacity (for fade-in), and background color
+    - h1: added top and bottom margins
+    - h2: added top and bottom margins and made display to block
+    - table, th, td: center text in table, added padding, changed border-collapse and border styling
+    - a (and a:link, a:visited, a:hover, a:active): change webpage links color on the <a> html tag with CSS
+    - created various other CSS classes: created img styling and other header styling
 
 - **JavaScript animations**:
     - Scaling `<div>` width under `h2` headers in JavaScript with simple increment algorithm
