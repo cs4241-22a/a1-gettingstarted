@@ -7,7 +7,8 @@
     border: 2px solid #DC00E8;
     text-shadow: 2px 2px 2px #C1B87D;
     animation-name: background-change;
-    animation-duration: 100ms;
+    animation-duration: 2500ms;
+    animation-iteration-count: infinite;
 }
 @keyframes background-change {
     from{background-color: #7649b8;}
