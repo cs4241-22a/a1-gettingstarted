@@ -27,6 +27,6 @@ This project includes:
 ## Design Achievements
 
 - **Used custom color palette from Adobe Color**:
-  - I created my own color palette to use throughout my site. See repo for screenshot.
+  - I created my own color palette to use throughout my site. See color_palette.PNG for screenshot.
 - **Used the IM Fell DW Pica Font from Google Fonts**:
   - I used IM Fell DW Pica as the font for the headers on my site.
