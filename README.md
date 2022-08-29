@@ -6,7 +6,7 @@ This repository contains the source code for the website made for Assignment 1. 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the body, h1, h2, p, and ul tags. Also created styling rules for id="colorPalette" and class="courses".
 - **Javascript Animation**: Added an animation that changes the color of the rectangle. This is used to show the color palette that is used on this website.
-- **Other HTML Tags**: Used <ul>, <li>, <hr>, and <small>.
+- **Other HTML Tags**: Used ul, li, hr, and small.
         
 
 ### Design Achievements
