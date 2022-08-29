@@ -1,28 +1,150 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica"
+    />
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+  <body>
+    <style>
+      #car {
+        position: relative;
+        cursor: pointer;
+      }
+    </style>
+
+    <h1>
+      starter webpage <br />
+      (cindy's version)
+    </h1>
+
+    <p>Major(s): Computer Science/Data Science + Teacher Prep Program</p>
+    <p>Class: 2023 </p>
+    <p>(Some) Previous Courses Taken @ WPI</p>
+    <center>
+      <table>
+        <tr>
+          <th>Course Number</th>
+          <th>Course Name</th>
+        </tr>
+        <tr>
+          <td>CS3733</td>
+          <td>SOFTWARE ENGINEERING</td>
+        </tr>
+        <tr>
+          <td>CS548</td>
+          <td>KNOWLEDGE DISCOVERY + DATA MINING</td>
+        </tr>
+        <tr>
+          <td>CS543</td>
+          <td>COMPUTER GRAPHICS</td>
+        </tr>
+
+        <tr>
+          <td>DS3010</td>
+          <td>COMPUTATIONAL DATA INTELLIGENCE</td>
+        </tr>
+      </table>
+    </center>
+
+    <p>Campus Involvements</p>
+
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>President @ WPI Women in Computer Science</li>
+      <li>Crimson Key Tour Guide</li>
+      <li>Art and Design Club</li>
     </ul>
+
+    <p>Technologies</p>
+    <ul>
+      <li>HTML: a lot</li>
+      <li>CSS: a lot</li>
+      <li>Java: a lot</li>
+      <li>JavaScript: some</li>
+      <li>Ruby: none</li>
+      <li>Python: a lot</li>
+      <li>unit testing: some</li>
+    </ul>
+    <hr />
+    <h1>experience</h1>
+    <center>
+      <p>
+        <a href="https://www.linkedin.com/in/cindy-trac">visit my linkedin!</a>
+      </p>
+    </center>
+    <p>Working Experience</p>
+    <ul>
+      <li>Cloud Ops IT Engineer Intern @ Boston Scientific</li>
+      <li>EECS CO-OP @ MIT Lincoln Labatory</li>
+      <li>Technical Research Assistant @ WPI MAPLE Lab</li>
+    </ul>
+    <p>Other Experience</p>
+    <ul>
+      <li>Lead Program Ambassador @ Connections Program</li>
+      <li>Program Coordinator @ WPI Girls Who Code</li>
+      <li>Engineering Ambassador</li>
+    </ul>
+    <br />
+    <center>
+      <img
+        id="car"
+        src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fclipart-library.com%2Fimages_k%2Flightning-mcqueen-transparent-background%2Flightning-mcqueen-transparent-background-3.png&f=1&nofb=1"
+        width="75"
+        height="75"
+      />
+      <br />
+      <p>
+        Click to see how I'll be flying through senior year. <br />
+        Click again to see it again and again and again.
+      </p>
+    </center>
+
+    <script>
+      car.onclick = function () {
+        let start = Date.now();
+
+        let timer = setInterval(function () {
+          let timePassed = Date.now() - start;
+
+          car.style.left = timePassed / 5 + "px";
+
+          if (timePassed > 1800) clearInterval(timer);
+        }, 20);
+      };
+    </script>
+
+    <center>
+      <button onclick="toTheTop()" id="myBtn" title="Go to top">
+        Go to Top!
+      </button>
+    </center>
+    <script>
+      button = document.getElementById("myBtn");
+
+      window.onscroll = function () {
+        scroll();
+      };
+
+      function scroll() {
+        if (
+          document.body.scrollTop > 42 ||
+          document.documentElement.scrollTop > 42
+        ) {
+          button.style.display = "block";
+        } else {
+          button.style.display = "none";
+        }
+      }
+
+      function toTheTop() {
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+      }
+    </script>
   </body>
 </html>
