@@ -1,28 +1,150 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/myCSS.css" />
+    <script>
+      let id = null;
+      function moveBar() {
+        const elem = document.getElementById("animation");
+        const colors = [
+          "rgb(255, 159, 10)",
+          "rgb(252, 123, 10)",
+          "rgb(255, 96, 23)",
+          "rgb(130, 26, 5)",
+        ];
+        let pos = 0;
+        let leftDirection = false;
+        clearInterval(id);
+        id = setInterval(frame, 10);
+        function frame() {
+          if (leftDirection) {
+            pos -= 0.25;
+          } else {
+            pos += 0.25;
+          }
+          elem.style.left = pos + "vw";
+          if (
+            pos >=
+              93 - elem.style.width.substring(0, elem.style.width.lenth - 2) ||
+            pos <= 0
+          ) {
+            leftDirection = !leftDirection;
+            elem.style.background =
+              colors[
+                (colors.findIndex(
+                  (element) => element == elem.style.background
+                ) +
+                  1) %
+                  colors.length
+              ];
+          }
+        }
+      }
+    </script>
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
+  <body onload="moveBar()">
+    <div id="animationContainer">
+      <div id="animation"></div>
+    </div>
+    <div>
+      <h1>Information about Nick Grumski</h1>
+      <img
+        src="https://cdn.glitch.global/4ff76ccd-b275-4ab2-b2b6-ba0c464e99da/NickG.jpg?v=1661558921778"
+        alt="picture of me"
+      />
+    </div>
     <p>
-      [Self introduction]
+      Hello and welcome to my webpage. Here you can find information about be
+      including my college major, work experience and other things. I am a
+      senior Robotics Engineering and Computer Science double major at Worcester
+      Polytechnic Institute (WPI). Some clubs I am involved with on campus
+      include the WPI Marching and Pep Band and the WPI Combat Robotics club.
+      You can find my youtube channel
+      <a href="https://www.youtube.com/channel/UCHs9_BTDbod34VftSbGDm5w">here</a
+      >.
     </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
-
+    <div>
+      <p>Here is a rumble that I fought in: <i>(I'm the bot with purple)</i></p>
+      <video
+        class="fight"
+        alt="video of 3 pound combat robots fighting"
+        controls
+      >
+        <source
+          src="https://cdn.glitch.me/4ff76ccd-b275-4ab2-b2b6-ba0c464e99da/robot_fight.mov?v=1661557589252"
+        />
+      </video>
+    </div>
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+    <h3>Working Experience</h3>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>
+        Omnicell - Software Engineering Intern | May 2021 - Aug 2021, May 2022 -
+        Aug 2022
+        <ul>
+          <li>
+            Working on a robot cabinet to dose medicine from vials and stock
+            bags into syringes and IV bags.
+          </li>
+        </ul>
+      </li>
+      <li>
+        WPI - Undergraduate Research Assistant | Feb 2021 - May 2021
+        <ul>
+          <li>
+            Working on a robot to prevent water pollution by scaring birds off
+            powerlines.
+          </li>
+        </ul>
+      </li>
     </ul>
+    <h3>Computer Science Courses</h3>
+    <ul>
+      <li>CS 2103 - Accelerated Object-Oriented Design Concepts</li>
+      <li>CS 2022 - Discrete Mathematics</li>
+      <li>CS 2303 - Systems Programming Concepts</li>
+      <li>
+        CS 2011 - Introduction To Machine Organization And Assembly Language
+      </li>
+      <li>CS 2223 - Algorithms</li>
+      <li>CS 3043 - Social Implications Of Information Processing</li>
+    </ul>
+    <h3>Technologies</h3>
+    <table class="technologies">
+      <tr>
+        <th>Tool</th>
+        <th>Experience Level (1-5)</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Ruby</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Unit Testing</td>
+        <td>3</td>
+      </tr>
+    </table>
   </body>
 </html>
