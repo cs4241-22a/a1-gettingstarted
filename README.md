@@ -1,5 +1,5 @@
 Readme 
-(Everything works locally, but glitch did something weird with evberything correct.)
+(Everything works locally, but glitch did something weird with everything correct.)
 ---
 
 Shiyue(Vanessa) Wang
