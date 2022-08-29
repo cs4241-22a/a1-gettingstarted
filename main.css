@@ -1,0 +1,55 @@
+img{
+  max-width:100%;
+  border: 3px solid;
+  animation-name: imgBorder;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+body {
+  font-family: 'Kanit', sans-serif;
+  background-color:#D4CDF4;
+  padding-left: 10px;
+}
+
+h1{
+  text-align: center;
+  font-size: 25px;
+  text-decoration: underline;
+  color: #815E5B;
+}
+h2{
+  text-align: center;
+  font-size: 22px;
+  text-decoration: underline;
+  color: #685155;
+}
+
+p{
+  text-align: left;
+  font-size: 18px;
+  color: #7A6F9B;
+}
+
+ul{
+  text-align: left;
+  font-size: 16px;
+  color: #8B86C1;
+}
+
+@keyframes imgBorder{
+  0% {
+    border-color: #E23813;
+  }
+  25%{
+    border-color: #E2DF13;
+  }
+  50%{
+    border-color: #13E263;
+  }
+  75%{
+    border-color: #1356E2;
+  }
+  100%{
+    border-color: #A313E2;
+  }
+}
