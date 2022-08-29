@@ -1,28 +1,65 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+<head>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Raleway">
+  <link rel="stylesheet"
+        href="style.css">
+  <title>CS4241 Assignment 1</title>
+  <meta charset="utf-8">
+</head>
+<body>
+<div class="loader" id="load">
+  <div class="wheel"></div>
+</div>
+<header class="top">
+  <p class="top-intro">
+    Hello, I'm
+  </p>
+  <h1 class="top-heading">
+    Jacob van Steyn
+  </h1>
+</header>
+<section class="intro">
+  <h1>Information about me</h1>
+  <p>I'm a part-time developer and full time student at <a href="https://www.wpi.edu/">Worcester Polytechnic Institute</a>.</p>
+  <p>I love working on new projects and technologies especially in the field of AI & machine learning.</p>
+</section>
+<section class="more">
+  <h1>Interests</h1>
+  <p>Outside of school and work, I enjoy anything to do with the outdoors. Surfing, skiing, mountain biking, and backpacking are a few of my favorite activities.</p>
+</section>
+<section class="education">
+  <h1>Education</h1>
+  <h2>Worcester Polytechnic Institute</h2>
+  <p>I'm currently studing towards a double major in Computer Science and Data Science as part of the class of 2023.</p>
+  <h3>Relevant Coursework</h3>
+  <ul>
+    <li>Software Engineering</li>
+    <li>Machine Learning</li>
+    <li>Algorithms</li>
+    <li>Introduction To Artificial Intelligence</li>
+    <li>Data Analysis For Decision Making</li>
+    <li>Database Systems</li>
+    <li>Modeling and Data Analysis</li>
+    <li>Various Math Courses</li>
+  </ul>
+</section>
+<section class="experience">
+  <h1>Work Experience</h1>
+  <h2>SAAS Startup - Founder</h2>
+  <p>Founded a small online SAAS Business single-handedly that served ~300,000+ users daily at its peak. Developed and ran the business from scratch by myself while in school full-time.</p>
+  <h2>SCI Consulting - Software Engineering Contractor</h2>
+  <p>Developed a full-stack webapp using .NET to be used by various counties in California for ballot tabulation and verification.</p>
+  <h2>Positronics Incorporated - Internship</h2>
+  <p>Designed pathfinding software in Java for robotic assistants using A* and other algorithms</p>
+</section>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+<footer>
+  <p>© Jacob van Steyn, 2022</p>
+</footer>
+<script>
+  setTimeout(function () {document.getElementById('load').style.display = "none"}, 1500);
+</script>
+</body>
 </html>

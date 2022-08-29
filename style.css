@@ -1,0 +1,137 @@
+:root {
+    --color-text-main: #000000;
+    --color-primary: #FFFF00;
+    --wrapper-height: 87vh;
+    --image-max-width: 300px;
+    --image-margin: 3rem;
+    --font-family: "Raleway";
+}
+
+body {
+    font-family: Raleway, serif;
+    background-color: var(--color-bg);
+}
+
+footer {
+    margin: 60px 0 0;
+    padding: 25px 0;
+    text-align: center;
+    background-color: #5CBDF7;
+}
+footer > p {
+    color: #FBF601;
+}
+
+.top {
+    padding: 40px 0;
+    background-image: url("https://t4.ftcdn.net/jpg/04/62/04/53/360_F_462045391_NAC1PacXxTWcSMy7gMgymsTqh5izdaMd.jpg");
+    background-size: cover;
+    border-top: solid 10px #ADAB02;
+}
+
+.top-heading, .top-intro, footer {
+    text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+    .top {
+        padding: 40px 0;
+    }
+    .top-heading {
+        font-size: 40px;
+    }
+}
+
+.top-intro {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.top-heading {
+    color: #FBF601;
+    margin-top: -10px;
+    font-weight: bold;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.intro,
+.more,
+.education,
+.experience {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+.intro > p,
+.more > p,
+.education > p,
+.experience > p,
+footer > p {
+    /* Typography Declarations */
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.education > h2, 
+.experience > h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    /* Layout */
+    margin: 2em 0 1em 0;
+}
+
+.education > h3 {
+    font-size: 1em;
+    font-style: italic;
+    padding-left: 1em;
+}
+
+.education > ul {
+    margin-left: 1.5em;
+}
+
+section > h1 {
+    margin-top: 2em;
+}
+
+a {
+    font-style: italic;
+    font-weight: bolder;
+    text-decoration: underline;
+    color: #2A7CAB;
+}
+
+.wheel {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    z-index: 100;
+}
+
+.loader {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0.7;
+    background-color: #fff;
+    z-index: 98;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
