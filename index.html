@@ -1,28 +1,89 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      function slideSquare() {
+        let id = null;
+        const elem = document.getElementById("square");
+        let pos = 0;
+        clearInterval(id);
+        id = setInterval(frame, 5);
+        function frame() {
+          if (pos == 450) {
+            clearInterval(id);
+          } else {
+            pos++;
+            elem.style.left = pos + "px";
+          }
+        }
+      }
+    </script>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <div id="background1">
+      <div id="background2">
+        <h1>Information about Caleb Scopetski</h1>
+        <p>Class of 2024</p>
+        <p>Computer Science Major</p>
+        <h2>Previous Computer Science Courses</h2>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+        <ul>
+          <li><abbr title="Introduction to Program Design">CS1101</abbr></li>
+          <li><abbr title="Discrete Mathematics">CS2022</abbr></li>
+          <li><abbr title="Object Oriented Design Concepts">CS2102</abbr></li>
+          <li><abbr title="Algorithims">CS2223</abbr></li>
+          <li><abbr title="Systems Programming Concepts">CS2303</abbr></li>
+          <li><abbr title="Operating Systems">CS3013</abbr></li>
+          <li><abbr title="Social Implications of Computing">CS3043</abbr></li>
+          <li><abbr title="Foundations of Computer Science">CS3133</abbr></li>
+          <li><abbr title="Database Systems I">CS3431</abbr></li>
+          <li><abbr title="Software Engineering">CS3733</abbr></li>
+        </ul>
+        <h2>Experience</h2>
+        <table>
+          <tr>
+            <th>Technology</th>
+            <th>Experience Level</th>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td>some</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>some</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>a lot</td>
+          </tr>
+          <tr>
+            <td>Javascript</td>
+            <td>some</td>
+          </tr>
+          <tr>
+            <td>Ruby</td>
+            <td>none</td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>some</td>
+          </tr>
+          <tr>
+            <td>Unit Testing</td>
+            <td>some</td>
+          </tr>
+        </table>
+        <p><button onclick="slideSquare()">Slide Square</button></p>
+
+        <div id="canvas">
+          <div id="square"></div>
+        </div>
+        <a href="https://www.google.com/">Link to Cool Website</a>
+      </div>
+    </div>
   </body>
 </html>
