@@ -29,7 +29,7 @@ Achievements
 - **Additional HTML tags** such as
   -  **Linked an image** of myself by adding the file to my repo and using the <img> tag inside of a container
   - **Added linked audio and controls** Tried to implement autoplay but was blocked by google chrome- so I used the <audio> tag to include smooth jazz (see above)
- - 2. (5 points) Add a simple JavaScript animation to the page.
+
 
 **Design Achievements**
 - **Created Custom Adobe Color Palette** in various shades of soft green that I found pleasing as it is my favorite color!
