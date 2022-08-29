@@ -4,14 +4,21 @@
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="main.css" />
+    <script>
+      function myFunction(){
+      setInterval(currTime, 1000);
+      function currTime() {
+        const date = new Date();
+        document.getElementById("clock").innerHTML = date.toLocaleTimeString();
+        }
+      }
+    </script>
   </head>
-   <script>
-  </script>
   <body>
     <h1>Information about Ryan Luu</h1>
     <div class="bioSection">
       <p>
-        I am a student of the class of 2023 at Worcester Polytechnic Institute.
+        I am a student of the Class of 2023 at Worcester Polytechnic Institute.
       </p>
       <p>I am majoring in Computer Science and minoring in Data Science.</p>
     </div>
@@ -20,7 +27,7 @@
       src="https://cdn.glitch.global/124a5a9a-51c6-4708-8ce5-bcaa3f8548a3/645.JPG?v=1661731658725"
     />
     <div class="EXP">
-      <h2 id="highlight">Experience</h2>
+      <h2>Experience</h2>
       <table style="width: 100%">
         <tr>
           <th style="background-color: #f2d8c2">Methods/Languages</th>
@@ -78,9 +85,19 @@
         <li>CS 3041 - Human-Computer Interaction</li>
         <li>CS 3043 - Social Implications Of Information Processing</li>
         <li>CS 3133 - Foundations Of Computer Science</li>
-        <li>CS 3733 - Software Engineering</li>
         <li>CS 3516 - Computer Networks</li>
+        <li>CS 3733 - Software Engineering</li>
       </ul>
     </div>
   </body>
+  <footer>
+    <button onclick="myFunction()">
+        Click Here for Current Time
+      </button>
+    <p id="clock">
+      </p>
+    <p>
+       CS4241 Assignment 1 © Ryan Luu 2022
+    </p>
+  </footer>
 </html>
