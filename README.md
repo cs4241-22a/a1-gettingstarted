@@ -33,5 +33,6 @@ This project shows ...
 5. script to link my javascript animation code
 
 ## Design Achievements
-- **Used all colors from color wheel**: I used the three shades of blue for the body and 2 divs surrounding the main content of the page. I used the shades of yellow to color the square and background of the javascript animation. 
-- **Used the Audiowide Font from Google Fonts**: I used Audiowide as the main font for my site.
+**Used all colors from color wheel**: I used the three shades of blue for the body and 2 divs surrounding the main content of the page. I used the shades of yellow to color the square and background of the javascript animation. 
+
+**Used the Audiowide Font from Google Fonts**: I used Audiowide as the main font for my site.
