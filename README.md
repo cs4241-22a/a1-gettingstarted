@@ -2,7 +2,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===================================================================
 
 Sean McMillan
-
+https://a1-seansta18.glitch.me/
 
 This project shows some personal information about myself including some of the classes I have taken. There is basic use of HTML and CSS within the project along with
 extra features to do with the CSS and Google Fonts.
