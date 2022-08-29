@@ -95,6 +95,8 @@ This project shows ...
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the p, li, and a selectors...
+- **HTML tags**: Hyperlinks <a>; Ordered lists <ol>; Head 3 <h3>; Head 4 <h4>; Head 5 <h5>; Head 6 <h6>; Striketrhough <s>;
+
 
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Used the Contrail One Font from Google Fonts**: I used Contrail One as the font for the main title of my site
