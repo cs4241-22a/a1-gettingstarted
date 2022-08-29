@@ -1,13 +1,29 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>CS4241 Assignment 1</title>
+    <title>CS4241 Assignment 1 By Griffin Atchue</title>
+    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Silkscreen"/>
     <meta charset="utf-8">
+    <script>
+      window.onload = function(){
+        const imgs = ['https://cdn.glitch.global/78c6a1f6-28e8-45e8-9122-c0b3aabd3fdd/room?v=1661731342877',
+                      'https://cdn.glitch.global/78c6a1f6-28e8-45e8-9122-c0b3aabd3fdd/image_50729217.JPG?v=1661732203400', 
+                      'https://cdn.glitch.global/78c6a1f6-28e8-45e8-9122-c0b3aabd3fdd/image_67180289.JPG?v=1661732193833']
+        let i = 0
+        setInterval(
+          function() {
+            document.images.item(0).src = imgs[i++ % 3];
+          },
+          5000
+        )
+      }
+    </script>
   </head>
   <body>
     <h1>Information about Griffin Atchue</h1>
     <p>
-      Hello! I'm Griffin, a senior at WPI.
+      <b>Hello! I'm Griffin, a senior at WPI.</b>
     </p>
     <p>
       I am a member of the class of 2023 double majoring in Computer Science, and IMGD (Interactive Media and Game Design). 
@@ -16,11 +32,14 @@
       Outside of school I enjoy time with my two black labs Koda and Arlo.
       I also enjoy outside activities such as hiking and biking, 
       and indoor ones as well such as board games, reading, and esports.
+      Here are some pictures of my dogs.
     </p>
-
+    <img id="img" src="https://cdn.glitch.global/78c6a1f6-28e8-45e8-9122-c0b3aabd3fdd/room?v=1661731342877" 
+         alt="Two black labs in living room" width="500">
+    
     <h2>Experience</h2>
     <p>
-      Technology experience
+      <u>Technology experience</u>
     </p>
     <ul>
       <li>HTML: some</li>
@@ -31,7 +50,7 @@
       <li>unit testing: a lot</li>
     </ul>
     <p>
-      Class Experience
+      <i>Class Experience</i>
     </p>
     <ul>
       <li>CS1101 - Introduction to Program Design</li>
@@ -45,5 +64,8 @@
       <li>CS3733 - Software Engineering</li>
       <li>CS4731 - Computer Graphics</li>
     </ul>
+    <button onclick="alert('Thanks for clicking!')">
+      Click me!
+    </button>
   </body>
 </html>
