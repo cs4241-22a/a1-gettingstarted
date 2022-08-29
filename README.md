@@ -2,6 +2,8 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
 Jacquelyn Lopez
 
+Glitch Link: https://a1-jlopez-codes.glitch.me/
+
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for h1, section size, tags, 4 different colors, blinking rule, h2, p1, p, centering text, and my name.
