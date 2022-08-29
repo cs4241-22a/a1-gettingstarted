@@ -3,11 +3,10 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 
 *DUE: Monday, August 30th by 11:59 AM (before the start of class!)*  
 
-*Link:*
+*Link:* https://a1gabi246.glitch.me
 
 Achievements
 ---
-Below are some suggested technical and design achievements. You can use these to help boost your grade up to an A and customize the assignment to your personal interests. These are recommended acheivements, but feel free to create/implement your own... just make sure you thoroughly describe what you did in your README and why it was challenging. ALL ACHIEVEMENTS MUST BE DESCRIBED IN YOUR README IN ORDER TO GET CREDIT FOR THEM.
 
 *Technical*
 - Added background color in CSS using “body {background-color: rgb(25, 135, 171); }”
