@@ -43,12 +43,12 @@ This project shows some personal information of me as a WPI student through HTML
   
   2.Used **a** to add a link to https://www.wpi.edu/
   
-  3.Used **img** to add a picture into **a**. Once user click the image of wpi, it will navigate the user to https://www.wpi.edu/
+  3.Used **img** to add a picture into **a** . Once user click the image of wpi, it will navigate the user to https://www.wpi.edu/
  
   4.Used **footer** to print the name and year at the bottom of web page
   
   5.Used **audio** to embed the audio into  HTML document. Users can start playback, adjust volume and playback speed independently.
   
 ## Design Achievements
-- **Created a color palette using color.adobe.com**. I've posted a screenshot of the palette in the repo.
+- **Created a color palette using color.adobe.com**. I've posted a screenshot of the palette "palette.png" in the repo.
 - **Used the Silkscreen Font from Google Fonts**: I used Silkscreen as the font for the primary copy text in my site.
