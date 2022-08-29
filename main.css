@@ -1,9 +1,19 @@
 body {
-    background-color: powderblue;
+    background-color: #99F2E0;
   }
   h1 {
-    color: blue;
+    color: #2AE869;
+    font-family: "Audiowide", sans-serif;
+  }
+  h2{
+    color: #32B1DB;
+    font-family: "Audiowide", serif;
   }
   p {
-    color: red;
+    color: #422AE8;
+    font-family: "Audiowide", serif;
+  }
+  li{
+    color: #2C6AF2;
+    font-family: "Audiowide", serif;
   }
