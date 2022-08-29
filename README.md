@@ -1,11 +1,10 @@
 Readme 
-(Everything works locally, but glitch did something weird with everything correct.)
 ---
 
 Shiyue(Vanessa) Wang
 https://a1-capricieuxv.glitch.me
 
-Github Page (This one works well)
+Github Page
 https://capricieuxv.github.io/a1-gettingstarted/
 
 This project shows basic operations to creating a website.
