@@ -2,17 +2,21 @@ p {
     color: red;
     color: #000106;
   }
-  h1 {
+h1 {
     font-family: 'Contrail One', cursive;
     color: #000106;
     background: #67FFEF;
   }
-  h2 {
+h2 {
     color: #000106;
     background: #67FFEF;
   }
-  s {
+s {
     margin-left: 5px;
     color: #000106;
   }
-  
+ol {
+  color: #000106;
+  background: #67FFEF;
+  font-size: medium;
+}
