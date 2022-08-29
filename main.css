@@ -1,0 +1,28 @@
+body{
+  background: #0DFFD8;
+}
+h1 {
+  background: #0BDE75;
+  font-family: AudioWide, serif;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+h2 {
+  background: #00F527;
+  font-family: AudioWide, serif;
+}
+p {
+  background: #37DE0B;
+  font-family: Silkscreen, sans-serif;
+}
+li {
+  background: #AAFC23;
+  font-family: Silkscreen, sans-serif;
+}
+button {
+  background: #0BDE75;
+  font-family: Silkscreen, sans-serif;
+}
+
