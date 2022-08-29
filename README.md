@@ -1,5 +1,5 @@
 Yueting Zhu
-https://glitch.com/~a1-yuetingzhu1
+https://a1-yuetingzhu1.glitch.me/
 
 This project shows my personal introduction and this is for HW1 in CS4445 Webware
 
