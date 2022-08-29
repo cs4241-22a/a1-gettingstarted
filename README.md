@@ -12,4 +12,4 @@ The site was created using HTML, CSS, and Javascript. CSS was used to set the fo
 
 ### Design Achievements
 - **Created a color palette using color.adobe.com**: The color palette used was created using color.adobe.com. The palette utilizes monochromatic colors, specifically #417980 for the background color, #81F2FF for the h1 text, #68C2CC for the h2 text, #CFFAFF for paragraph and list text, and #677D80 for the image border. The included image colorwheel.png shows the colors on the color.adobe.com site.
-- **Used a font from Goolge Fonts in the website.**: The font used from Google Fonts was PT Sans Narrow. The font was used for all the text contained within the website.
+- **Used a font from Google Fonts in the website.**: The font used from Google Fonts was PT Sans Narrow. The font was used for all the text contained within the website.
