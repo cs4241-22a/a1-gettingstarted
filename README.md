@@ -20,7 +20,7 @@ This project shows basic operations to creating a website.
 
 
 - **Animation with JS**: 
--  JS animation: press "A" "S" "D" "F" to change the background color, "R" to reset
+-  JS animation: press "A" "S" "D" "F" "G" to change the background color, "R" to reset
 
 
 - **Extra tags**:
