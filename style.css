@@ -1,0 +1,18 @@
+
+
+
+li {
+  list-style-type: none;
+  padding: 10px;
+  outline: 1px solid #F0B05C;
+}
+
+roman{
+  list-style-type: upper-roman;
+  padding-left: 50px;
+  color: #F0B05C;
+}
+
+body{
+  background-color: #F0B05C;
+}

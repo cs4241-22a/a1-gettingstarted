@@ -3,26 +3,121 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <style>
+      
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+      h1{
+        color: #F0B05C;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 250%;
+        margin-left: 5px;
+      }
+      h2{
+        color: #14F5A4;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 150%;
+        margin-left: 5px;
+      }
+      
+      p{
+        color: #1381EB;
+        font-family: 'Montserrat', sans-serif;
+        margin-left: 10px;
+      }
+      
+      ul{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 90%;
+        margin-left: 20px;
+        list-style-type: kannada;
+      }
+      
+      #box {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        background: black;
+        margin-left: 20px;
+      }
+      #animate {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: yellow;
+      }
+
+    </style>
+    
+
+    
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <a href="https://www.wpi.edu/"><img src="https://cdn.discordapp.com/attachments/926188769323929721/1013709298578231417/WPI_logo.png" width="200" alt="WPI logo"></a>
+    <h1>Info. about Yinuo (Enoch) Zhao</h1>
     <p>
-      [Self introduction]
+      Hey! Didn't see you there :D
     </p>
     <p>
-      [Major and other information]
+      My name is Enoch and I'm a <a href="https://www.wpi.edu/academics/departments/computer-science">CS</a> and 
+      <a href="https://www.wpi.edu/academics/departments/robotics-engineering">RBE</a> Major with a Minor in <a href="https://music.wpi.edu/">Music</a>
+    <br> of the Class of 2024
     </p>
     <p>
-      [Other things]
+      Outside of school I enjoy playing the piano and vibing out to music.
     </p>
 
-    <h2>Experience</h2>
+    <h2>Previous Courses and Experience</h2>
+    
     <p>
-      Working experience
+      Previous CS related courses:
     </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+    <ul style="color:#57DE1D;">
+      <li>CS 1101</li>
+      <li>CS 2102</li>
+      <li>CS 2303</li>
+      <li>CS 2223</li>
+      <li>CS 3733</li>
+      <li>CS 3516</li>
+      <li>RBE 2002</li>
+      <li>ECE 2049</li>
     </ul>
+    <p>
+      Programming languages experience:
+    <ul style="color: #F5DB14; background-color: black">
+      <li>HTML - intermediate proficiency</li>
+      <li>CSS - intermediate proficiency</li>
+      <li>JS - intermediate proficiency</li>
+      <li>Python - intermediate proficiency</li>
+      <li>Java - intermediate proficiency</li>
+    </ul>
+      
+    </p>
+  
+    <p></p>
+      <div id ="box">
+        <div id="animate">
+        </div>
+  </div>
+  
+      <script> 
+      
+        let id = null;
+        const elem = document.getElementById("animate");   
+        let pos = 0;
+        clearInterval(id);
+        id = setInterval(frame, 5);
+        function frame() {
+          if (pos == 350) {
+            clearInterval(id);
+          } else {
+            pos++; 
+            elem.style.top = pos + "px"; 
+            elem.style.left = pos + "px"; 
+          }
+        }
+      
+    </script>
+  
   </body>
 </html>
