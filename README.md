@@ -28,6 +28,7 @@ This was particularly challenging as I had not worked with async functions befor
     - BR -> tag to add breaks between sections.
     - IMG -> to load in an image, I used this tag to load in a gif.
     - TABLE -> to organize data, I used this to organize my technical experience in a user friendly and intuitive way.
+    - A -> anchor tag to link to an external website, used to link a project i am working on
     
 
 ## Design Achievements
