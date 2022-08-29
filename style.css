@@ -1,6 +1,7 @@
 p{
     color: indigo;
     padding-left: 50px;
+    font-weight: bold;,f fu
 }
 
 h1{
@@ -8,9 +9,14 @@ h1{
 }
 
 h2{
-    font-family: "Arial Rounded", cursive;
+    font-family: "Dancing Script", cursive;
 }
 
 ul{
     padding-left: 50px;
+}
+
+img{
+    height: 150px;
+    width: 200px;
 }
