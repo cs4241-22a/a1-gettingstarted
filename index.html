@@ -1,28 +1,94 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
+
+<head>
+  <title>CS4241 Assignment 1</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gantari">
+</head>
+
+<body>
+  <main>
+    <h1>Information about Jack McEvoy</h1>
     <p>
-      [Self introduction]
+      Hi! I'm Jack. I'm in the WPI class of 2024.
+      You can find me on GitHub at <a href="https://github.com/Linkd-Aether">Linkd-Aether</a>.
+      My Discord username is LinkdAether#5643.
     </p>
     <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
+      Majors:
+    <ul>
+      <li>Computer Science</li>
+      <li>Interactive Media and Game Design (Tech)</li>
+    </ul>
     </p>
 
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+    <h3>
+      Classroom experience:
+    </h3>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>CS 1102</li>
+      <li>CS 2103</li>
+      <li>CS 2011</li>
+      <li>CS 2303</li>
+      <li>CS 2223</li>
+      <li>CS 3733</li>
+      <li>CS 4731</li>
     </ul>
-  </body>
+    <h3>
+      Language experience:
+    </h3>
+    <ul>
+      <li>HTML - some</li>
+      <li>CSS - some</li>
+      <li>Java - a lot</li>
+      <li>JavaScript - some</li>
+      <li>Ruby - none</li>
+      <li>Python - some</li>
+      <li>Unit Testing - a lot</li>
+    </ul>
+
+    <hr>
+
+    <br>
+    Please sign this digital guestbook. All signatures are stored securely in the cloud, I think!
+    <br><br>
+
+    <form>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <input type="reset" value="Submit">
+    </form>
+
+  </main>
+
+  <bgimg>
+    <img
+      src="https://www.wpi.edu/sites/default/files/inline-image/Offices/Marketing-Communications/WPI_Inst_Prim_FulClr_PREVIEW.png"
+      alt="WPI Logo. Please work." width="750">
+  </bgimg>
+
+  <bgtcont>
+    <bgtext id="bgtext">
+      This is animated text. This is animated text. This is animated text. This is repeating. This is cake. This is a
+      lie. The Crests are to blame. This is podracing. This is the Monado's power! Three. Two. One. Go! Burn my bread.
+      This is a message from Lord Nergal, I await you on the Dread Isle. Let's mosey. I love you, and all you guys! Time
+      to tip the scales! If you are still reading this, thank you. Sorry for the color scheme. I make my own fate! Wake
+      up, get up, get out there! Also try Minecraft! This is ending. Thank you for playing.
+    </bgtext>
+  </bgtcont>
+  <script>
+    const bgtext = document.getElementById("bgtext");
+    function shift() {
+      bgtext.style.top = `${getComputedStyle(bgtext).top.split('px')[0] - 1}px`
+    }
+
+    setInterval(shift, 100);
+  </script>
+</body>
+
 </html>
