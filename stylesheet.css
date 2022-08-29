@@ -31,7 +31,9 @@ h2 {
 }
 
 li {
+	color: green;
 	position: relative;
 	top: 420px;
 	left: 340px;
+	border: double;
 }
