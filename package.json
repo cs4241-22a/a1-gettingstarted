@@ -6,7 +6,4 @@
   "scripts": {
     "start": "node server.js"
   },
-  "dependencies": {
-    "@splidejs/splide": "^4.0.7"
-  }
 }
