@@ -4,6 +4,19 @@
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+    <script>
+      window.onload = function () {
+        const colors = ["blue","red","green"]
+        let i = 0
+        setInterval(
+          function(){
+            document.body.style = "background:" + colors[i%3];
+            i = i + 1
+          },
+          1000
+          )
+      };
+    </script>
   </head>
   <body>
     <h1>Information about Yueting(Alex) Zhu</h1>
