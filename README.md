@@ -27,4 +27,6 @@ This project shows basic operations to creating a website.
 -  Link to my cat: his name is the hyperlink
 
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Create a color palette**: I used "#0CF2C2", "#120DFC", "#E6006F", "#FF8B08", "#EAF500"
+
+- **Used the Roboto Font from Google Fonts**: I used "Dancing Script", cursive for header2.
