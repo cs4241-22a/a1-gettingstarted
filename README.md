@@ -1,8 +1,9 @@
 Readme 
+Everything works locally, but glitch did something weird.
 ---
 
 Shiyue(Vanessa) Wang
-
+https://a1-capricieuxv.glitch.me/
 
 This project shows basic operations to creating a website.
 
