@@ -1,28 +1,128 @@
 <!doctype html>
 <html lang="en">
+  
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel= "stylesheet" href="main.css " />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
   </head>
+  
   <body>
-    <h1>Information about [Your name here]</h1>
+
+     
+    <h1>Information about Sizhe Li</h1>
+    
     <p>
-      [Self introduction]
+      I am a senior student in the class of 2023. I come from China. You can also call me Frank.
     </p>
+    
     <p>
-      [Major and other information]
+      My major is Computer Sicence and my minor is IMGD.
     </p>
+    
     <p>
-      [Other things]
+      Hope we can have a good semester together!
     </p>
 
+        <h2>CS Course I have taken at WPI</h2>
+    <ul>
+      <li>CS 1101 - Introduction To Program Design</li>
+      <li>CS 2011 - Introduction To Machine Organization And Assembly Language</li>
+      <li>CS 2022 - Discrete Mathematics</li>
+      <li>CS 2102 - Object-Oriented Design Concepts</li>
+      <li>CS 2223 - Algorithms</li>
+      <li>CS 2303 - Systems Programming Concepts</li>
+      <li>CS 3013 - Operating Systems</li>
+      <li>CS 3041 - Human-Computer Interaction</li>
+       </ul>
+    
     <h2>Experience</h2>
+    
+    <p>Technologies and methods
+    </p>
+    <ul>
+      <li>CSS</li>
+      <li>Java</li>
+      <li>Python</li>
+      <li>R</li>
+      <li>C/C++</li>
+      <li>ZBrush</li>
+      <li>SolidWorks</li>
+      <li>Adobe Photoshop</li>
+      <li>Adobe Premiere</li>
+    </ul>
+    
     <p>
       Working experience
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>Part-time photographer</li>
+      <li>Teaching Chinese to child</li>
+      <li>WPI Summer Staff</li>
+      <li>Still looking for something related to the major</li>
     </ul>
-  </body>
+   <audio autoplay="autoplay" loop="loop" preload="auto" controls="controls"
+    src="https://cdn.glitch.global/2adcadf9-a1af-4f09-8939-db96159b2a73/SnapSave.io%20-%20%E6%88%B4%E5%86%A0%E5%BC%8F%E3%80%9C%E5%A6%96%E7%B2%BE%E5%86%86%E5%8D%93%E9%A0%98%E5%9F%9F%EF%BC%9A%E5%B4%A9%E5%A3%8A%E3%80%80%E5%A6%96%E7%B2%BE%E5%86%86%E5%8D%93%E9%A0%98%E5%9F%9F%20%E3%82%A2%E3%83%B4%E3%82%A1%E3%83%AD%E3%83%B3%E3%83%BB%E3%83%AB%E3%83%BB%E3%83%95%E3%82%A7%E3%80%80MAP%20bgm%EF%BC%96%20(128%20kbps).mp3?v=1661737976842">
+</audio>
+    
+    <div class="console-container"><span id="text"></span><div class="console-underscore" id="console">&#95;</div></div>
+    <script type="text/javascript">consoleText(['Hello World!', 'CS4241', 'SIZHE LI =V='], 'text',['#2843AD','#F394F8','White']);
+
+function consoleText(words, id, colors) {
+  if (colors === undefined) colors = ['#fff'];
+  var visible = true;
+  var con = document.getElementById('console');
+  var letterCount = 1;
+  var x = 1;
+  var waiting = false;
+  var target = document.getElementById(id)
+  target.setAttribute('style', 'color:' + colors[0])
+  window.setInterval(function() {
+
+    if (letterCount === 0 && waiting === false) {
+      waiting = true;
+      target.innerHTML = words[0].substring(0, letterCount)
+      window.setTimeout(function() {
+        var usedColor = colors.shift();
+        colors.push(usedColor);
+        var usedWord = words.shift();
+        words.push(usedWord);
+        x = 1;
+        target.setAttribute('style', 'color:' + colors[0])
+        letterCount += x;
+        waiting = false;
+      }, 1000)
+    } else if (letterCount === words[0].length + 1 && waiting === false) {
+      waiting = true;
+      window.setTimeout(function() {
+        x = -1;
+        letterCount += x;
+        waiting = false;
+      }, 1000)
+    } else if (waiting === false) {
+      target.innerHTML = words[0].substring(0, letterCount)
+      letterCount += x;
+    }
+  }, 120)
+  window.setInterval(function() {
+    if (visible === true) {
+      con.className = 'console-underscore hidden'
+      visible = false;
+
+    } else {
+      con.className = 'console-underscore'
+
+      visible = true;
+    }
+  }, 400)
+}</script>  
+    <a href= "https://www.wpi.edu/"><img src="https://cdn.glitch.global/2adcadf9-a1af-4f09-8939-db96159b2a73/WPI_logo.svg.png?v=1661724816009" width ="240px" height="86"></a>
+    
+    <footer>
+    <p>&copy; 2022 Sizhe Li </p>
+  </footer>
+   </body>
 </html>
