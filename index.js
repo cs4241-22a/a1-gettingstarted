@@ -18,7 +18,48 @@ let Megadeth = null;
 let TOOL = null;
 let selectedBand = null;
 let menuTones = ["a", "b", "c", "d"];
-const allBands = ["pierce-the-veil", "korn", "metallica", "the-human-abstract", "system-of-a-down", "protest-the-hero", "megadeth", "tool"];
+let musicController = null;
+const allBands = [
+    {
+        id: "pierce-the-veil",
+        url: "https://cdn.glitch.global/9d50777f-8cd6-40cf-afe5-e2614590fe6e/PTV.mp3?v=1661723619478",
+        volume: .5,
+    },
+    {
+        id: "korn",
+        url: "https://cdn.glitch.global/9d50777f-8cd6-40cf-afe5-e2614590fe6e/Korn.mp3?v=1661723621354",
+        volume: .25,
+    }, 
+    {
+        id: "metallica",
+        url: "https://cdn.glitch.global/9d50777f-8cd6-40cf-afe5-e2614590fe6e/Metallica.mp3?v=1661723626028",
+        volume: 1,
+    }, 
+    {
+        id: "the-human-abstract",
+        url: "https://cdn.glitch.global/9d50777f-8cd6-40cf-afe5-e2614590fe6e/TheHumanAbstract.mp3?v=1661723624464",
+        volume: 1,
+    }, 
+    {
+        id: "system-of-a-down",
+        url: "https://cdn.glitch.global/9d50777f-8cd6-40cf-afe5-e2614590fe6e/SystemOfADown.mp3?v=1661723623728",
+        volume: .5,
+    }, 
+    {
+        id: "protest-the-hero",
+        url: "https://cdn.glitch.global/9d50777f-8cd6-40cf-afe5-e2614590fe6e/ProtestTheHero.mp3?v=1661723621510",
+        volume: 1,
+    }, 
+    {
+        id: "megadeth",
+        url: "https://cdn.glitch.global/9d50777f-8cd6-40cf-afe5-e2614590fe6e/Megadeth.mp3?v=1661723622663",
+        volume: 1,
+    }, 
+    {
+        id: "tool",
+        url: "https://cdn.glitch.global/9d50777f-8cd6-40cf-afe5-e2614590fe6e/TOOL.mp3?v=1661723626138",
+        volume: 1,
+    }];
 let keyChangeNeeded = false;
 
 // Define page data
@@ -65,9 +106,10 @@ const pages = [
 /** Chromium disallows autoplay so we start music when the page is interacted with */
 let musicPlaying = false;
 function startMusic() {
+    musicController = document.getElementById("music-controller");
     if (!musicPlaying) {
         const randomBandIndex = Math.floor(Math.random() * 8);
-        selectedBand = document.getElementById(allBands[randomBandIndex]);
+        selectedBand = allBands[randomBandIndex];
         playSelectedBand();
         musicPlaying = true;
         document.getElementById("music-hint").innerHTML = "click to change music";
@@ -86,16 +128,14 @@ function startMusic() {
  */
 function playSelectedBand() {
     for (const band of allBands) {
-        const bandAudio = document.getElementById(band);
-        if (bandAudio) {
-            bandAudio.pause();
-            bandAudio.currentTime = 0;
-            const bandButton = document.getElementById(band + "-button");
-            console.log(band)
-            bandButton.classList.remove("playing");
-        }
+        const bandButton = document.getElementById(band.id + "-button");
+        bandButton.classList.remove("playing");
     }
-    selectedBand.play();
+    musicController.pause();
+    musicController.setAttribute("src", selectedBand.url);
+    musicController.volume = selectedBand.volume;
+    musicController.currentTime = 0;
+    musicController.play();
     const selectedBandButton = document.getElementById(selectedBand.id + "-button");
     selectedBandButton.classList.add("playing");
     loadSelectedBand();
@@ -182,10 +222,10 @@ function setUpMusicPage() {
         document.getElementById("app").classList.remove("panned-far");
     })
     for (const band of allBands) {
-        const bandButton = document.getElementById(band + "-button");
+        const bandButton = document.getElementById(band.id + "-button");
         if (bandButton) {
             bandButton.addEventListener("mousedown", () => {
-                selectedBand = document.getElementById(band);
+                selectedBand = band;
                 playSelectedBand();
             })
         }
@@ -225,17 +265,6 @@ window.onload = () => {
     backArrow.addEventListener("mousedown", () => {
         panAppContainer();
     })
-    PTV = document.getElementById("pierce-the-veil");
-    PTV.volume = .5;
-    KORN = document.getElementById("korn");
-    KORN.volume = .25;
-    Metallica = document.getElementById("metallica");
-    TheHumanAbstract = document.getElementById("the-human-abstract");
-    SystemOfADown = document.getElementById("system-of-a-down");
-    SystemOfADown.volume = .5;
-    ProtestTheHero = document.getElementById("protest-the-hero");
-    Megadeth = document.getElementById("megadeth");
-    TOOL = document.getElementById("tool");
     const musicButton = document.getElementById("music-button");
     musicButton.addEventListener("mousedown", () => {
         startMusic();
