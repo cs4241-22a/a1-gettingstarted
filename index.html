@@ -1,28 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="main.css" />
+    <script>
+      window.onload = function () {
+        let i = 0;
+        const size = ["10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%"];
+        setInterval(function () {
+          document.getElementById("table").style = "width: " + size[i++ % 8];
+        }, 2000);
+      };
+    </script>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about Nicholas Li</h1>
     <p>
-      [Self introduction]
+      My name is Nicholas Li. 
+      <br>I am 20 years old and I am a part of the Class of
+      2023 (Senior).
     </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <p>I am majoring in Computer Science at WPI.</p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
+    <div>
+      <h3>Other Courses that I Have Taken</h3>
+      <ul>
+        <li>Introduction To Program Design</li>
+        <li>Object-Oriented Design Concepts</li>
+        <li>Systems Programming Concepts</li>
+        <li>Introduction To Machine Organization And Assembly Language</li>
+        <li>Foundations Of Computer Science</li>
+        <li>Social Implications Of Information Processing</li>
+        <li>Algorithms</li>
+        <li>Software Engineering</li>
+        <li>Database Systems II</li>
+        <li>Computer Networks</li>
+      </ul>
+    </div>
+
+    <h2>Experiences</h2>
+    <br>
+    <div >
+          <p class = "work">
+      Shaw Industries - Software Engineer Intern<br>
+      Ming House - Manager<br>
+      ASSISTments - Student Content Builder
     </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    </div>
+
+    <br>
+    <table id="table">
+      <tr>
+        <th>Technologies</th>
+        <th>Experiences</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td>A Lot</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>Ruby</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>Unit Testing</td>
+        <td>A Lot</td>
+      </tr>
+    </table>
+
+    <div>
+      <a href="https://color.adobe.com/create/color-wheel#"
+        ><img
+          src="https://cdn.glitch.global/7a4c6128-745e-441b-8073-c50a9cf5b0b1/Color%20Wheel.PNG?v=1661464298461"
+        />
+      </a>
+      
+    </div>
+    <footer>Nicholas Li</footer>
   </body>
 </html>
