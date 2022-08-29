@@ -1,28 +1,127 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+    <script>
+      var imgObj = null;
+      var animate;
+
+      function init() {
+        imgObj = document.getElementById("Smiley");
+        imgObj.style.position = "relative";
+        imgObj.style.left = "0px";
+      }
+      function moveRight() {
+        imgObj.style.left = parseInt(imgObj.style.left) + 10 + "px";
+        animate = setTimeout(moveRight, 1000); // call moveRight every 1 sec
+      }
+      function stop() {
+        clearTimeout(animate);
+        imgObj.style.left = "0px"; //reset it back
+      }
+      window.onload = init;
+    </script>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about Trang Pham</h1>
+    <img
+      src="https://cdn.glitch.global/99ec4d3a-dd0f-4966-9bf7-deb32cb62332/self.jpg?v=1661752112905"
+      alt="My Picture"
+      usemap="#Location"
+    />
+    <map name="Location">
+      <area
+        shape="rect"
+        coords="34, 44, 270, 350"
+        href="https://www.google.com/maps/d/viewer?hl=en_US&mid=17Iq09G8ZZfDQuKqFDVaT2RS87lY&ll=42.27312394642147%2C-71.80901685457899&z=21"
+      />
+    </map>
+    <p1>Click to photo to see location I took the photo</p1>
+    <p>Class of 2022. Proudly be a 5th "super senior" :))</p>
+    <p>Major: Robotics Engineering and Computer Sciencce</p>
     <p>
-      [Self introduction]
+      Hobby:
+      <a href="https://mymodernmet.com/history-of-origami-definition/"
+        >Origami </a
+      >, Travelling, a little bit of guitar and making friends!!!!
     </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+
+    <form>
+      <img
+        id = "Smiley"
+        src="https://cdn.glitch.global/99ec4d3a-dd0f-4966-9bf7-deb32cb62332/smiley.png?v=1661753824328"
+        alt="Smiley"
+        width="60"
+      />
+      <p1>Click the buttons below to handle animation</p1>
+      <input type="button" value="Start" onclick="moveRight();" />
+      <input type="button" value="Stop" onclick="stop();" />
+    </form>
 
     <h2>Experience</h2>
     <p>
-      Working experience
+      <span class="border-highlight"> Previous Computer Science Courses: </span>
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>CS 1102: Accelerated Intro to Program Design</li>
+      <li>CS 2011: Intro to Machine Organization And Assembly Language</li>
+      <li>CS 2103: Accelerated Object-oriented Design Concepts</li>
+      <li>CS 2223: Algorithms</li>
+      <li>CS 2303: System Programming Language</li>
+      <li>CS 3013: Operating Systems</li>
+      <li>CS 3041: Human-Computer Interaction</li>
+      <li>CS 3043: Social Implications Of Information Processing</li>
+      <li>CS 3431: Database System I</li>
+      <li>CS 3733: Software Engineering</li>
+      <li>CS 4341: Intro to Artificial Intelligence</li>
+      <li>CS 4342: Machine Learning</li>
+      <li>CS 4432: Database System II</li>
+    </ul>
+
+    <p>
+      <span class="border-highlight"> Technologies: </span>
+    </p>
+    <ul>
+      <table>
+        <tr>
+          <th>Technologies</th>
+          <th>Methods</th>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td>Some</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>Some</td>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td>A lot</td>
+        </tr>
+        <tr>
+          <td>Javascript</td>
+          <td>Some to none</td>
+        </tr>
+        <tr>
+          <td>Ruby</td>
+          <td>none</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>A lot</td>
+        </tr>
+        <tr>
+          <td>Unit Testing</td>
+          <td>Some</td>
+        </tr>
+      </table>
     </ul>
   </body>
 </html>

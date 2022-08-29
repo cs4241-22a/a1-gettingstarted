@@ -1,0 +1,66 @@
+body {
+  background-color: #ddedaaff;
+}
+h1 {
+  background-color: white;
+  color: #bd4f6cff;
+  text-align: center;
+  font-family: "Sofia", sans-serif
+}
+
+p {
+  font-style: italic;
+}
+
+p1 {
+  font-weight: bold;
+  color: #bd4f6cff
+}
+
+
+h2 {
+  background-color: #f0cf65ff;
+  text-align: center;
+  font-family: "Sofia", sans-serif
+}
+li {
+  color: #d7816aff
+}
+
+p::after { 
+  content: " <3";
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+}
+
+img {
+  max-width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.border-highlight{
+  border:2px dashed #93b5c6ff;  
+  padding:0.03em 0.25em;
+}
+
+.center {
+  text-align: center;
+}
+
+
+/* CSS HEX */
+--pewter-blue: #93b5c6ff;
+--yellow-green-crayola: #ddedaaff;
+--orange-yellow-crayola: #f0cf65ff;
+--middle-red: #d7816aff;
+--popstar: #bd4f6cff;
+
+/* CSS HSL */
+--pewter-blue: hsla(200, 31%, 68%, 1);
+--yellow-green-crayola: hsla(74, 65%, 80%, 1);
+--orange-yellow-crayola: hsla(46, 82%, 67%, 1);
+--middle-red: hsla(13, 58%, 63%, 1);
+--popstar: hsla(344, 45%, 53%, 1);
