@@ -1,0 +1,27 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.exp{
+    width: 98%;
+    margin: auto;
+    list-style: none;
+    padding-left: 4%;
+    padding-top: 1%;
+}
+
+
+.expListItem{
+    padding-top: 2%;
+}
+.expListItem::before{
+    content:"\2022   ";
+    color: #7446DE;
+    vertical-align: middle;
+    font-size: 24px;
+}
+
+p{
+    font-size: smaller;
+    margin-left: 3%;
+}
