@@ -12,4 +12,4 @@ This project shows my personal page that I made for the assignment 1.
 ### Design Achievements
 - **Used the Michroma Font from Google Fonts**: I used Michroma as the font for the Heading in my site. 
 
-- **Used the Color Wheel from Adobe**: I have used all the colors suggested in different parts of the site. I used the #D6CA9F as the background color of the page, #F5413D for the Heading background, #1B213D for just the paragraph text and #CC4567 for the h2 and unvisited links and #23EB52 for visited links at the bottom of the page.
+- **Used the Color Wheel from Adobe**: I have used all the colors suggested in different parts of the site. I used the #D6CA9F as the background color of the page, #F5413D for the Heading background, #1B213D for just the paragraph text and #CC4567 for the h2 and unvisited links and #23EB52 for visited links at the bottom of the page. [also added the colorwheel doc to the files]
