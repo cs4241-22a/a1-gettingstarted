@@ -33,7 +33,7 @@ This project shows some personal information of me as a WPI student through HTML
   
 - **Add a simple JavaScript animation to the page**:
 
-  Created a simple console animation based on tutorials on the Internet.
+  I added a simple console animation based on tutorials on the Internet.
  
   It will loop through the three options **'Hello World!', 'CS4241', 'SIZHE LI =V='**
 
