@@ -3,26 +3,133 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css?family=Sora' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+    <h1>
+      <img id="image" alt="WPI Logo" src="https://www.wpi.edu/sites/default/files/inline-image/Offices/Marketing-Communications/WPI_Inst_Prim_FulClr.png">
+      <span>Information about Miles Gregg</span>
+    </h1>
+    <h2>About me:</h2>
+    <div id="header2first"></div>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>Hello, my name is Miles Gregg and I am a Junior at WPI</li>
+      <li>BS and MS in Computer Science at <a href="https://www.wpi.edu/" target="_blank"> WPI</a>, Class of 2024</li>
+      <li>
+        Classes Taken:
+        <table>
+          <tr>
+            <th>Class Number</th>
+            <th>Class Name</th>
+          </tr>
+          <tr>
+            <td><a href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/17851/Computer-Science#CS-1101" target="_blank">CS 1101</a></td>
+            <td>Introduction to Program Design</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/17851/Computer-Science#CS-2011" target="_blank">CS 2011</a></td>
+            <td>Introduction to Machine Organization and Assembly Language</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/17851/Computer-Science#CS-2103" target="_blank">CS 2103</a></td>
+            <td>Accelerated Object-Oriented Design Concepts</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/17851/Computer-Science#CS-2223" target="_blank">CS 2223</a></td>
+            <td>Algorithms</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/17851/Computer-Science#CS-2303" target="_blank">CS 2303</a></td>
+            <td>Systems Programming Concepts</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/17851/Computer-Science#CS-3013" target="_blank">CS 3013</a></td>
+            <td>Operating Systems</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/17851/Computer-Science#CS-3516" target="_blank">CS 3516</a></td>
+            <td>Computer Networks</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/17851/Computer-Science#CS-3733" target="_blank">CS 3733</a></td>
+            <td>Software Engineering</td>
+          </tr>
+        </table>
+      </li>
     </ul>
+    <h2>Experience:</h2>
+    <div id="header2second"></div>
+    <ul>
+      <li>
+        Technology Experience:
+        <table>
+          <tr>
+            <th>Language</th>
+            <th>Experience</th>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td>some</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>some</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>a lot</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>some</td>
+          </tr>
+          <tr>
+            <td>Ruby</td>
+            <td>none</td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>a lot</td>
+          </tr>
+          <tr>
+            <td>unit testing</td>
+            <td>a lot</td>
+          </tr>
+        </table>
+      </li>
+    </ul>
+    <script>
+      window.onload = function () {
+        const body = document.body;
+        const headers = document.getElementsByTagName('h2');
+        const cssHeaderNames = ["header2first", "header2second"];
+
+        var h2s = {
+          "About me:": 0,
+          "Experience:": 0
+        }
+
+        var increment = 0;
+
+        setInterval(function() {
+          increment += 0.005
+          body.style.opacity = increment < 1 ? increment : 1
+        }, 10);
+        
+        setInterval(function() {
+          for (let index = 0; index < headers.length; index++) {
+            const element = headers[index].innerHTML;
+            const header = document.getElementById(cssHeaderNames[index]);
+            const header_length = 150;
+            
+            h2s[element] = h2s[element] < header_length ? h2s[element] + 0.2 : 0;
+            header.style.width = String(h2s[element]) + "px";
+          }
+        }, 0.001);
+      }
+    </script>
   </body>
 </html>
