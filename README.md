@@ -91,12 +91,13 @@ Sample Readme (delete the above when you're ready to submit, and modify the text
 Jonathan Palmieri
 http://a1-jdpalmieri1.glitch.me
 
-This project shows ...
+This project shows some basic information about myself in the form of an HTML website with a CSS style sheet.
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the p, li, and a selectors...
 
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Used the Audiowide Font from Google Fonts [fonts.googleapis.com](https://fonts.googleapis.com/css?family=Audiowide).**: I used Audiowide as the font for the primary copy text in my site.
+- **Created a color palette using [color.adobe.com](https://color.adobe.com).**
 
 ![alt text](https://github.com/jdpalmieri/a1-gettingstarted/blob/main/ColorWheel.JPG)
