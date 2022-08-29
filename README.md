@@ -4,8 +4,8 @@ This project shows
 
 # Technical Achievements
 1. Styled page with CSS:
-    Rules used: background color, color, text-align, background, border radius, padding, font family, max-width
-    Rules added to h1, h2, main, footer, div, img, and a selectors
+    - Rules used: background color, color, text-align, background, border radius, padding, font family, max-width
+    - Rules added to h1, h2, main, footer, div, img, and a selectors
 
 2. Other HTML links used: main, footer, article, table, td, tr, a, div, figure, img.
 
