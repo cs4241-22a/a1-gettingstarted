@@ -2,7 +2,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
 
 Cameron Jacobson
-website link here
+http://a1-cjacobson32.glitch.me
 
 GH username: CJACOBSON32
 
@@ -26,15 +26,4 @@ GH username: CJACOBSON32
 ### Design Achievements
 - **Used a color palette from Adobe color wheel:** I used all 5 colors from the color scheme
 ![](color_wheel.png)
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
-
-Charlie Roberts
-http://a1-charlieroberts.glitch.me
-
-This project shows ...
-
-## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
-
-### Design Achievements
 - **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
