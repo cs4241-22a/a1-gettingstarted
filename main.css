@@ -1,0 +1,149 @@
+*{
+    font-family: 'Share Tech Mono', monospace;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+    background-color: black;
+    color: white;
+}
+
+
+.light-theme {
+    background-color: white;
+    color: black;
+}
+
+.ulCicle{
+    list-style-type: circle;
+}
+
+.headingName{
+    color:#47E6AA
+}
+
+.pHighlight{
+    color:#E65E94
+}
+
+.headingTitle{
+    text-align: center;
+    color:#E67F6A
+}
+
+.paraTitle{
+    color:#C553E6
+}
+
+.tableColName{
+    color:#BCE675
+}
+
+.techExpTable{
+    text-align: center;
+    border-collapse : collapse;
+    border:2px solid white;
+}
+
+.techExpTable.light-theme{
+    border:2px solid black;
+}
+.techExpTable td{
+    border-left:1px solid white;
+}
+.techExpTable th{
+    border-left:1px solid white;
+    border-bottom: 1px solid white;
+}
+.techExpTable.light-theme td{
+    border-left:1px solid black;
+}
+.techExpTable.light-theme th{
+    border-left:1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.liIndented{
+    padding-left: 20px;
+}
+
+th, td {
+    padding: 10px;
+}
+
+#myCanvas{
+    width : 100%;
+    height : 30px;
+    margin:auto;
+}
+
+.flexContainer{
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+.flexContainer div{
+    margin:auto;
+    margin-top: 0em;   
+}
+
+.headingFlexContainer{
+    display: flex;
+    align-items:center;
+    margin: auto;
+    justify-content: space-around;
+}
+
+
+
+.gif{
+    width: 300px;
+    height: auto;
+}
+
+.themeToggle {
+    opacity: 0;
+    position: absolute;    
+}
+  
+.label {
+    width: 70px;
+    height: 40px;
+    background-color:rgb(42, 42, 42);
+    border-radius:50px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 5px;
+    position: relative;
+    transform: scale(2);
+  }
+  
+.centerBall {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+  
+.themeToggle:checked + .label .centerBall{
+    transform: translateX(24px);
+  }
+  
+.fa-moon {
+    color: white;
+  }
+  
+.fa-sun {
+    color: yellow;
+  }

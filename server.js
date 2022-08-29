@@ -2,7 +2,7 @@ const http = require('http'),
       fs   = require('fs'),
       port = 3000
 
-const server = http.createServer( function( request,response ) {
+const server = http.createServer(function( request,response ) {
   switch( request.url ) {
     case '/':
       sendFile( response, 'index.html' )
@@ -10,8 +10,23 @@ const server = http.createServer( function( request,response ) {
     case '/index.html':
       sendFile( response, 'index.html' )
       break
+    case '/main.css':
+      sendFile(response, 'main.css')
+      break
+    case '/main.js':
+      sendFile(response, 'main.js')
+      break
+    case '/myGif.gif':
+      sendFile(response, 'myGif.gif')
+      break
+    case '/colorPallete.jpg':
+      sendFile(response, 'colorPallete.jpg')
+      break
+    case '/mainIcon.png':
+      sendFile(response, 'mainIcon.png')
+      break
     default:
-      response.end( '404 Error: File Not Found' )
+      response.end('404 Error: File Not Found' )
   }
 })
 
@@ -22,3 +37,6 @@ const sendFile = function( response, filename ) {
      response.end( content, 'utf-8' )
    })
 }
+
+console.log("Server Started")
+

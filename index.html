@@ -1,28 +1,107 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>CS4241 Assignment 1</title>
+    <!--Loading CSS-->
+    <link rel="stylesheet" href="/main.css">
+    <!--Retrieving Font from Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9c56610553.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="mainIcon.png">
+    <title>A1 SiddharthaPradhan</title>
     <meta charset="utf-8">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <div class="headingFlexContainer">
+      <h1>Information about <span class="headingName">Siddhartha Pradhan</span></h1>
+      <div>
+        <input type="checkbox" class="themeToggle" id="themeToggle">
+        <label for="themeToggle" class="label">
+          <i class='fas fa-sun'></i>
+          <i class="fas fa-moon"></i>
+        
+        <div class='centerBall'></div>
+      </label>
+    </div>
+  </div>
+    <canvas id="myCanvas"></canvas>
     <p>
-      [Self introduction]
+      Hi! I am Siddhartha, I usually go by Sid. I am an international student, hailing from Kathmandu, Nepal.
     </p>
     <p>
-      [Major and other information]
+      I have two majors, <span class="pHighlight"> Computer Science </span> and <span class="pHighlight"> Data Science. </span>
     </p>
-    <p>
-      [Other things]
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+    <br>
+    <div class="flexContainer">
+      <div>
+    <h2 class="headingTitle" style="text-decoration: underline;"> Classes I have taken: </h2>
+    <ul class="ulCircle">
+      <li class="liIndented">Algorithms</li>
+      <li class="liIndented">Foundations</li>
+      <li class="liIndented">Networks 1</li>
+      <li class="liIndented">Database System 1</li>
+      <li class="liIndented">Software Engineering</li>
+      <li class="liIndented">Intro to AI </li>
+      <li class="liIndented">Mobile Computing</li>
+      <li class="liIndented">Machine Learning</li>
+      <li class="liIndented">OOD Concepts</li>
     </ul>
+  </div>
+  <div><img class="gif" src="myGif.gif" alt="CoolGifLOL"> </div>
+
+  </div>
+  <br>
+    <h2 class="headingTitle" style="text-decoration: underline;">Experience:</h2>
+    <div class="flexContainer">
+      <div class="techExp">
+    <h3 class="paraTitle" style="text-align: center;">Technical experience:</h3>
+    <table class="techExpTable" id="techExpTable">
+      <tr class="tableColName">
+          <th>Skill</th>
+          <th>Experience Level</th>
+        
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td>A lot</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>Ruby</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>A lot</td>
+      </tr>
+      <tr>
+        <td>Unit Testing</td>
+        <td>Some</td>
+      </tr>
+    </table>
+  </div>
+  <div class="workExp">
+    <h3 class="paraTitle" style="text-align: center;">Work experience:</h3>
+    <ul>
+      <li class="liIndented">Reseach Assistant (MAPLE LAP WPI) </li>
+      <li class="liIndented"><a href="https://www.youtube.com/watch?v=H8ZH_mkfPUY&ab_channel=EderKFCard">Super-Top-Secret Project I am working on</a></li>
+      <li class="liIndented">Interesting Job</li>
+      <li class="liIndented">Super Cool Job</li>
+    </ul>
+  </div>
+  </div>
+    <script src="main.js"></script>
   </body>
 </html>
