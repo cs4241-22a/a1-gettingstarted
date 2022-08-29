@@ -85,16 +85,25 @@ If you need a JavaScript/HTML/CSS refresher, see [HTML & CSS](https://wpi.primo.
 
 If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.com/categories/bootcamp/), the [GitHub Guides](https://guides.github.com/) (especially the ones on Hello World, and Understanding the GitHub Flow, and Forking Projects), and [CodeSchool's Try Git Course](https://www.codeschool.com/courses/try-git).
 
-Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
+Submission Details
 ---
 
-Charlie Roberts
-http://a1-charlieroberts.glitch.me
+Joseph Dobbelaar
+https://a1-r2pen2.glitch.me/
 
 This project shows ...
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
-
+- **Styled page with CSS**: Added rules for ul, body, root, li, h1, a, and some custom div classes. There are also some style rules for selectors inside certain classes. These style rules all either have to do with the home menu animation (transitions and before/after data), general appearance (text color, background images, etc.), or for page formatting (flexboxes, alignment, etc.).
+- **JavaScript Animation**: I made an animation for menu items where the text is cut by a sword before being dragged off to show a new page! There are several pieces to this. First, the sword moves to whichever link is was last hovered. This is done by setting the hoveredElement to whatever the mouse last touched and then adding a position class to the sword based on which element is hovered. The movement is handled in CSS with translations and transitions. Then, when a link is clicked, the sword and the clicked link are given the "cut" class. The sword is then thrown to the right, and the link's "before" and "after" properties (which were previously aligned to look like they are a single piece) are translated to the right and vertically away from each other. The whole app-container div then translates to the left 100vw, shifting the view from the home menu to the "content-page". During this transition, text is loaded into the HTML tags on the content page based on which link was clicked. The back arrow on the content page translates the app-container back to it's home position. 
+- **Other HTML Tags**: Other HTML tags used were images (for the sword and the back button) and audio for background music, the sword moving sounds, the back button click, and the cut sound effect.
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Google Font**: Implemented the [BebasNeue-Regular](https://fonts.google.com/specimen/Bebas+Neue#styles) font from Google Fonts. I used this everywhere except for the p tags on the second page becuase I didn't want them to be uppercase. I felt that BebasNeue was blocky enough and bold enough to get the user's attention on a menu without feeling overwhelming when scaled up really large.
+- **Color Pallete**: Created an analogous color pallete with [color.adobe.com](https://color.adobe.com). Screenshot is in the "submission" directory. This color pallete is used alongside the colors white and black on the whole site. The background, which used the adobe color pallete, was created using [Haikei](https://app.haikei.app/)— a web app for generating curvy, multicolored SVG images. I generated a set of waves that I liked using the "layered waves" tool, brought it into photoshop, and replaced the colors with the ones from adobe. There are actually two background images that use this style, one with the waves on the left and one with the waves on the right. I hadn't initially planned for the pages to scroll horizontally, so "otherPageBackground.png" was an afterthought that I strung together when I wanted to add some more interactivity.
+
+## EDIT: Even more technical stuff
+- **Sound Engine**: I just spent a few hours making a sound engine and a music page for this site. The website has a choice of 8 different songs that can be selected by clicking on the music note in the bottom left of the home menu. The menu items also play different tones depending on the song and where in the song we are (since some songs have a key change. Metallica, for example, does this early on.) This was a bit of a coding challenge, but mostly just an organizational stretch because of how many static files are now involved in this little website. There's a new background, images for each band, songs for each band, and sounds for each possible note. Songs were just downloaded from youtube and notes were generated in GuitarPro7, which is a guitar tablature program I own. I decided to add a music page to my site because originally there was a page talking about the music I like, but I thought that was way too boring for something I care so much about. I figured making the menu something where you could (kinda) play along with some music I love would be a cool little trick.
+- **CSS Keyframes**: Some CSS keyframe animations were added to make it clear which band is playing at a given time. I have very little experiece keyframing in CSS, so they're just a basic wobble animation.
+
+Edit 8/29 @ 11:47am:
+Glitch upload was having trouble with assets. All Glitch uploaded assets were not showing up, even in the Glitch editor. Files on the Glitch deployment are hosted in my Google drive. I'll fix this as soon as I can.

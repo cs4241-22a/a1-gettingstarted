@@ -1,0 +1,341 @@
+/* Set font-face, variables, and body style */
+@font-face {
+    font-family: BebasNeue;
+    src: url("./assets/BebasNeue-Regular.ttf");
+}
+
+:root {
+    --adobe-color-a: #0AF077;
+    --adobe-color-d: #0CF7D3;
+    --adobe-color-e: #00B2E0;
+    --adobe-color-c: #0C77F7;
+    --adobe-color-b: #0C25ED;
+    --menu-item-height: 100px;
+    --menu-sword-width: 200px;
+    --sword-cut-displacement: 50vw;
+}
+
+body {
+    bottom: auto;
+    margin: 0;
+    overflow-y: hidden;
+    font-family: 'BebasNeue';
+}
+
+/* Remove decoration from lists */
+ul {
+    list-style-type: none;
+}
+
+/* Hide the scrollbar */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: row;
+    width: 300vw;
+    transform: rotate(90deg), translateY(-100vh);
+    transform-origin: top left;
+    transition: transform 1.5s ease;
+}
+
+.app-container.panned {
+    transform: translateX(-100vw);
+}
+
+.app-container.panned-far {
+    transform: translateX(-200vw);
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+.home-container {
+    background-image: url('./assets/backgrounds/homeBackground.png');
+    background-position-y: bottom;
+    background-position-x: right;
+}
+
+.home-title {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    color: black;
+    border: none;
+    user-select: none;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+.home-menu-list li {
+    height: var(--menu-item-height);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-menu-list a {
+    font-size: 56px;
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+    /* Remove text decoration (underline) */
+    text-decoration: none;
+    /* Color must be transparent because the displayed text is actually
+    the top half of "after" and the bottom half of "before" */
+    color: transparent;
+}
+
+/* Setting up the "cut" animation */
+.home-menu-list a:before, .home-container a:after {
+    /* Pull text content for "before" and "after" from the data-label attribute*/
+    content: attr(data-label);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+/* Clip top half of "before" */
+.home-menu-list a:before {
+    clip-path: polygon(0 0, 100% 0%, 100% 50%, 0 50%);
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 50%, 0 50%);
+}
+
+/* Clip bottom half of "after" */
+.home-menu-list a:after {
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+}
+
+/* Move "before" when "cut" class is added */
+.home-menu-list a.cut:before {
+    transform: translate(50px, -20px);
+}
+
+/* Move "after" when "cut" class is added */
+.home-menu-list a.cut:after {
+    transform: translate(50px, 20px);
+}
+
+/* This is an attempt to create a nicely scaling box on the left for the sword to hang out in */
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50vw;
+}
+
+.menu-container .left {
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.menu-container .center {
+    flex: 1;
+}
+
+.menu-container .right {
+    flex: 1;
+}
+
+.menu-sword {
+    width: var(--menu-sword-width);
+    opacity: 1;
+    transition: transform 0.25s ease, opacity 0.5s ease;
+}
+
+/* Put the sword in the right place */
+/* This is probably a really goofy way to move the sword, but at least it scales with the page */
+.menu-sword.pos0 {
+    transform: translateY(0);
+}
+.menu-sword.pos1 {
+    transform: translateY(calc(var(--menu-item-height) * 1));
+}
+.menu-sword.pos2 {
+    transform: translateY(calc(var(--menu-item-height) * 2));
+}
+.menu-sword.pos3 {
+    transform: translateY(calc(var(--menu-item-height) * 3));
+}
+.menu-sword.cut.pos0 {
+    transform: translate(var(--sword-cut-displacement), 0);
+}
+.menu-sword.cut.pos1 {
+    transform: translate(var(--sword-cut-displacement), calc(var(--menu-item-height) * 1));
+}
+.menu-sword.cut.pos2 {
+    transform: translate(var(--sword-cut-displacement), calc(var(--menu-item-height) * 2));
+}
+.menu-sword.cut.pos3 {
+    transform: translate(var(--sword-cut-displacement), calc(var(--menu-item-height) * 3));
+}
+.menu-sword.hidden {
+    opacity: 0;
+}
+
+.content-page {
+    background-image: url('./assets/backgrounds/otherPageBackground.png');
+    background-position-y: bottom;
+    background-position-x: left;
+    display: flex;
+    flex-direction: row;
+}
+
+.back-arrow {
+    height: 100px;
+    margin-right: 50px;
+    transition: all 0.5s ease;
+}
+
+.back-arrow:hover {
+    transform: scale(1.2);
+}
+
+.back-arrow.hidden {
+    display: none;
+}
+
+.content-page .left {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.content-page .right {
+    flex: 3;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.content-page h1 {
+    font-size: 90px;
+    user-select: none;
+}
+
+.content-page h2 {
+    font-size: 40px;
+    margin-top: -70px;
+}
+
+.content-page p {
+    font-size: 24px;
+    padding-right: 8vw;
+    font-family: "Helvetica Neue", "Helvetica";
+    line-height: 150%;
+}
+
+.p-divider {
+    margin-top: 20px;
+}
+
+.music-button {
+    position: absolute;
+    bottom: 50px;
+    left: 25vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    user-select: none;
+}
+
+.music-button img {
+    height: 40px;
+    width: 40px;
+    transition: all 0.5s ease;
+}
+
+.music-button:hover {
+    cursor: pointer;
+}
+
+.music-button p {
+    margin-left: 10px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .music-button.playing img {
+        animation: wobble infinite 3s;
+    }
+}
+
+@keyframes wobble {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-15deg);
+    }
+}  
+
+.music-page {
+    background-image: url("./assets/backgrounds/musicPageBackground.png");
+    background-position-y: bottom;
+    background-position-x: right;
+    display: flex;
+    flex-direction: row;
+    user-select: none;
+}
+
+.music-page .left {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.music-page .center {
+    flex: 4;
+}
+
+.music-page .right {
+    flex: 3;
+}
+
+.music-page ul {
+    columns: 2;
+}
+
+.band-icon {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+}
+
+.band-icon:hover {
+    cursor: pointer;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .band-icon.playing {
+        animation: wobble infinite 3s;
+    }
+}

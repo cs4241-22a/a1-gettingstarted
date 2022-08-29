@@ -1,28 +1,88 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>CS4241 Assignment 1</title>
+    <title>Joe Dobbelaar, Information About</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./main.css" />
+    <script src="index.js" ></script>
+    <audio id="cut-sound" src="./assets/Cut.mp3"></audio> 
+    <audio id="music-controller" src="" loop="true"></audio> 
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <div class="app-container" id="app">
+      <div class="slide home-container" id="home">
+        <h1 class="home-title">Joe Dobbelaar</h1>
+        <div class="menu-container">
+          <div class="left">
+            <img src="./assets/Sword.svg" class="menu-sword" id="menu-sword">
+          </div>
+          <div class="center">
+            <ul class="home-menu-list">
+              <li id="introduction-menu-item">
+                <a href="#introduction" data-label="Introduction" id="anchor-introduction">Introduction</a>
+              </li>
+              <li id="wpi-menu-item">
+                <a href="#wpi" data-label="WPI" id="anchor-wpi">WPI</a>
+              </li>
+              <li id="experience-menu-item">
+                <a href="#experience" data-label="Experience" id="anchor-experience">Experience</a>
+              </li>
+              <li id="contact-menu-item">
+                <a href="#contact" data-label="Contact" id="anchor-contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="right"></div>
+        </div>
+        <div class="music-button" id="music-button">
+          <img src="./assets/Music.svg">
+          <p id="music-hint">Click to start music</p>
+        </div>
+      </div>
+      <div class="slide content-page" id="content-page">
+        <div class="left">
+          <img class="back-arrow" id="back-arrow" src="./assets/backArrow.svg" >
+        </div>
+        <div class="right">
+          <h1 id="content-page-title">Content Title</h1>
+          <h2 id="content-page-subtitle">Content Subtitle</h2>
+          <p id="content-page-paragraph">Content Paragraph</p>
+        </div>
+      </div>
+      <div class="slide music-page" id="music-page">
+        <div class="left">
+          <img class="back-arrow" id="music-back-arrow" src="./assets/backArrow.svg">
+        </div>
+        <div class="center">
+          <ul>
+            <li>
+              <img class="band-icon" src="./assets/bands/PTV.png" alt="Pierce The Veil" id="pierce-the-veil-button">
+            </li>
+            <li>
+              <img class="band-icon" src="./assets/bands/KORN.png" alt="KORN" id="korn-button">
+            </li>
+            <li>
+              <img class="band-icon" src="./assets/bands/Metallica.png" alt="Metallica" id="metallica-button">
+            </li>
+            <li>
+              <img class="band-icon" src="./assets/bands/TheHumanAbstract.png" alt="The Human Abstract" id="the-human-abstract-button">
+            </li>
+            <li>
+              <img class="band-icon" src="./assets/bands/SystemOfADown.png" alt="System of a Down" id="system-of-a-down-button">
+            </li>
+            <li>
+              <img class="band-icon" src="./assets/bands/ProtestTheHero.png" alt="Protest the Hero" id="protest-the-hero-button">
+            </li>
+            <li>
+              <img class="band-icon" src="./assets/bands/Megadeth.png" alt="Megadeth" id="megadeth-button">
+            </li>
+            <li>
+              <img class="band-icon" src="./assets/bands/TOOL.png" alt="TOOL" id="tool-button">
+            </li>
+          </ul>
+        </div>
+        <div class="right"></div>
+      </div>
+    </div>
   </body>
 </html>
