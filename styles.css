@@ -35,14 +35,14 @@ td, th {
   padding: 8px;
 }
 
-/* unvisited link */
+/* for the unvisited link */
 a:link {
   color: #CC4567;
-  padding: 8px;
+  padding: 10px;
 }
 
-/* visited link */
+/* for the visited link */
 a:visited {
   color: #23EB52;
-  padding: 8px;
+  padding: 10px;
 }
