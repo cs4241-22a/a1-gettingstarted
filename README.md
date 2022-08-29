@@ -1,3 +1,32 @@
+This project shows ...
+
+## Technical Achievements
+- **Styled page with CSS**: 
+
+    * color: changes the color of any element in the html file
+    * font-family: changes the font to the designated group and type
+    * font-size: changes the font size to the specified percentage
+    * margin-left: changes the distance between element and left side of site
+    * list-style-type: changes the style of bullet points in a list
+
+- **Simple JavaScript animation**: There is a yellow square that will move across a black box upon loading of the website
+- **HTML Tags**:
+- 
+    * img: There is a WPI logo embedded at the top of the website as an img
+    * href img link: There is an href link within the logo when clicked
+    * href CS link: There is an href link on the acronym "CS" when clicked
+    * href RBE link: There is an href link on the acronym "RBE" when clicked
+    * href Music link: There is an href link on the word "Music" when clicked
+
+### Design Achievements
+- **Used the Montserrat Font from Google Fonts**: I used "Montserrat" Regular 400 for all text elements
+- **Create a colour palette**: My colour palette consisted of the colour codes "#F0B05C", "#14F5A4", "#1381EB", "#57DE1D", and "#F5DB14". The colour palette image can be found in the repository
+
+
+
+
+
+
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
 
@@ -91,10 +120,3 @@ Sample Readme (delete the above when you're ready to submit, and modify the text
 Charlie Roberts
 http://a1-charlieroberts.glitch.me
 
-This project shows ...
-
-## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
-
-### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
