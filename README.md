@@ -14,3 +14,4 @@ Glitch Link: https://a1-jlopez-codes.glitch.me/
 ### Design Achievements
 - **Color Palette**: I used the color palette from color.adobe to create different CSS rules for each color. 
 - **Used the Pacifico Font from Google Fonts**: I used Pacifico as the font for the primary header for my website. 
+![color wheel](https://user-images.githubusercontent.com/37939164/187207500-54188cc3-7769-4036-975b-c712dff82fe9.jpg)
