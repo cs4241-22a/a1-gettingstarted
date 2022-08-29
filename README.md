@@ -5,6 +5,8 @@ Readme
 Shiyue(Vanessa) Wang
 https://a1-capricieuxv.glitch.me/
 
+Backup Page with more features fixed to work on Glitch https://a1-2-capricieuxv.glitch.me/
+
 Github Page (This one works well)
 https://capricieuxv.github.io/a1-gettingstarted/
 
