@@ -4,13 +4,15 @@
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    
     <script>
       window.onload = function () {
         const colors = ["blue","red","green"]
         let i = 0
         setInterval(
           function(){
-            document.body.style = "background:" + colors[i%3];
+            document.body.style = "color:" + colors[i%3];
             i = i + 1
           },
           1000
@@ -19,9 +21,9 @@
     </script>
   </head>
   <body>
-    <h1>Information about Yueting(Alex) Zhu</h1>
+    <h1 style="font-family: 'Indie Flower', cursive;">Information about Yueting(Alex) Zhu</h1>
     <p>
-      Slef intro: My name is Yueting Zhu, you can call me Alex. I am a data
+      Self intro: My name is Yueting Zhu, you can call me Alex. I am a data
       science senior in WPI.
     </p>
     <p>Major: Data science</p>
