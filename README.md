@@ -2,7 +2,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
 
 Cameron Jacobson
-http://a1-cjacobson32.glitch.me
+https://a1-cjacobson32.web.app/
 
 GH username: CJACOBSON32
 
