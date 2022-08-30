@@ -23,7 +23,7 @@ h1 {
   margin-bottom: 50px;
 }
 
-bgimg {
+#bgimg {
   position: absolute;
   left: 15%;
   top: 50%;
@@ -31,7 +31,7 @@ bgimg {
   z-index: -1;
 }
 
-bgtcont {
+#bgtcont {
   position: absolute;
   overflow: hidden;
   width: 100px;
@@ -42,7 +42,7 @@ bgtcont {
   z-index: -1;
 }
 
-bgtext {
+#bgtext {
   font-size: 100px;
   font-weight: bold;
   position: absolute;
