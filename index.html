@@ -34,15 +34,37 @@
       <li>I have some python experience</li>
       <li>I have done a little unit testing with JUnit tests</li>
     </ul>
+
+    <p>Click below for fun sounds:</p>
+    <audio controls autoplay>
+      <source src="carcrashsound.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+
+    <iframe src="carcrashsound.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+    </iframe>
+
+    <audio autoplay id=“crash_sound” src=“carcrashsound.mp3” preload=“auto”></audio>
+
+    
   </body>
 </html>
 <script>
+
   let theBody = document.getElementById("myText");
   let garfCounterX = 0;
   let garfCounterY = 0;
   let garfSwitch = 1;
-  let andrewGarfield = setInterval(translateText, 12);
+
+  window.onload = function() {
+    var crash = document.getElementById("crash_sound");
+    console.log("garfield");
+    crash.play();
+  }
+
+  let andrewGarfield = setInterval(translateText, 15);
   let myRand = 2.5;
+
   function translateText() {
     if ((garfCounterX > -60 && garfCounterX < 60) || (garfCounterY > -60 && garfCounterY < 60)) {
       if (myRand < 1) {
@@ -56,25 +78,25 @@
     } else {
       if (Math.random() * 18 < 1) {
         garfSwitch = -garfSwitch;
-        if (myRand < 1) {
+        if (myRand < 1.0) {
           garfCounterX += garfSwitch;
-        } else if (myRand < 2) {
+        } else if (myRand < 2.0) {
           garfCounterY += garfSwitch;
         } else {
           garfCounterY += garfSwitch;
           garfCounterX += garfSwitch;
         }
       } else {
-        if (myRand < 1) {
+        if (myRand < 1.0) {
           garfCounterX += garfSwitch;
-        } else if (myRand < 2) {
+        } else if (myRand < 2.0) {
           garfCounterY += garfSwitch;
         } else {
           garfCounterY += garfSwitch;
           garfCounterX += garfSwitch;
         }
         
-        myRand = Math.random() * 3;
+        myRand = Math.random() * 3.0;
       }
     }
 
