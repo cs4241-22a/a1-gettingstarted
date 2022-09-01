@@ -1,0 +1,28 @@
+/* head holds metadata*/
+head{
+  font-family: 'Silkscreen', cursive;
+}
+body{
+  background-color: red;
+}
+
+    h1 {color:#0EE8EB;
+        background: yellow;
+        text-align: center;
+      font-family: 'Silkscreen', cursive; font-size:36px}
+    h2 {color:#02F670;
+        background: #0272F6;
+      font-family: 'Silkscreen', cursive;}
+    ul{color:#0299D4; border-style: dashed; border-color:grey; background: white;}
+  
+    p {background: white; color:#02D49C; font-weight:bold; border: 1px solid; }
+
+
+
+#animatedSquare{
+  margin: auto;
+  width: 100px;
+  height: 100px;
+/*   position: absolute; */
+  background: white;
+}
