@@ -1,4 +1,7 @@
 # Assignment 1 for CS4241
+## Link to the Page
+Page Link: https://a1-hao-oliverchen.glitch.me/      
+
 ## Technical Achievements
 (max 5 points) Style my page using CSS
 1. For the only two headers that I used in this assignment, I set the texts to be centered for their alignment (better reading experience for the user).
