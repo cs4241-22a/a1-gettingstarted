@@ -8,3 +8,4 @@ in glitch despite trying different file types
 
 I have 5 CSS tags - background, text-align, border style, border, and font weight
 
+I did option 2 so I didn't push - Fork repo and import to Glitch, edit on Glitch, and then export back to GitHub
