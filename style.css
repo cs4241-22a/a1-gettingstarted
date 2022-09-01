@@ -1,0 +1,24 @@
+body {
+    background-color: #611B18;
+    font-family: Arial, Helvetica, sans-serif;
+    font-kerning: normal;
+  }
+h1 {
+    background-color: #E6827E;
+  }
+h2 {
+    background-color: #E03E38;
+  }
+h3 {
+    background-color: #613735;
+    margin: 2ch;
+  }
+.div1 {
+    background-color: #AD312C;
+    margin: 5ch;
+}
+ul {
+    background-color: #AD312C;
+    border: 10ch;
+    margin: 5ch;
+}
