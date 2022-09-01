@@ -1,4 +1,4 @@
-Aidan Mulcahey, Glitch: https://glitch.com/edit/#!/a1-aidanmulcahey?path=README.md%3A1%3A0
+Aidan Mulcahey, Glitch: https://a1-aidanmulcahey.glitch.me
 
 This project is about my very first web page. I added an animation, shared with the world a little about myself and was able to make it visually pleasing. Met all requirements and fulfilled all design achievements.
 
