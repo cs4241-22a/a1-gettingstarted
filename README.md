@@ -94,7 +94,27 @@ http://a1-charlieroberts.glitch.me
 This project shows ...
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
+- **Styled page with CSS**: 
+Added rules for the p, li, table, and body selectors.
+Assigned colors in accordance with the color palette that was created to 
+each component. Adjusted the font size slightly for the list and paragraph
+text. Elected to employ a double-border for the header. Mixed around serif and sans-serif fonts where it was deemed appropriate.
+
+Experimented with new html tags. Expanded upon the list element that was already present in the project. Added a second list as well. Decided to put
+my software working experience into a table, added some internal and in-line style sheets to it. Also integrated a jpeg image. 
+
+
 
 ### Design Achievements
 - **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+
+I created an analagous color pallette. I settled upon one set of colors, but then fiddled with the knob before I could manage a screenshot so  all five colors that appear in the image may not match exactly with the hex-codes in the style sheets. It is a red-orange to pink to lavender to indigo to blue pallette. I use blue for the back-ground color, the red-orange for headers and list text, the lavender for plain text, the pink for a filler color inside of the table, and the indigo for in-table text. 
+
+Link to color pallette:
+https://docs.google.com/document/d/19JIt88SJX0k7J5u2RrLZnEEzPrYUQZ3B0pqRvbJOIYc/edit?usp=sharing
+
+
+
+
+
+
