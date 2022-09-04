@@ -1,0 +1,38 @@
+@font-face {
+	font-family: 'VT323', monospace;
+	src: url(/fonts/VT323-Regular.ttf);
+	font-style: normal; 
+	font-weight: normal; 
+}
+
+body{
+	background-color: black;
+	color: #00FF00;
+	font-family: 'VT323';
+	text-align: center;
+	font-size: larger;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+.list{
+	margin-left: 45%;
+	margin-right: 50%;
+}
+
+mark.orange{
+	color: #F7C33B;
+	background: none;
+}
+
+mark.dOrange{
+	color: #ED8C39;
+	background: none;
+}
+
+mark.lOrange{
+	color: #E0D841;
+	background: none;
+}
