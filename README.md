@@ -96,7 +96,7 @@ This project shows ...
 ## Technical Achievements
 - **Styled page with CSS**: 
 Added rules for the p, li, table, and body selectors.
-Assigned colors in accordance with the color palette that was created to 
+Assigned colors, in accordance with the color palette that was created, to 
 each component. Adjusted the font size slightly for the list and paragraph
 text. Elected to employ a double-border for the header. Mixed around serif and sans-serif fonts where it was deemed appropriate.
 
