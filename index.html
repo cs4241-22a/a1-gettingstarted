@@ -1,28 +1,82 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <style>
+    #container {
+      width: 400px;
+      height: 400px;
+      position: relative;
+      background: #FFF153;
+    }
+    #animate {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      background-color: #1928E3;
+      border-radius: 50%;
+      display: inline-block;
+    } 
+    
+  </style>
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <title style="font-family: 'Roboto'">CS4241 Assignment 1</title>
+    <meta charset="utf-8" />
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
+
+  <body style="background-color:#28FAF6">
+    <h1 style="font-family: 'Roboto'; color: #1928E3">
+      Information about Joe Volpato
+    </h1>
+    <p style="font-family: 'Roboto'; color: #E51CFB">
+      Im Joe Volpato a transfer who is apart of class 2024 <u>Hopefully</u>.
     </p>
-    <p>
-      [Major and other information]
+    <p style="font-family: 'Roboto'; color: #E51CFB">
+      Im an IMGD mayor with almost a minor in computer science.
     </p>
-    <p>
-      [Other things]
+    <p style="font-family: 'Roboto'; color: #E51CFB">
+      My favorite character from a game best line is <b>"OK"</b>.
     </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+    <h2 style="font-family: 'Roboto'; color: #1928E3">
+      I have taken Introduction to Progam Design and Object-Oriented Design
+    </h2>
+    <p style="font-family: 'Roboto'; color: #E51CFB">Coding Languages I know</p>
+    <ul style="font-family: 'Roboto'">
+      <li style="font-family: 'Roboto'; color: #E51CFB">Python</li>
+      <li style="font-family: 'Roboto'; color: #E51CFB">Html</li>
+      <li style="font-family: 'Roboto'; color: #E51CFB">Java</li>
+      <li style="font-family: 'Roboto'; color: #E51CFB">DrRacket</li>
+      <li style="font-family: 'Roboto'; color: #E51CFB">C++</li>
     </ul>
+    <p style="font-family: 'Roboto'">
+      <button style="color: #FFF153; background-color: #21E319" onclick="myMove();this.disabled = true;" >Click Me</button>
+    </p>
+
+    <div id="container">
+      <div id="animate"></div>
+    </div>
+
+    <script>
+      function myMove() {
+        let id = null;
+        const elem = document.getElementById("animate");
+        let pos = 0;
+        clearInterval(id);
+        id = setInterval(frame, 5);
+        function frame() {
+          if (pos == 350) {
+            while (pos >= 1) {
+              pos--;
+              elem.style.bottom = pos + "px";
+              elem.style.right = pos + "px";
+            }
+          } else {
+            pos++;
+            elem.style.top = pos + "px";
+            elem.style.left = pos + "px";
+          }
+        }
+      }
+    </script>
   </body>
 </html>
