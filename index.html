@@ -3,26 +3,165 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arimo">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <div id="background">
+      <main id="midbox">
+      <h1 id="header">Information about Mark Renzi, WPI class of 2024</h1>
+      <p>
+        My name is Mark, and I spend my time making fun personal projects. 
+        I have done various things from building an arcade machine on 
+        a raspberry pi to learning some basic 3D modeling and game design.
+      </p>
+      <p>
+        I am majoring in computer science on track to complete the B.S./M.S. 
+        program. Below are the CS courses I have taken at WPI.
+      </p>
+      <img src="https://cdn.discordapp.com/attachments/121797037942374400/1013124217748852766/unity.jpg" alt="My Unity Scene" width="650" height="300" id="mainimg">
+      <img src="https://cdn.discordapp.com/attachments/121797037942374400/1013176039897305138/DVD_logo-MARK-80.png" alt="Bouncing logo" width="80" height="38" id="logo">
+    </main>
+    <div id = "alignbox">
+      <h2>
+        WPI CS Experience
+      </h2>
+      <table>
+        <tr>
+          <th>No.</th>
+          <th>Course Title</th>
+        </tr>
+        <tr>
+          <td>1102</td>
+          <td>Accelerated Introduction to Program Design</td>
+        </tr>
+        <tr>
+          <td>2103</td>
+          <td>Accelerated Object-Oriented Design Concepts</td>
+        </tr>
+        <tr>
+          <td>2011</td>
+          <td>Introduction to Machine Organziation and Assembly Language</td>
+        </tr>
+        <tr>
+          <td>2303</td>
+          <td>Systems Programming Concepts</td>
+        </tr>
+        <tr>
+          <td>2022</td>
+          <td>Discrete Mathematics</td>
+        </tr>
+        <tr>
+          <td>2223</td>
+          <td>Algorithms</td>
+        </tr>
+        <tr>
+          <td>3043</td>
+          <td>Social Implications of Information Processing</td>
+        </tr>
+        <tr>
+          <td>3013</td>
+          <td>Operating Systems</td>
+        </tr>
+      </table>
+      <h2>Experience</h2>
+      <span id="experience">
+      <h3>
+        Relevant Skills
+      </h3>
+      <ul>
+        <li>Java</li>
+        <li>C/C++</li>
+        <li>x86 Assembly</li>
+        <li>C#</li>
+        <li>Python</li>
+        <li>Unit Testing</li>
+        <li>Git</li>
+        <li>Bluetooth Low Energy</li>
+        <li>MIDI</li>
+        <li>Raspberry Pi and Arduino</li>
+        <li>Solidworks 2021 CAD Software</li>
+        <li>Blender (3D modeling and animation)</li>
+        <li>Unity</li>
+      </ul>
+      <h3>
+        Qualifications
+      </h3>
+      <ul>
+        <li>CPR Certified</li>
+        <li>Eagle Scout</li>
+      </ul>
+      <h3>
+        Working experience
+      </h3>
+      <ul>
+        <li>UPS Driver Helper</li>
+        <li>Dave's Marketplace Night Crew</li>
+      </ul>
+    </span>
+    <img src="https://cdn.discordapp.com/attachments/121797037942374400/1013266086793330748/arcade_machine.png" alt="Arcade cabinet" width="300" height="371" id="arcade">
+  </div>  
+  </div>
+    <script>
+      var boundingBox = document.getElementById("midbox");
+      var offsets = boundingBox.getBoundingClientRect(); //next 4 lines get sides of yellow box
+      var x1 = offsets.left;
+      var y1 = offsets.top;
+      var x2 = offsets.right;
+      var y2 = offsets.bottom;
+      var logo = document.getElementById("logo");
+      var posx = offsets.left; //x and y pos of dvd logo
+      var posy = offsets.top;
+      const offsetx = x1;//these two offsets are to sync up the static posx posy coordinate system with the scrolling page
+      const offsety = y1; //they keep track of the difference between the original position of x1 and y1, so we can see how the scroll or zoom affects the values.
+      const speed = (offsets.bottom - offsets.top)/200;
+      var i = speed;
+      var j = speed;
+      var timer = 0;
+      var up = true;
+      function move() {
+        //check for window changes
+        offsets = boundingBox.getBoundingClientRect();
+        x1 = offsets.left;
+        y1 = offsets.top;
+        x2 = offsets.right;
+        y2 = offsets.bottom;
+        //
+        logo.style.left = posx + "px";
+        logo.style.top = posy + "px";
+        posx += i;
+        posy += j;
+        if (posx <= x1){ 
+          i = speed;
+          posx += speed;
+        }
+        if (posy + (y1-offsety) <= y1){
+          j = speed;
+          posy += speed;
+        }
+        if (posx >= x2 - 82){ // 80 image width (extra 2px for div border)
+          i = -speed;
+          posx -= speed;
+        }
+        if (posy + (y1-offsety) >= y2 - 40){ // 38 image height (extra 2px for div border)
+          j = -speed;
+          posy -= speed;
+        }
+        //arcade cabinet
+        timer += 20;
+        if (timer >= 1000){
+          timer = 0;
+          if (up){
+            document.getElementById("arcade").style.transform = "rotate(10deg)";
+            up = !up
+          } else {
+            document.getElementById("arcade").style.transform = "rotate(0deg)";
+            up = !up
+          }
+          
+        }
+      }
+      setInterval(move, 20);
+    </script>
   </body>
 </html>
