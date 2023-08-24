@@ -3,26 +3,159 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+    table, td, th {
+      border:1px solid black;
+      border-collapse: collapse;
+    }
+    td {
+      text-align: center;
+    }
+    
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+    
+    .green {
+      background-color: #baffc9;
+    }
+    .yellow {
+      background-color: #ffffba;
+    }
+    .red {
+      background-color: #ffb3ba;
+    }
+    </style>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1 id=rainbow>Information about Michael Oliveira!</h1>
     <p>
-      [Self introduction]
+      Michael Oliveira - Class of 2024
     </p>
     <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
+      Majoring in Computer Science
     </p>
 
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <table>
+      <tr>
+        <th>Language</th>
+        <th>Experience</th>
+      </tr>
+      <tr class=green>
+        <td>Python</td>
+        <td>A lot</td>
+      </tr>
+      <tr class=green>
+        <td>Java</td>
+        <td>A lot</td>
+      </tr>
+      <tr class=green>
+        <td>JS</td>
+        <td>A lot</td>
+      </tr>
+      <tr class=yellow>
+        <td>HTML</td>
+        <td>Some</td>
+      </tr>
+      <tr class=yellow>
+        <td>CSS</td>
+        <td>Some</td>
+      </tr>
+      <tr class=yellow>
+        <td>Unit Testing</td>
+        <td>Some</td>
+      </tr>
+      <tr class=red>
+        <td>Ruby</td>
+        <td>None</td>
+      </tr>
+    </table>
+    <p></p>
+    <table>
+      <tr>
+        <th>Number</th>
+        <th>Name</th>
+      </tr>
+      <tr>
+        <td>CS1101</td>
+        <td>Introduction to Program Design</td>
+      </tr>
+      <tr>
+        <td>CS2102</td>
+        <td>Object Oriented Design</td>
+      </tr>
+      <tr>
+        <td>CS2223</td>
+        <td>Algorithmns</td>
+      </tr>
+      <tr>
+        <td>CS2202</td>
+        <td>Discrete Math</td>
+      </tr>
+      <tr>
+        <td>CS2303</td>
+        <td>Systems Programming</td>
+      </tr>
+      <tr>
+        <td>CS2011</td>
+        <td>Machine Org and Assembly</td>
+      </tr>
+      <tr>
+        <td>CS3431</td>
+        <td>Databases I</td>
+      </tr>
+      <tr>
+        <td>CS3013</td>
+        <td>Operating Systems</td>
+      </tr>
+      <tr>
+        <td>CS3133</td>
+        <td>Foundations of Computer Science</td>
+      </tr>
+      <tr>
+        <td>CS3043</td>
+        <td>Social Implications</td>
+      </tr>
+      <tr>
+        <td>CS3733</td>
+        <td>Software Engineering</td>
+      </tr>
+      <tr>
+        <td>CS4341</td>
+        <td>Introduction to AI</td>
+      </tr>
+      <tr>
+        <td>CS4731</td>
+        <td>Computer Graphics</td>
+      </tr>
+      <tr>
+        <td>CS4432</td>
+        <td>Databases II</td>
+      </tr>
+      
+    </table>
   </body>
+  <script>
+  let obj = document.getElementById('rainbow');
+  let rgb = [255, 0, 0];
+  let idx = 1;
+  let dir = 1;
+  
+  updateRainbow = function() {
+    rgb[idx] = Math.min(Math.max(rgb[idx] + dir * 3, 0), 255);
+    if ((dir == 1 && rgb[idx] == 255) || (dir == -1 && rgb[idx] == 0)) {
+      dir *= -1;
+      idx = (idx + 2) % 3;
+    }
+    obj.style = `color: rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`
+  }
+  
+  window.onload = function() {
+    setInterval(updateRainbow, 1);
+  }
+  </script>
 </html>
