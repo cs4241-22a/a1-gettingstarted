@@ -1,28 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <link rel="stylesheet" href="/style.css" />
+    <!--   Google Fonts.   -->
+    <style>
+      /* Handjet. */
+      @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    </style>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
+    <img class="big-cat" src="https://images.pexels.com/photos/3257811/pexels-photo-3257811.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="wowie cool picture"/>
+    <br/>
+    <a href="https://www.google.com" target="_blank">go to google.com</a>
+    <br/>
+    <input type="checkbox">radio button</input>
+    <br>
+    <label>dropdown:</label>
+    <select>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+    </select>
+    <h1 class="underline">Information about Will Dufault</h1>
+    <p>Hey! I'm Will Dufault and I'm a senior. I'm getting a bachelor's in computer 
+      science and a minor in data science. In my free time, I enjoy playing 
+      video games, working out, playing basketball, and spending time with friends.
     </p>
 
-    <h2>Experience</h2>
+    <h2 class="underline">Experience</h2>
     <p>
-      Working experience
+      I recently finished my first internship at BJ's Wholesale Club as a Cloud
+      Engineer Intern. My entire internship was basically just playing around
+      with Python and AWS. My project was to help automate parts of the machine
+      learning workflow.
     </p>
+    <h3 class="underline">Places I've worked:</h3>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>
+        WPI (hopefully, I still haven't been assigned a class to SA for yet)
+      </li>
+      <li>BJ's Wholesale Club</li>
+      <li>Home Depot</li>
     </ul>
+    <h1 class="underline">Super cool JS animation:</h1>
+    <button class="super-cool-button" onclick="spinny()">
+      ANIMATE
+    </button>
+    <br/>
+    <br/>
+    <div id="animation-frame">
+      <div id="spin-box"/>
+    </div>
   </body>
+  <script src="/main.js"></script>
 </html>
