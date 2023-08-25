@@ -1,17 +1,17 @@
-Charlie Roberts
-http://a1-charlieroberts.glitch.me
+Ryan Rabbitt
+http://a1-ryanrabbitt.glitch.me
 
 This project shows ...
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for body, h2, img, hr, li, selectors.
-body's background color and font is changed, also added fade in animation on load. 
+body's background color + font is changed, also added fade in animation on load. Also added max-width and margins for center alignment.
 h2 has custom color, font side and text decoration (underline).
 img has set height, margins and a left float, also a background color for behind the transparent image.
 hr has custom margin and thicker outline. 
 li has custom bullet points.
 - **Added class selectors**: Added classes + styles for header, container-box, and icon. Also added ids + styles for box-1, box-2.
-.container-box has custom borders to mimic Windows 95 windows, margin for spacing between boxes, background color and custom width.
+.container-box has custom borders to mimic Windows 95 windows, margin for spacing between boxes, + background color.
 .header has custom width + height, background color, font weight and padding.
 .icon has the same borders as .container-box, plus a set width + height, margins, and vertical + horizontal align to center the x. Vertical align was achieved using a line-height equal to the height of the div.
 box-1 and box-2 have padding, plus box-1 has a set height.

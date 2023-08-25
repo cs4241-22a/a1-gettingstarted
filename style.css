@@ -5,6 +5,8 @@ body {
     animation-fill-mode: forwards;
     font-family: 'Inconsolata', Andale Mono, monospace;
     color: black;
+    margin: 0 auto;
+    max-width: 900px;
 }
 
 
@@ -41,7 +43,6 @@ h1 {
     border-right: 2px solid black;
     padding-right: 1px;
     background-color: #c2c2c2;
-    width: 50%;
     margin-bottom: 20px;
 }
 
