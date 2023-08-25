@@ -1,0 +1,47 @@
+:root{
+	--darkBlue: #115ea8;
+	--blue: #0c83f5;
+	--red: #f55400;
+	--darkGreen: #11a84d;
+	--green: #0cf568;
+}
+
+body{
+	background-color: var(--blue);
+}
+
+h1{
+	color: var(--green);
+	font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+table{
+	border-collapse: collapse;
+	text-align: center;
+	background-color: white;
+}
+td, th{
+	border: 2px solid;
+	width: 25%;
+}
+
+td:nth-child(2){
+	color: var(--darkGreen);
+	border-color: black;
+	font-weight: bold;
+}
+
+td:nth-child(3){
+	color: var(--red);
+	border-color: black;
+	font-weight: bold;
+}
+
+footer{
+	width:98%;
+	text-align: center;
+	color: var(--darkBlue);
+	position: absolute;
+	bottom: 0;
+	left: 1%;
+}
