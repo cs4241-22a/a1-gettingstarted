@@ -1,28 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="style.css" />
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
+    <h1>Information about Sultan Adedeji</h1>
+    <img id="image" src="images/sultan.JPG" alt="image of sultan" class="center">
+    <h2>Brief Intro</h2>
+    <p class="intro">
+      Hello everyone, my name is Sultan Adedeji 
+      and I am a member of the <a href="https://www.wpi.edu/academics">WPI</a> class of 2024. I am originally 
+      from Nigeria but I moved to the United States 4 years ago 
+      for school. I my free time, I enjoy playing soccer, going 
+      to the gym, and trying new adventures in general.
     </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <h2>Academics</h2>
+    <div class="cs">
+      <p>Major: <a href="https://www.wpi.edu/academics/departments/computer-science">Computer Science</a></p>
+      <div>
+        <p>Previous Computer Science Courses:</p>
+        <ul>
+          <li>CS1101: Intro to Program Design</li>
+          <li>CS2022: Discrete Mathematics</li>
+          <li>CS2102: Object Oriented Concepts</li>
+          <li>CS2303: Systems Programming</li>
+          <li>CS3043: Social Implications of Information Processing</li>
+          <li>CS3133: Foundations of CS</li>
+          <li>CS4341: Intro to AI</li>
+        </ul>
+      </div>
+    </div>
 
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <div class="experience">
+      <div>
+        <p>Working experience:</p>
+        <ul>
+          <li><a href="https://www.collinsaerospace.com/">Collins Aerospace</a></li>
+          <li><a href="https://www.goldmansachs.com/">Goldman Sachs</a></li>
+        </ul>
+      </div>
+      <div>
+        <p>Technology experience:</p>
+        <ul>
+          <li>HTML: some</li>
+          <li>CSS: some</li>
+          <li>Java: a lot</li>
+          <li>JavaScript: a lot</li>
+          <li>Ruby: none</li>
+          <li>Python: a lot</li>
+          <li>unit testing: none</li>
+        </ul>
+      </div>
+    </div>
   </body>
+  <script>
+    const imageElement = document.getElementById("image");
+    const imageSources = ["sultan.JPG", "sult2.jpg", "sult3.jpg"];
+    let currentImageIndex = 0;
+
+    const imgChange = function() {
+      currentImageIndex = (currentImageIndex + 1) % imageSources.length;
+      imageElement.src = `images/${imageSources[currentImageIndex]}`;
+    }
+
+    imageElement.addEventListener("click", imgChange);
+  </script>
 </html>
