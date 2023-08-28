@@ -23,7 +23,7 @@
 - input
 - select
 - option
-- (Also div and label but I'm not sure if those count.)
+- (Also div, label, table, th, and td.)
 
 ### Design
 

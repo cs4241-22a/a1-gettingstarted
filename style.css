@@ -20,6 +20,10 @@ p:hover {
   transform: scaleY(-1);
 }
 
+table, th, td {
+  border: 0.1rem solid white;
+}
+
 .big-cat {
   height: 20rem;
 }
