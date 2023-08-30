@@ -1,0 +1,44 @@
+.child {
+  display: inline-block;
+  color: #2C4DB8;
+}
+
+.list {
+  line-height: 1.5;
+}
+
+li {
+  color: #2C4DB8;
+}
+
+ul.no-bullets {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 45px;
+  color: #203785;
+  
+}
+
+h2, h3 {
+  color: #1E2438;
+}
+
+body {
+  background-color: #6A7FC3;
+  font-family: 'Oswald', sans-serif;
+}
+
+p {
+  color: #1A2D6B;
+}
+
+input[type='checkbox'] {
+   filter: brightness(80%) saturate(100) hue-rotate(25deg);
+}
+
+input[type='checkbox']:checked {
+   filter: brightness(20%) saturate(100) hue-rotate(25deg);
+}
+
