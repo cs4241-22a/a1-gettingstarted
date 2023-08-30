@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --color-one: #435F94;
+    --color-two: #D4E0FC;
+    --color-three: #7B9FE0;
+    --color-four: #947534;
+    --color-five: #E0A526;
+    --image: url(Resources/DVD_logo.svg);
+}
+
+
+
+body {
+    background-color: var(--color-two);
+    font-family: 'Roboto';
+    font-size: 22px;
+}
+
+button {
+    display: block;
+    margin-left: 140px;
+    margin-bottom: 25px;
+    font-family: "Roboto";
+    width: 120px;
+    height: 40px;
+    position: relative;
+    background-color: var(--color-three);
+    border-color: black;
+    border-radius: 10px;
+}
+
+/* Using text-decoration */
+h1 {
+    text-decoration: underline;
+    text-decoration-color: var(--color-five);
+}
+
+img {
+    /* filter: invert(.5); */
+    width: 100px;
+}
+
+li {
+    color: var(--color-one);
+    -webkit-text-fill-color: black;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+/* Elements by id*/
+
+#boundingBox {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: black;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+
+}
+
+
+#animation {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    background-color: var(--color-five);
+}
+
+.mask {
+    -webkit-mask-image: var(--image);
+    mask-image: var(--image);
+}
