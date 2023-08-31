@@ -1,28 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="bouncingBox.js"></script>
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
 
-    <h2>Experience</h2>
+  <body>
+    <h1>Information about Nikesh Walling</h1>
     <p>
-      Working experience
+      I am a class of 2025 student at WPI. I am part of the marching band, the
+      orchestra, and the High Power Rocketry Club. In my free time, I like
+      watching tv, cooking, and working on software/hardware projects.
     </p>
+    <b>Majors:</b> Robotics Engineering and Computer Science <br />
+    <b>Minor:</b> Mechanical Engineering<br />
+    <p>Previous relevant classes:</p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>CS 1101: Introduction To Program Design</li>
+      <li>CS 2103: Accelerated Object-Oriented Design Concepts</li>
+      <li>CS 2303: Systems Programming Concepts</li>
+      <li>CS 2223: Algorithms</li>
+      <li>CS 3013: Operating Systems</li>
+      <li>CS 3733: Software Engineering</li>
+      <li>CS 539: Machine Learning</li>
     </ul>
+
+    <h3>Language/Tool Familiarities:</h3>
+    <table>
+      <tr>
+        <th>Language/Tool</th>
+        <th>Experience</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td>A lot</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Ruby</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>unit testing</td>
+        <td>Some</td>
+      </tr>
+    </table>
+    <h2>Experience</h2>
+    <p>Working experience</p>
+    <ul>
+      <li>WPI Student</li>
+      <li>Robotics Research Assistant</li>
+      <li>HPRC Sub-team Lead</li>
+      <li>Soft Eng Team Lead</li>
+    </ul>
+
+    <h2>Fun Stuff</h2>
+
+    <h3>Link to my Github and LinkedIn Pages:</h3>
+    Github:<a style="font-size: 18px" target="_blank"
+      href="https://github.com/valleyquail">https://github.com/valleyquail</a><br />
+    LinkedIn:
+    <a style="font-size: 18px" target="_blank" href="
+  https://www.linkedin.com/in/nikesh-walling/">https://www.linkedin.com/in/nikesh-walling</a>
+    <br />
+
+    <h3 style="text-indent: px">Bouncing DVD:</h3>
+    <button id="DVDButton" onclick="animator()">Click Me To Start</button>
+    <div id="boundingBox">
+      <div id="animation" class="mask"></div>
+    </div>
   </body>
+
 </html>
