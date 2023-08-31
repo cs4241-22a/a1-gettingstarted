@@ -1,19 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https: //github.com/valleyquail/a1-NikeshWalling/blob/main/Resources/DVD_logo.svg");
 :root {
-    --color-one: #435F94;
-    --color-two: #D4E0FC;
-    --color-three: #7B9FE0;
+    --color-one: #435f94;
+    --color-two: #d4e0fc;
+    --color-three: #7b9fe0;
     --color-four: #947534;
-    --color-five: #E0A526;
+    --color-five: #e0a526;
     --image: url(Resources/DVD_logo.svg);
 }
 
-
-
 body {
     background-color: var(--color-two);
-    font-family: 'Roboto';
+    font-family: "Roboto", serif;
     font-size: 22px;
 }
 
@@ -21,7 +19,7 @@ button {
     display: block;
     margin-left: 140px;
     margin-bottom: 25px;
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     width: 120px;
     height: 40px;
     position: relative;
@@ -44,12 +42,18 @@ img {
 li {
     color: var(--color-one);
     -webkit-text-fill-color: black;
+    font-size: medium;
 }
 
 table,
-th,
-td {
+th {
     border: 1px solid black;
+    padding: 0px 20px 0px 0px
+}
+
+td{
+    border: 1px solid black;
+    font-size: smaller;
 }
 
 /* Elements by id*/
@@ -62,9 +66,7 @@ td {
     border-color: black;
     border-width: 3px;
     border-style: solid;
-
 }
-
 
 #animation {
     width: 100px;
