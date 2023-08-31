@@ -17,6 +17,7 @@ function animator() {
     let upDownPos = 0;
     let leftRightPos = 0;
     let temp
+    console.log("Bouncing time\n");
 
     clearInterval(id);
     id = setInterval(frame, 20);
